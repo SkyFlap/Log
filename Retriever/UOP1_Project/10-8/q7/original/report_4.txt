@@ -1,0 +1,21 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+    * 文件内容概述：该脚本定义了一个名为`Attack`的类，用于实现游戏对象的攻击行为。它通过检测与具有`Collider`组件的非友军对象的碰撞来触发攻击，并使用`AttackConfigSO`预设对象来管理攻击属性，如攻击强度。
+    * 该文件与问题目标之间的关联性：该脚本直接涉及到攻击行为的实现，因此与怪物攻击行为的逻辑直接相关。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\StateMachine\Core\State.cs
+    * 文件内容概述：该脚本定义了一个名为`State`的类，用于表示状态机中的一个状态，并管理状态转换和动作。它提供了状态进入、更新和退出的方法，以及尝试获取下一个状态转换的方法。
+    * 该文件与问题目标之间的关联性：虽然该脚本不直接包含攻击行为的逻辑，但它作为状态机框架的一部分，可能被用于管理怪物攻击状态，因此与问题目标间接相关。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\StateMachine\Core\StateAction.cs
+    * 文件内容概述：该脚本定义了一个名为`StateAction`的抽象类，用于表示状态机中的动作。它提供了与状态机相关的行为和属性，如动作执行时刻和关联的共享对象。
+    * 该文件与问题目标之间的关联性：该脚本作为状态机动作的基类，可能被用于实现怪物攻击动作，因此与问题目标间接相关。
+
+* 文件四：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\StateMachine\Core\StateTransition.cs
+    * 文件内容概述：该脚本定义了一个名为`StateTransition`的类，用于管理状态转换。它提供了检查和执行状态转换的逻辑，包括条件检查和结果组管理。
+    * 该文件与问题目标之间的关联性：该脚本作为状态机转换的核心部分，可能被用于控制怪物从非攻击状态转换到攻击状态，因此与问题目标间接相关。
+
+以上是本次项目文件搜索过程中所搜索到的所有与问题目标相关的文件及其内容概述，以及它们与问题目标之间可能的关联性。

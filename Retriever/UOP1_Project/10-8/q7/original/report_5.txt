@@ -1,0 +1,9 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+    * 文件内容概述：该脚本定义了一个名为`Attack`的类，继承自`MonoBehaviour`，主要功能是定义一个攻击行为。它通过`AttackConfigSO`管理攻击属性，并在`OnTriggerEnter`方法中检测与其他游戏对象的碰撞，当检测到非友军对象且该对象具有`Damageable`组件时，执行攻击。
+    * 该文件与问题目标之间的关联性：该脚本可能包含怪物攻击行为的逻辑，因为它定义了攻击行为，并在检测到碰撞时执行攻击。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attacker.cs
+    * 文件内容概述：该脚本定义了一个名为`Attacker`的类，继承自`MonoBehaviour`，包含`EnableWeapon`和`DisableWeapon`两个方法，用于启用和禁用攻击器（可能是一个攻击范围的Collider）。
+    * 该文件与问题目标之间的关联性：该脚本可能用于控制怪物的攻击行为，通过启用和禁用攻击器来控制攻击范围的Collider，从而影响怪物的攻击行为。

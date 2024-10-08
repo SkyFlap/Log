@@ -1,0 +1,25 @@
+# Unity 项目怪物攻击行为逻辑分析报告
+
+## 2. 搜索结果
+### 文件路径及内容概述
+
+#### 文件一
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+- **文件内容概述**：该脚本定义了一个名为`Attack`的类，继承自`MonoBehaviour`。它使用`AttackConfigSO`来管理攻击的属性，如攻击强度，并在检测到非友军对象且该对象具有`Damageable`组件时执行攻击。
+- **文件关联性**：这个脚本直接定义了攻击行为，包括攻击的触发条件和执行过程，因此与怪物攻击行为的逻辑直接相关。
+
+#### 文件二
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attacker.cs
+- **文件内容概述**：该脚本定义了一个名为`Attacker`的类，继承自`MonoBehaviour`。它包含两个公共方法：`EnableWeapon`和`DisableWeapon`，分别用于激活和禁用攻击碰撞器。
+- **文件关联性**：这个脚本用于控制攻击的激活和禁用，虽然不直接实现攻击逻辑，但它与攻击行为的控制相关，因此也与怪物攻击行为的逻辑间接相关。
+
+## 3. 任务分析
+根据搜索结果，怪物攻击行为的逻辑主要定义在`Attack.cs`脚本中，该脚本详细描述了攻击的触发条件和执行过程。而`Attacker.cs`脚本则与攻击行为的控制有关，它负责管理攻击碰撞器的激活和禁用状态。
+
+## 4. 结论
+怪物攻击行为的逻辑实现在`D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs`文件中。`Attacker.cs`文件虽然不直接包含攻击逻辑，但与攻击行为的控制有关联。
+
+## 5. 建议（可选）
+无
+
+注：已删除报告中的不相关内容和冗余信息，并保持了原始报告的排版格式。

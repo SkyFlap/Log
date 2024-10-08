@@ -1,0 +1,16 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+    * 文件内容概述：该脚本定义了一个名为`Attack`的类，用于控制攻击行为。它通过`AttackConfigSO`预设对象管理攻击属性，并在检测到非友军对象且该对象具有`Damageable`组件时执行攻击。
+    * 该文件与问题目标之间的关联性：该脚本直接定义了攻击行为，是怪物攻击行为逻辑实现的关键部分。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attacker.cs
+    * 文件内容概述：该脚本定义了一个名为`Attacker`的类，用于控制攻击者的攻击碰撞体（_attackCollider）的激活和禁用。它提供了`EnableWeapon`和`DisableWeapon`方法来控制攻击碰撞体的状态。
+    * 该文件与问题目标之间的关联性：该脚本负责控制攻击碰撞体的激活和禁用，是攻击行为的一部分，与怪物攻击行为的逻辑相关联。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\AttackConfigSO.cs
+    * 文件内容概述：该脚本定义了一个名为`AttackConfigSO`的类，用于存储攻击配置。它可能包含攻击强度等属性，用于管理攻击行为。
+    * 该文件与问题目标之间的关联性：该脚本定义了攻击配置，是攻击行为的一部分，与怪物攻击行为的逻辑相关联。
+
+以上是根据搜索过程中获取的信息整理的报告，涵盖了与怪物攻击行为逻辑相关的文件及其内容概述。
