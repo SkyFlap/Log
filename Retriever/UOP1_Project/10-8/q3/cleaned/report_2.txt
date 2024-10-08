@@ -1,0 +1,31 @@
+清洗后的任务报告：
+
+# Unity 玩家跳跃逻辑实现分析报告
+
+## 1. 引言
+- **任务目标**：在指定目录下寻找玩家跳跃逻辑的实现位置。
+- **搜索方法概览**：通过遍历指定目录下的脚本和配置文件，分析文件内容与玩家跳跃逻辑的相关性。
+
+## 2. 搜索结果
+### 文件路径及内容概述
+
+#### 文件一
+- **文件路径**：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\Scripts\\Characters\\Protagonist.cs
+    - **文件内容概述**：该脚本定义了Unity中的`Protagonist`类，负责处理玩家输入，包括移动、跳跃等，并包含状态管理字段和移动向量计算。
+    - **文件关联性**：`Protagonist.cs`脚本直接处理玩家的跳跃输入，因此包含玩家跳跃逻辑的实现。
+
+#### 文件三
+- **文件路径**：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\ScriptableObjects\\StateMachine\\Protagonist\\Conditions\\IsHoldingJump.asset
+    - **文件内容概述**：该脚本组件负责检测游戏对象是否处于跳跃状态，涉及性能优化的缓存结果设置。
+    - **文件关联性**：`IsHoldingJump.asset`脚本直接涉及玩家跳跃状态的检测，因此与玩家跳跃逻辑的实现相关。
+
+## 3. 任务分析
+基于搜索结果，玩家跳跃逻辑的实现主要位于`Protagonist.cs`脚本中，该脚本处理玩家的输入并管理跳跃状态。`IsHoldingJump.asset`脚本组件辅助检测跳跃状态，也与跳跃逻辑相关。
+
+## 4. 结论
+玩家跳跃逻辑的实现位于`Protagonist.cs`脚本文件中，`IsHoldingJump.asset`脚本组件提供辅助功能。
+
+## 5. 建议（可选）
+无
+
+注：文件二、文件四和文件五与玩家跳跃逻辑的实现无直接关联，故在报告中予以删除。

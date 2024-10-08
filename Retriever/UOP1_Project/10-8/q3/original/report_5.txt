@@ -1,0 +1,24 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Protagonist.cs
+    * 文件内容概述：该文件定义了Unity中的Protagonist类，作为主角的输入处理组件。它负责读取玩家的输入（如移动、跳跃、攻击等），并将其传递给状态机（`StateMachine`）的动作进行进一步处理。文件中包含了与跳跃逻辑相关的代码，如OnJumpInitiated和OnJumpCanceled方法。
+    * 该文件与问题目标之间的关联性：该文件直接包含了玩家跳跃逻辑的实现，是本次搜索任务的关键文件。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\Actions
+    * 文件内容概述：该文件夹包含了与主角状态机动作相关的脚本资源。这些脚本定义了主角的各种行为，如移动、攻击、跳跃等。由于跳跃逻辑是主角行为的一部分，这些脚本可能包含了实现跳跃逻辑的具体细节。
+    * 该文件与问题目标之间的关联性：该文件夹中的脚本可能包含了实现跳跃逻辑的具体代码，是搜索跳跃逻辑实现的重要目录。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\States
+    * 文件内容概述：该文件夹包含了与主角状态机状态相关的脚本资源。这些脚本定义了主角的各种状态，如空闲、行走、攻击、跳跃等。由于跳跃逻辑是主角状态的一部分，这些脚本可能包含了跳跃状态的实现细节。
+    * 该文件与问题目标之间的关联性：该文件夹中的脚本可能包含了跳跃状态的实现细节，是搜索跳跃逻辑实现的重要目录。
+
+* 文件四：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\NPCs\BardHare\Actions
+    * 文件内容概述：该文件夹包含了与NPC状态机动作相关的脚本资源。虽然该文件夹中的脚本是为NPC设计的，但它们可能包含了与跳跃逻辑相关的通用代码，可以提供跳跃逻辑实现的参考。
+    * 该文件与问题目标之间的关联性：该文件夹中的脚本可能包含了与跳跃逻辑相关的通用代码，可以作为实现跳跃逻辑的参考。
+
+* 文件五：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\Conditions
+    * 文件内容概述：该文件夹包含了与主角状态机条件相关的脚本资源。这些脚本定义了主角状态机运行的条件，如是否在地面上、是否正在攻击等。由于跳跃逻辑涉及到是否在地面的状态，这些脚本可能包含了与跳跃逻辑相关的条件判断。
+    * 该文件与问题目标之间的关联性：该文件夹中的脚本可能包含了与跳跃逻辑相关的条件判断，是搜索跳跃逻辑实现的重要目录。

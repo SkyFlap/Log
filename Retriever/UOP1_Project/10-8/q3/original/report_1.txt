@@ -1,0 +1,51 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Protagonist.cs
+    * 文件内容概述：该文件定义了Unity中的`Protagonist`类，作为主角的输入处理组件。它通过`InputReader`接收玩家输入，如移动、跳跃和攻击，并将这些输入传递给状态机处理。脚本中包含状态管理字段，如跳跃和攻击标志，以及用于计算和存储移动向量的变量。`Protagonist`类注册了输入事件监听器，并在`Update`方法中重新计算移动向量，根据输入和相机方向调整移动逻辑。此外，脚本还处理了跳跃、攻击等事件，并提供了攻击输入的消费方法。
+    * 该文件与问题目标之间的关联性：该文件明确包含了与玩家跳跃逻辑相关的代码，如`OnJumpInitiated`和`OnJumpCanceled`方法，这表明玩家跳跃逻辑的实现就在这个文件中。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters
+    * 文件内容概述：该文件夹汇集了Unity游戏开发中角色相关的脚本资源，包括角色配置（如攻击、奖励、效果和NPC移动）、状态机逻辑、音频处理以及角色行为控制。文件夹内分为多个子目录，如Config存储角色配置脚本，StateMachine包含构建游戏逻辑的脚本，Audio则专注于角色音效。此外，Attack、Attacker、Critter等脚本负责角色具体行为，而NPC、Protagonist等则涉及角色状态和交互。整体上，这些脚本相互协作，共同构成了游戏中的角色系统。
+    * 该文件与问题目标之间的关联性：虽然该文件夹本身不直接包含跳跃逻辑的代码，但它包含了与角色行为相关的脚本，其中可能包含了与跳跃逻辑相关的配置或引用。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Input
+    * 文件内容概述：该文件夹汇集了游戏输入管理脚本，包含`GameInput.cs`和`InputReader.cs`两个关键文件。`GameInput.cs`定义了`@GameInput`类，负责处理游戏输入，包括玩法、菜单、对话和作弊等模块，并实现了资源管理。`InputReader.cs`则继承自`DescriptionBaseSO`，实现了对游戏输入事件的管理，如跳跃、攻击等，并通过事件和回调函数将输入事件传递给相应系统。两者协同工作，确保游戏输入的模块化和高效处理。
+    * 该文件与问题目标之间的关联性：该文件夹包含了处理玩家输入的脚本，其中可能包含了与跳跃逻辑相关的输入处理代码。
+
+* 文件四：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\Actions
+    * 文件内容概述：该文件夹汇集了Unity游戏开发所需的多种脚本资源，包括用于动画状态控制的AnimatorParameters、角色移动逻辑的MovementVector、粒子效果的Particles、声音效果的SFX，以及交互和视觉效果的脚本如ClearInputCache_OnEnter、DestroyPlayer、GetHitFlashingEffect、ResetGetHitState、RespawnPlayer和ShakeCam。这些资源协同工作，为游戏角色动作、视觉效果和交互体验提供全面支持。
+    * 该文件与问题目标之间的关联性：该文件夹包含了与角色行为相关的脚本，其中可能包含了与跳跃逻辑相关的行为控制代码。
+
+* 文件五：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\States
+    * 文件内容概述：该文件夹汇集了多个Unity游戏脚本配置文件，涵盖角色状态和行为管理，如死亡、击中、空闲、攻击、跳跃、滑动、拾取等。这些脚本共同构成了游戏角色复杂的行为逻辑，例如`Dying.asset`处理死亡逻辑，`GettingHit.asset`与`WalkAttacking.asset`协同管理击中和攻击行为，而`Idle.asset`和`Walking.asset`则分别负责空闲和移动状态。文件夹内的脚本通过Unity的MonoBehaviour系统相互配合，确保游戏角色在各种情境下表现自然。
+    * 该文件与问题目标之间的关联性：该文件夹包含了与角色状态和行为管理相关的脚本，其中可能包含了与跳跃状态相关的逻辑代码。
+
+* 文件六：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\NPCs\BardHare\Actions
+    * 文件内容概述：该文件夹汇集了两个Unity脚本资产，分别为`JumpDownTrigger_OnEnter.asset`和`JumpUpTrigger_OnEnter.asset`。这两个资产共同用于控制游戏角色跳跃动作的动画过渡，前者触发跳跃下降，后者触发上升，通过在角色进入特定触发器时激活相应参数，确保跳跃动作的流畅性。
+    * 该文件与问题目标之间的关联性：该文件夹包含了与角色跳跃动作相关的脚本资产，这些资产可能被用于实现跳跃动作的动画过渡逻辑。
+
+* 文件七：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\Conditions
+    * 文件内容概览：该文件夹汇集了多个Unity游戏脚本资产，涵盖了游戏中的关键状态检测与控制功能。这些脚本包括头部碰撞检测（HasHitHead.asset）、移动状态监控（IsActuallyMoving.asset）、地面接触检测（IsGrounded.asset）、攻击与跳跃行为控制（IsHoldingAttack.asset和IsHoldingJump.asset）、拾取物品检测（IsPickingUp.asset）、玩家受击检测（IsPlayerGettingHit.asset）、滑动状态检测（IsSliding.asset）、死亡状态检测（IsThisDead.asset）、动画计时器（Timer_DyingAnimation.asset、Timer_JumpHoldButton.asset、Timer_PickUpAnimation.asset和Timer_SurprisedAnimation.asset、Timer_Talking.asset），共同构成了游戏状态管理系统，确保游戏逻辑的流畅与交互的准确性。
+    * 该文件与问题目标之间的关联性：该文件夹包含了与游戏状态检测和控制相关的脚本资产，其中可能包含了与跳跃行为控制相关的逻辑代码。
+
+* 文件八：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Gameplay
+    * 文件内容概述：该文件夹汇集了Unity游戏开发的核心脚本，包括`GameManager.cs`用于管理游戏状态和事件，`GameStateSO.cs`负责跟踪和管理游戏状态变化，以及`SpawnSystem.cs`负责玩家的生成逻辑。这些脚本相互协作，共同构成了游戏的核心功能框架。
+    * 该文件与问题目标之间的关联性：虽然该文件夹本身不直接包含跳跃逻辑的代码，但它包含了游戏核心功能的脚本，其中可能包含了与跳跃逻辑相关的游戏状态管理代码。
+
+* 文件九：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\SceneManagement
+    * 文件内容概述：该文件夹汇集了Unity游戏开发的核心脚本，旨在高效管理游戏场景与设置。其中，ScriptableObjects子文件夹封装了游戏场景、位置、菜单等数据，通过继承基类实现通用场景管理功能。FallCatcher、InitializationLoader、LocationEntrance、LocationExit等脚本分别处理玩家碰撞、游戏初始化、位置入口与出口逻辑。SceneLoader负责场景的异步加载与卸载，而StartGame则管理游戏开始流程，包括新游戏和继续游戏选项。整体上，这些脚本协同工作，确保游戏场景的流畅切换和玩家交互的顺畅进行。
+    * 该文件与问题目标之间的关联性：虽然该文件夹本身不直接包含跳跃逻辑的代码，但它包含了游戏场景管理的脚本，其中可能包含了与跳跃逻辑相关的场景管理代码。
+
+* 文件十：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Cutscenes
+    * 文件内容概述：该文件夹汇集了Unity游戏开发中用于管理和控制场景播放的脚本。它包含对话控制脚本，如`DialogueBehaviour`、`DialogueClip`和`DialogueTrack`，负责对话的显示和播放；音频配置脚本`CutsceneAudioConfigSetter`，用于调整场景中的音量；场景管理脚本`CutsceneManager`，负责场景的播放、暂停和对话显示；场景加载脚本`CutsceneSceneLoader`，用于加载特定场景；触发脚本`CutsceneTrigger`，用于触发场景播放；以及时间轴绑定脚本`TimelineBinder`，确保游戏对象与时间轴同步。这些脚本相互协作，共同构建了游戏中的场景系统。
+    * 该文件与问题目标之间的关联性：虽然该文件夹本身不直接包含跳跃逻辑的代码，但它包含了游戏场景管理的脚本，其中可能包含了与跳跃逻辑相关的场景管理代码。
+
+以上是我本次项目文件搜索过程中所搜索到的所有与问题目标相关的文件绝对路径及其内容概述，以及它们与问题目标之间可能的关联性。
