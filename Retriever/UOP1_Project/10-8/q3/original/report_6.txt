@@ -1,0 +1,14 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Protagonist.cs
+    * 文件内容概述：这是一个Unity组件脚本，继承自`MonoBehaviour`，主要处理主角的输入读取和状态管理，包括读取玩家的输入（如移动、跳跃、攻击等）并将其传递给状态机。
+    * 该文件与问题目标之间的关联性：由于该脚本负责处理玩家的输入，包括跳跃，因此它很可能包含实现玩家跳跃逻辑的代码。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\States\JumpAscending.asset
+    * 文件内容概述：这是一个Unity脚本配置文件，包含主角跳跃上升状态的行为配置，具体内容为9个字典元素列表，每个字典元素包含type、fileID和guid等信息。
+    * 该文件与问题目标之间的关联性：该文件直接与主角跳跃上升状态相关，因此很可能包含实现跳跃上升逻辑的代码。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\Conditions\IsHoldingJump.asset
+    * 文件内容概述：这是一个Unity脚本配置文件，包含一个名为“IsHoldingJump”的脚本组件，用于检测跳跃按钮是否被按下，并设置了缓存结果以提高性能。
+    * 该文件与问题目标之间的关联性：该文件用于检测跳跃按钮的状态，是跳跃逻辑中的一部分，因此与问题目标相关。

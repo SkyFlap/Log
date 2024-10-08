@@ -1,0 +1,26 @@
+* 文件一：
+    * 文件绝对路径：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\Scripts\\Characters\\Protagonist.cs
+    * 文件内容概述：该脚本定义了Unity中的`Protagonist`类，作为主角的输入处理组件。它通过`InputReader`接收玩家输入，如移动、跳跃和攻击，并将这些输入传递给状态机处理。脚本中包含状态管理字段，如跳跃和攻击标志，以及用于计算和存储移动向量的变量。`Protagonist`类注册了输入事件监听器，并在`Update`方法中重新计算移动向量，根据输入和相机方向调整移动逻辑。此外，脚本还处理了跳跃、攻击等事件，并提供了攻击输入的消费方法。
+    * 该文件与问题目标之间的关联性：`Protagonist.cs`脚本直接处理玩家的输入，包括跳跃输入，因此它很可能包含玩家跳跃逻辑的实现。
+
+* 文件二：
+    * 文件绝对路径：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\ScriptableObjects\\StateMachine\\Protagonist\\Actions\\Particles\\PlayJumpParticles.asset
+    * 文件内容概述：这是一个名为“PlayJumpParticles.asset”的文件，该文件里的内容为：MonoBehaviour: m_ObjectHideFlags: 0 m_CorrespondingSourceObject: fileID: 0 m_PrefabInstance: fileID: 0 m_PrefabAsset: fileID: 0 m_GameObject: fileID: 0 m_Enabled: 1 m_EditorHideFlags: 0 m_Script: fileID: 11500000 guid: 0d4626beca74e2c43b7101165ecf3d06 type: 3 m_Name: PlayJumpParticles m_EditorClassIdentifier: None description: Plays one off particles
+    * 该文件与问题目标之间的关联性：`PlayJumpParticles.asset`文件名中包含了关键词“Jump”，且描述为“Plays one off particles”，这表明它可能与玩家跳跃时产生的粒子效果相关，因此可能与玩家跳跃逻辑的实现有关。
+
+* 文件三：
+    * 文件绝对路径：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\ScriptableObjects\\StateMachine\\Protagonist\\Conditions\\IsHoldingJump.asset
+    * 文件内容概述：该文件描述了一个Unity游戏开发中的脚本组件`IsHoldingJump`，该组件基于`MonoBehaviour`类，负责控制游戏中的跳跃行为。文件包含了组件的基本属性和脚本配置，如缓存结果设置，表明该脚本可能涉及性能优化。
+    * 该文件与问题目标之间的关联性：`IsHoldingJump.asset`脚本负责检测游戏对象是否处于跳跃状态，这与玩家跳跃逻辑的实现直接相关。
+
+* 文件四：
+    * 文件绝对路径：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\ScriptableObjects\\StateMachine\\NPCs\\BardHare\\Actions\\JumpDownTrigger_OnEnter.asset
+    * 文件内容概述：该Unity脚本组件“JumpDownTrigger_OnEnter”负责在角色动画控制器上设置名为“JumpDown”的布尔参数。默认情况下，此参数值为0（假），用于控制特定动画的触发条件。
+    * 该文件与问题目标之间的关联性：`JumpDownTrigger_OnEnter.asset`脚本组件与角色跳跃动画的触发条件相关，因此可能与玩家跳跃逻辑的实现有关。
+
+* 文件五：
+    * 文件绝对路径：D:\\Unity\\open-project-1-main\\UOP1_Project\\Assets\\ScriptableObjects\\StateMachine\\NPCs\\BardHare\\Actions\\JumpUpTrigger_OnEnter.asset
+    * 文件内容概述：该文件是Unity脚本配置，名为"JumpUpTrigger_OnEnter"，用于在角色进入特定触发器时设置动画控制器上的"JumpUp"参数。参数类型为整数，默认值为0，具体执行时机未定义。
+    * 该文件与问题目标之间的关联性：`JumpUpTrigger_OnEnter.asset`脚本配置与角色跳跃动画的触发条件相关，因此可能与玩家跳跃逻辑的实现有关。
+
+以上是我搜索到的所有与玩家跳跃逻辑实现相关的文件及其内容概述，以及它们与问题目标之间的关联性。

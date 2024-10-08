@@ -1,0 +1,16 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+    * 文件内容概述：该脚本定义了一个名为`Attack`的类，该类继承自`MonoBehaviour`，其主要功能是定义一个攻击行为。当游戏对象与另一个具有`Collider`组件的对象碰撞时，会触发攻击行为。脚本通过`AttackConfigSO`管理攻击的属性，如攻击强度，并在`OnTriggerEnter`方法中检测碰撞对象，如果碰撞对象不是友军且具有`Damageable`组件，则执行攻击。
+    * 该文件与问题目标之间的关联性：该文件直接与怪物攻击行为逻辑相关，因为它定义了攻击行为的基本框架和执行逻辑。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attacker.cs
+    * 文件内容概述：该脚本名为“Attacker.cs”，是Unity游戏开发中用于控制游戏对象攻击状态的组件。它包含一个名为`Attacker`的类，该类继承自`MonoBehaviour`。类中定义了两个方法：`EnableWeapon()`和`DisableWeapon()`，分别用于启用和禁用攻击碰撞器（_attackCollider），以此控制游戏中的攻击功能。
+    * 该文件与问题目标之间的关联性：该文件与怪物的攻击行为逻辑相关，因为它提供了启用和禁用攻击功能的方法，这可能是控制怪物何时进行攻击的关键。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\Actions\AttackAction.cs
+    * 文件内容概述：由于路径错误，无法获取文件内容概述。
+    * 该文件与问题目标之间的关联性：假设该文件存在，它可能包含与怪物攻击行为相关的状态机动作，用于定义攻击行为的状态转换和执行逻辑。
+
+以上是本次项目文件搜索过程中所搜索到的与问题目标相关的文件及其内容概述和关联性分析。由于在尝试访问`StateMachine`目录下的`Actions`文件夹时遇到了路径错误，因此无法提供该目录下可能存在的与攻击行为相关的状态机动作的详细信息。

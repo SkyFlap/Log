@@ -1,0 +1,21 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Protagonist.cs
+    * 文件内容概述：该脚本是一个Unity组件，继承自`MonoBehaviour`，主要处理主角的输入读取和状态管理。它负责读取玩家的输入（如移动、跳跃、攻击等），并将其传递给状态机（`StateMachine`）的动作进行进一步处理。
+    * 该文件与问题目标之间的关联性：该脚本直接处理主角的输入，包括跳跃输入，因此它可能与玩家跳跃逻辑的实现直接相关。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\Actions
+    * 文件内容概述：该文件夹包含多个Unity脚本资产，用于控制游戏角色跳跃动作的动画过渡，如`JumpDownTrigger_OnEnter.asset`和`JumpUpTrigger_OnEnter.asset`。这些资产共同用于控制游戏角色跳跃动作的动画过渡，前者触发跳跃下降，后者触发上升。
+    * 该文件与问题目标之间的关联性：这些脚本资产直接涉及角色跳跃动作的动画控制，因此它们可能与玩家跳跃逻辑的实现直接相关。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\Conditions
+    * 文件内容概述：该文件夹包含多个Unity游戏脚本资产，涵盖了游戏中的关键状态检测与控制功能，如头部碰撞检测（HasHitHead.asset）、移动状态监控（IsActuallyMoving.asset）、地面接触检测（IsGrounded.asset）、攻击与跳跃行为控制（IsHoldingAttack.asset和IsHoldingJump.asset）等。
+    * 该文件与问题目标之间的关联性：这些脚本资产涉及游戏中的关键状态检测，包括跳跃行为控制，因此它们可能与玩家跳跃逻辑的实现直接相关。
+
+* 文件四：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\States
+    * 文件内容概述：该文件夹汇集了多个Unity游戏脚本配置文件，涵盖角色状态和行为管理，如死亡、击中、空闲、攻击、跳跃、滑动、拾取等。
+    * 该文件与问题目标之间的关联性：这些脚本配置文件直接涉及角色跳跃状态的管理，因此它们可能与玩家跳跃逻辑的实现直接相关。
+
+以上是本次项目文件搜索过程中所搜索到的所有与问题目标相关的文件绝对路径及其内容概述，以及它们与问题目标之间可能的关联性。

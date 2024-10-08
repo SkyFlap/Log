@@ -1,0 +1,35 @@
+# Unity 玩家跳跃逻辑实现位置分析报告
+
+## 1. 引言
+- **任务目标**：在指定目录下寻找玩家跳跃逻辑的实现位置。
+- **搜索方法概览**：遍历指定目录及其子目录，查找与玩家跳跃逻辑相关的脚本和资产。
+
+## 2. 搜索结果
+### 文件一
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Protagonist.cs
+- **文件内容概述**：该脚本负责处理主角的输入，包括跳跃输入，并传递给状态机处理。
+- **文件关联性**：直接处理主角的输入，包括跳跃输入，可能包含跳跃逻辑的实现。
+
+### 文件二
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\Actions
+- **文件内容概述**：包含控制游戏角色跳跃动作动画过渡的脚本资产。
+- **文件关联性**：涉及角色跳跃动作的动画控制，可能与跳跃逻辑实现相关。
+
+### 文件三
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\Conditions
+- **文件内容概述**：包含涉及游戏状态检测与控制功能的脚本资产，包括跳跃行为控制。
+- **文件关联性**：涉及跳跃行为控制，可能与跳跃逻辑实现相关。
+
+### 文件四
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\StateMachine\States
+- **文件内容概述**：包含角色状态和行为管理的脚本配置文件，包括跳跃状态。
+- **文件关联性**：涉及角色跳跃状态的管理，可能与跳跃逻辑实现相关。
+
+## 3. 任务分析
+- 根据搜索结果，玩家跳跃逻辑可能实现在`Protagonist.cs`脚本中，该脚本处理玩家的输入并传递给状态机。同时，`StateMachine`相关的文件夹中的`Actions`、`Conditions`和`States`可能包含了实现跳跃逻辑的相关状态和条件判断。
+
+## 4. 结论
+- 玩家跳跃逻辑的实现位置可能在`Protagonist.cs`以及`StateMachine`相关文件夹中的脚本和资产中。
+
+## 5. 建议（可选）
+- 建议进一步检查`Protagonist.cs`中的输入处理逻辑，以及`StateMachine`相关资产中与跳跃相关的状态和条件，以确定跳跃逻辑的具体实现位置。
