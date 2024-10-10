@@ -1,0 +1,35 @@
+# Unity 玩家受到怪物攻击伤害逻辑分析报告
+
+## 1. 引言
+- **任务目标**：在项目目录中寻找并分析玩家受到怪物攻击伤害的逻辑位置。
+- **搜索方法概览**：通过文件搜索和关键代码分析确定相关文件。
+
+## 2. 搜索结果
+### 文件一
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\HealthSO.cs
+- **文件内容概述**：该脚本负责管理游戏角色的生命值，包括设置最大生命值、当前生命值以及处理伤害和恢复生命值。
+- **文件关联性**：HealthSO.cs脚本包含处理伤害的方法，与玩家受到怪物攻击伤害的逻辑直接相关。
+
+### 文件二
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Damageable.cs
+- **文件内容概述**：该脚本用于控制游戏中的可伤害对象，包括伤害接收、处理伤害等功能。
+- **文件关联性**：Damageable.cs脚本提供了接收攻击和处理伤害的方法，与玩家受到怪物攻击伤害的逻辑直接相关。
+
+### 文件三
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+- **文件内容概述**：该脚本负责管理游戏对象的攻击行为，包括检测目标、判断是否为友军以及造成伤害。
+- **文件关联性**：Attack.cs脚本定义了攻击行为，包括碰撞检测和攻击触发，与玩家受到伤害的逻辑有间接影响。
+
+### 文件四
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\StateMachine\Protagonist\States\GettingHit.asset
+- **文件内容概述**：定义玩家受到攻击时的状态，包含处理伤害逻辑的动作。
+- **文件关联性**：直接定义了玩家受到攻击时的状态，与问题目标直接相关。
+
+## 3. 任务分析
+基于搜索结果，玩家受到怪物攻击伤害的逻辑主要涉及HealthSO.cs、Damageable.cs和Attack.cs三个脚本。HealthSO.cs和Damageable.cs脚本处理了伤害接收和生命值减少的部分，而Attack.cs脚本定义了攻击行为，包括对目标的伤害判定。
+
+## 4. 结论
+玩家受到怪物攻击伤害的逻辑实现在HealthSO.cs、Damageable.cs和Attack.cs三个脚本中。HealthSO.cs负责生命值的管理，Damageable.cs提供了处理伤害和生命值变化的方法，而Attack.cs定义了攻击行为和攻击执行逻辑。
+
+## 5. 建议（可选）
+无。

@@ -1,0 +1,11 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+    * 文件内容概述：该脚本定义了一个名为`Attack`的类，该类继承自`MonoBehaviour`，用于管理游戏对象的攻击行为。脚本的主要功能是定义一个攻击行为，当游戏对象与另一个具有`Collider`组件的对象碰撞时触发。
+    * 该文件与问题目标之间的关联性：Attack.cs脚本中包含了攻击行为的定义和执行逻辑，当怪物攻击玩家时，会触发该脚本中的攻击逻辑，从而对玩家造成伤害。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Damageable.cs
+    * 文件内容概述：该脚本定义了Unity C#脚本，负责管理游戏中的可伤害对象（如敌人或玩家）。它提供了健康状态管理、伤害接收、死亡事件广播以及恢复健康的功能。
+    * 该文件与问题目标之间的关联性：Damageable.cs脚本中包含了角色受到伤害后的逻辑，包括减少生命值、触发死亡事件以及恢复健康等功能。当玩家受到怪物攻击时，会调用该脚本中的`ReceiveAnAttack`方法，从而减少玩家的生命值，并可能触发死亡事件。
+
+以上两个文件都与玩家受到怪物攻击伤害的逻辑相关，Attack.cs脚本定义了攻击行为，而Damageable.cs脚本则负责处理角色受到伤害后的逻辑。这两个脚本协同工作，实现了玩家受到怪物攻击伤害的逻辑。

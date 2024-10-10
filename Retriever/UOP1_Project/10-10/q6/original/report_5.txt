@@ -1,0 +1,39 @@
+* 文件一：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+    * 文件内容概述：该脚本定义了一个名为`Attack`的类，用于管理攻击行为，包括攻击配置管理和碰撞检测。它通过`OnTriggerEnter`方法检测与其他游戏对象的碰撞，并在检测到非友军对象且该对象具有`Damageable`组件时执行攻击。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它包含了检测到怪物攻击玩家时的逻辑，但具体的伤害处理逻辑并不在该文件中。
+
+* 文件二：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Critter.cs
+    * 文件内容概述：该脚本定义了一个名为`Critter`的类，用于管理与玩家交互的警报区域和攻击区域，并处理目标死亡的事件。它通过`isPlayerInAlertZone`和`isPlayerInAttackZone`变量来追踪玩家是否进入了警报区域或攻击区域。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它涉及到与玩家交互的攻击区域，但具体的伤害处理逻辑并不在该文件中。
+
+* 文件三：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\Configs\Attacks\BasicAttack.asset
+    * 文件内容概述：该文件定义了基础攻击的属性，包括攻击强度和重装填时间。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它定义了攻击的属性，但具体的伤害处理逻辑并不在该文件中。
+
+* 文件四：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\Configs\Attacks\EliteAttack.asset
+    * 文件内容概述：该文件定义了精英攻击的属性，包括攻击强度和重装填时间。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它定义了攻击的属性，但具体的伤害处理逻辑并不在该文件中。
+
+* 文件五：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\Configs\Attacks\PigChefAttack.asset
+    * 文件内容概述：该文件定义了猪厨师攻击的属性，包括攻击强度和重装填时间。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它定义了攻击的属性，但具体的伤害处理逻辑并不在该文件中。
+
+* 文件六：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\EventChannels\Health\InflictDamageEvent.asset
+    * 文件内容概述：该文件是一个Unity事件资产，用于触发伤害事件。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它是一个事件资产，用于触发伤害事件，但具体的伤害处理逻辑并不在该文件中。
+
+* 文件七：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\ScriptableObjects\EventChannels\Health\DeathEvent.asset
+    * 文件内容概述：该文件是一个Unity事件资产，用于处理角色死亡的事件。
+    * 该文件与问题目标之间的关联性：该文件与问题目标相关，因为它是一个事件资产，用于处理角色死亡的事件，这通常与受到伤害有关。
+
+* 文件八：
+    * 文件绝对路径：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Damageable.cs
+    * 文件内容概述：该脚本定义了一个名为`Damageable`的类，用于控制游戏中的可伤害对象（如敌人或玩家）。它提供了健康状态管理、伤害接收、死亡事件广播以及恢复健康的功能。
+    * 该文件与问题目标之间的关联性：该文件与问题目标高度相关，因为它包含了处理玩家受到怪物攻击伤害的逻辑，包括健康状态管理、伤害接收和死亡事件广播。
