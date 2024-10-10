@@ -1,0 +1,14 @@
+# Unity 玩家受到怪物攻击伤害逻辑分析报告
+
+## 2. 搜索结果
+### 文件一
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Attack.cs
+- **文件内容概述**：该脚本定义了攻击行为，当游戏对象与另一个具有`Collider`组件的对象碰撞时触发。
+- **文件关联性**：包含了攻击行为的定义和执行逻辑，当怪物攻击玩家时，会触发该脚本中的攻击逻辑。
+
+### 文件二
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Damageable.cs
+- **文件内容概述**：该脚本负责管理游戏中的可伤害对象，包括健康状态管理、伤害接收、死亡事件广播以及恢复健康的功能。
+- **文件关联性**：包含了角色受到伤害后的逻辑，当玩家受到怪物攻击时，会调用该脚本中的`ReceiveAnAttack`方法。
+
+以上两个文件共同实现了玩家受到怪物攻击伤害的逻辑。

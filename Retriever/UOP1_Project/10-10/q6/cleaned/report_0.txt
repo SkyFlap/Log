@@ -1,0 +1,18 @@
+# Unity 玩家受到怪物攻击伤害逻辑分析报告
+
+## 2. 搜索结果
+### 文件一
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\HealthSO.cs
+- **文件内容概述**：该脚本负责管理游戏角色的生命值，包括设置最大生命值、当前生命值以及处理伤害和恢复生命值。
+- **文件关联性**：HealthSO.cs脚本包含处理伤害的方法，与玩家受到怪物攻击伤害的逻辑直接相关。
+
+### 文件二
+- **文件路径**：D:\Unity\open-project-1-main\UOP1_Project\Assets\Scripts\Characters\Damageable.cs
+- **文件内容概述**：该脚本用于控制游戏中的可伤害对象，包括伤害接收、处理伤害等功能。
+- **文件关联性**：Damageable.cs脚本提供了接收攻击和处理伤害的方法，与玩家受到怪物攻击伤害的逻辑直接相关。
+
+## 3. 任务分析
+根据搜索结果，玩家受到怪物攻击伤害的逻辑主要涉及HealthSO.cs和Damageable.cs两个脚本。HealthSO.cs脚本负责生命值的管理，包括伤害的处理；而Damageable.cs脚本则负责接收攻击和处理伤害，两者共同构成了玩家受到怪物攻击伤害的逻辑。
+
+## 4. 结论
+玩家受到怪物攻击伤害的逻辑实现在HealthSO.cs和Damageable.cs两个脚本中，具体包括伤害的接收、处理以及生命值的更新。
