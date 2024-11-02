@@ -1,0 +1,44 @@
+* 文件1：
+    * 文件绝对路径：D:\Unity\Survaval\Assets\_MyAssets\Data\Spawns
+    * 文件内容概述：文件夹包含用于配置敌人生成逻辑的文件，定义了敌人的种类、生成时间等参数。
+    * 具体分析：直接关联到敌人刷新机制的配置。
+
+* 文件2：
+    * 文件绝对路径：D:\Unity\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_0.asset
+    * 文件内容概述：资产文件包含第一关敌人生成的配置信息。
+    * 具体分析：直接关联到第一关敌人刷新机制的配置。
+
+* 文件3：
+    * 文件绝对路径：D:\Unity\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_1.asset
+    * 文件内容概述：资产文件包含敌人生成的配置信息，但与第一关不直接相关。
+    * 具体分析：不直接关联到任务目标。
+
+* 文件4：
+    * 文件绝对路径：D:\Unity\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_endless_0.asset
+    * 文件内容概述：资产文件包含敌人生成的配置信息，与无尽模式相关。
+    * 具体分析：不直接关联到任务目标。
+
+* 文件5：
+    * 文件绝对路径：D:\Unity\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_teach.asset
+    * 文件内容概述：资产文件包含敌人生成的配置信息，与教学关卡相关。
+    * 具体分析：不直接关联到任务目标。
+
+* 文件6：
+    * 文件绝对路径：D:\Unity\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_2.asset
+    * 文件内容概述：资产文件包含敌人生成的配置信息，但与第一关不直接相关。
+    * 具体分析：不直接关联到任务目标。
+
+* 文件7：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\_MyAssets\\Scripts\\Character\\EnemySpawner.cs
+    * 文件内容概述：负责在编辑器中绘制敌人生成区域，并在游戏运行时将游戏对象转换为实体，为实体添加敌人生成相关组件。
+    * 具体分析：直接关联到敌人生成机制，是修改敌人刷新机制的关键文件。
+
+* 文件8：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\_MyAssets\\Scripts\\Character\\EnemySpawnerData.cs
+    * 文件内容概述：定义了敌人生成逻辑的配置，包括敌人生成时间表、难度设置、警告提示、特殊类型等。
+    * 具体分析：包含敌人生成逻辑的配置信息，修改敌人生成类型时需要调整此文件。
+
+* 文件9：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\_MyAssets\\Scripts\\Character\\EnemySpawnSystem.cs
+    * 文件内容概述：负责管理敌人的生成逻辑、状态和音乐播放。
+    * 具体分析：管理敌人生成逻辑，修改敌人生成机制时可能需要调整。
