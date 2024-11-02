@@ -1,0 +1,4112 @@
+2024-11-03 05:11:15,106 - INFO Retriever 0 - Init Retriever.
+2024-11-03 05:13:43,787 - INFO Retriever 0 - keywords:“玩家”，“敌人”，“player”，“automatic”，“automation”，“enemy”，“attack”，“Automated Attack”，“adversary”，“Automatic Attack”，“assault”，“自动”，“自动攻击”，“攻击”
+2024-11-03 05:13:43,789 - INFO Retriever 0 - deep_think_conent
+:在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\Assets下各级目录中寻找：游戏中玩家自动攻击敌人的逻辑在什么地方实现的？”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“玩家”，“敌人”，“player”，“automatic”，“automation”，“enemy”，“attack”，“Automated Attack”，“adversary”，“Automatic Attack”，“assault”，“自动”，“自动攻击”，“攻击”。
+接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。
+2024-11-03 05:13:43,824 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:13:43,826 - INFO Retriever 0 - Assistant:
+2024-11-03 05:13:43,831 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "好的，接下来我将通过深度思考、仔细计划以及逐步执行的方式，来完成该任务。\n\n首先，在阅读详细的代码细节之前，应该先整体把握整个项目。\n\n在提供的可选的action中，可以通过get_folder_info操作，通过将项目顶层路径作为target_folder_path参数进行传入，来获取获取项目中主要文件夹和主要文件的描述，从而能够先大致把握项目文件的主要文件的文件树结构、基本内容、主要代码概述以及大致功能板块的分布。"
+    }
+}
+2024-11-03 05:13:43,839 - INFO Retriever 0 - 
+Observer:
+2024-11-03 05:13:43,849 - INFO Retriever 0 - 好的，请继续你的下一步行动或思考。
+2024-11-03 05:13:43,852 - INFO Retriever 0 - 
+2024-11-03 05:13:49,499 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:13:49,500 - INFO Retriever 0 - Assistant:
+2024-11-03 05:13:49,501 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 05:13:49,501 - INFO Retriever 0 - 
+Observer:
+2024-11-03 05:13:49,501 - INFO Retriever 0 - 目标文件夹路径：D:/Unity/Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 05:13:49,505 - INFO Retriever 0 - 
+2024-11-03 05:13:49,560 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:13:49,606 - INFO Retriever 0 - Assistant:
+2024-11-03 05:13:49,650 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\\Assets下各级目录中寻找：游戏中玩家自动攻击敌人的逻辑在什么地方实现的？”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“玩家”，“敌人”，“player”，“automatic”，“automation”，“enemy”，“attack”，“Automated Attack”，“adversary”，“Automatic Attack”，“assault”，“自动”，“自动攻击”，“攻击”。\n接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。"
+    }
+}
+2024-11-03 05:13:49,681 - INFO Retriever 0 - 
+Observer:
+2024-11-03 05:13:49,696 - INFO Retriever 0 - 好的，请继续你的下一步行动或思考。
+2024-11-03 05:13:49,697 - INFO Retriever 0 - 
+2024-11-03 05:13:51,642 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:13:51,642 - INFO Retriever 0 - Assistant:
+2024-11-03 05:13:51,643 - INFO Retriever 0 - {
+    "retrieve_keywords": {
+        "keyword_list": [
+            "玩家",
+            "敌人",
+            "player",
+            "automatic",
+            "automation",
+            "enemy",
+            "attack",
+            "Automated Attack",
+            "adversary",
+            "Automatic Attack",
+            "assault",
+            "自动",
+            "自动攻击",
+            "攻击"
+        ]
+    }
+}
+2024-11-03 05:13:51,644 - INFO Retriever 0 - 
+Observer:
+2024-11-03 05:13:51,644 - INFO Retriever 0 - 根据你提供的关键词，我检索到以下目录或文件，它们的绝对路径如下：
+
+
+1. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Enemies
+### 文件夹内容总结
+
+“Enemies”文件夹汇集了多种游戏敌人预制文件，包括基础敌人、金币奖励敌人、无尽模式敌人、困难模式敌人以及特殊能力敌人，如骷髅敌人，这些文件按类型和特性分类，为游戏开发者提供了丰富的敌人资源。
+
+2. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Players\player_5.prefab
+这是一个名为“player_5.prefab”的文件。
+
+3. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Players
+### 文件夹内容概述
+“Players”文件夹汇集了从player_1到player_59的玩家预制文件，以及一个基础玩家预制文件player_base，这些文件共同构成了游戏中的玩家角色配置，其中每个编号文件可能代表不同的角色变体或角色。
+
+4. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Players\player_41.prefab
+这是一个名为“player_41.prefab”的文件。
+
+5. D:\\Unity\\Survaval\Assets\_MyAssets\SteerSettings\enemy_steer_speed_2.5.asset
+### 简要总结
+该文件为Unity游戏中的敌人行为脚本，设定了敌人的最大速度为2.5，并配置了搜索特定标签玩家的行为，有效半径达10000，视野覆盖360度，以实现高效追踪。
+
+6. D:\\Unity\\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_2.asset
+### 文件内容概要
+“enemy_spawn_2.asset”文件是Unity游戏中的敌人生成配置，详细规定了不同时间点的敌人生成计划，包括敌人类型、数量、生成间隔和冷却时间。文件还包含了奖励生成的设置，确保游戏体验的丰富性。
+
+7. D:\\Unity\\Survaval\Assets\_MyAssets\SteerSettings\enemy_steer_speed_5.asset
+### 简化总结
+
+该文件为Unity游戏中的敌人资产“enemy_steer_speed_5”，配置了敌人的最大力量和速度，并定义了包含行为和搜索玩家标签的行为配置，使敌人能够在360度视野内追踪玩家。
+
+8. D:\\Unity\\Survaval\Assets\_MyAssets\Data\Spawns
+### 文件夹内容总结
+“Spawns”文件夹汇集了Unity游戏引擎中用于配置敌人生成逻辑的多个文件。这些文件共同定义了敌人的种类、生成时间、冷却时间、难度等级、奖励生成和音乐播放等关键参数。例如，`enemy_spawn_0.asset`和`enemy_spawn_1.asset`详细描述了基础生成配置，而`enemy_spawn_endless_0.asset`则专注于无限生成模式。此外，`enemy_spawn_teach.asset`提供了敌人生成规则的教学示例。这些文件相互补充，确保了游戏敌人生成系统的精确性和多样性。
+
+
+请注意，这些目录或文件可能不全都和你的任务目标相关，仅供参考。请你基于具体的文件内容概述，结合你的任务目标，认真思考分析后，优先选择最有可能与任务相关的目录或文件进行进一步的检查。
+2024-11-03 05:13:51,644 - INFO Retriever 0 - 
+2024-11-03 05:14:03,676 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据检索到的结果，我注意到有几个目录和文件可能与玩家自动攻击敌人的逻辑相关。特别是以下文件和目录：\n1. D:\\Unity\\Survaval\\Assets\_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset\n2. D:\\Unity\\Survaval\\Assets\_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset\n3. D:\\Unity\\Survaval\\Assets\_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset\n4. D:\\Unity\\Survaval\\Assets\_MyAssets\\Data\\Spawns\n这些文件和目录似乎与敌人的行为和生成有关，这可能是实现玩家自动攻击敌人逻辑的关键部分。下一步，我将检查这些文件的内容，以确定它们是否包含有关玩家自动攻击敌人的逻辑。"
+    }
+}
+2024-11-03 05:14:03,676 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:03,676 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:03,681 - INFO Retriever 0 - deep_think
+2024-11-03 05:14:03,681 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:03,681 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:03,681 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据检索到的结果，我注意到有几个目录和文件可能与玩家自动攻击敌人的逻辑相关。特别是以下文件和目录：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n这些文件和目录似乎与敌人的行为和生成有关，这可能是实现玩家自动攻击敌人逻辑的关键部分。下一步，我将检查这些文件的内容，以确定它们是否包含有关玩家自动攻击敌人的逻辑。"
+    }
+}
+2024-11-03 05:14:03,682 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:14:03,682 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据检索到的结果，我注意到有几个目录和文件可能与玩家自动攻击敌人的逻辑相关。特别是以下文件和目录：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n这些文件和目录似乎与敌人的行为和生成有关，这可能是实现玩家自动攻击敌人逻辑的关键部分。下一步，我将检查这些文件的内容，以确定它们是否包含有关玩家自动攻击敌人的逻辑。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:14:03,682 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:14:03,683 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:03,684 - INFO Retriever 0 - 当前窗口总长度：11
+2024-11-03 05:14:03,684 - INFO Retriever 0 - 当前更新窗口长度：2
+2024-11-03 05:14:03,684 - INFO Retriever 0 - 当前更新窗口长度：2
+2024-11-03 05:14:03,685 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:05,127 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset"
+    }
+}
+2024-11-03 05:14:05,127 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:05,127 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:05,128 - INFO Retriever 0 - read_file
+2024-11-03 05:14:05,128 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:05,128 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:05,128 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset"
+    }
+}
+2024-11-03 05:14:05,129 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:14:05,129 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:14:05,130 - INFO Retriever 0 - Observer: 该文件内容为空。
+2024-11-03 05:14:05,131 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:05,131 - INFO Retriever 0 - 当前窗口总长度：13
+2024-11-03 05:14:05,132 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 05:14:05,132 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 05:14:05,132 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:06,781 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset"
+    }
+}
+2024-11-03 05:14:06,781 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:06,781 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:06,782 - INFO Retriever 0 - read_file
+2024-11-03 05:14:06,782 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:06,782 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:06,782 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset"
+    }
+}
+2024-11-03 05:14:06,784 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:14:06,784 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:14:06,785 - INFO Retriever 0 - Observer: 该文件内容为空。
+2024-11-03 05:14:06,785 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:06,786 - INFO Retriever 0 - 当前窗口总长度：15
+2024-11-03 05:14:06,786 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 05:14:06,786 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 05:14:06,786 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:12,438 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset"
+    }
+}
+2024-11-03 05:14:12,440 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:12,440 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:12,442 - INFO Retriever 0 - read_file
+2024-11-03 05:14:12,443 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:12,444 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:12,445 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset"
+    }
+}
+2024-11-03 05:14:12,446 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:14:12,447 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:14:12,451 - INFO Retriever 0 - Observer: 该文件内容为空。
+2024-11-03 05:14:12,454 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:12,455 - INFO Retriever 0 - 当前窗口总长度：17
+2024-11-03 05:14:12,497 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 05:14:12,497 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 05:14:12,497 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:19,345 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经检查了三个文件，但它们的内容都是空的。这可能意味着这些文件是Unity的资产文件，它们的内容可能在Unity编辑器中设置，而不是直接在文本文件中。因此，我需要考虑其他方法来查找玩家自动攻击敌人的逻辑。我可能需要检查与玩家和敌人行为相关的脚本文件，或者检查与游戏逻辑相关的其他资产文件。接下来，我将检查与玩家和敌人行为相关的脚本文件。"
+    }
+}
+2024-11-03 05:14:19,346 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:19,346 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:19,346 - INFO Retriever 0 - deep_think
+2024-11-03 05:14:19,346 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:19,347 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:19,347 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经检查了三个文件，但它们的内容都是空的。这可能意味着这些文件是Unity的资产文件，它们的内容可能在Unity编辑器中设置，而不是直接在文本文件中。因此，我需要考虑其他方法来查找玩家自动攻击敌人的逻辑。我可能需要检查与玩家和敌人行为相关的脚本文件，或者检查与游戏逻辑相关的其他资产文件。接下来，我将检查与玩家和敌人行为相关的脚本文件。"
+    }
+}
+2024-11-03 05:14:19,347 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:14:19,347 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经检查了三个文件，但它们的内容都是空的。这可能意味着这些文件是Unity的资产文件，它们的内容可能在Unity编辑器中设置，而不是直接在文本文件中。因此，我需要考虑其他方法来查找玩家自动攻击敌人的逻辑。我可能需要检查与玩家和敌人行为相关的脚本文件，或者检查与游戏逻辑相关的其他资产文件。接下来，我将检查与玩家和敌人行为相关的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:14:19,348 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:14:19,349 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:19,349 - INFO Retriever 0 - 当前窗口总长度：19
+2024-11-03 05:14:19,349 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 05:14:19,350 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 05:14:19,350 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:22,271 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\Scripts"
+    }
+}
+2024-11-03 05:14:22,272 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:22,272 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:22,272 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:14:22,272 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:22,273 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:22,273 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\Scripts"
+    }
+}
+2024-11-03 05:14:22,273 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:14:22,273 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\Scripts'}
+2024-11-03 05:14:22,793 - INFO Retriever 0 - Observer: 目标路径D:\Unity\Survaval\Assets_MyAssets\Scripts不存在。
+2024-11-03 05:14:22,795 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:22,795 - INFO Retriever 0 - 当前窗口总长度：21
+2024-11-03 05:14:22,795 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 05:14:22,797 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 05:14:22,797 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:33,741 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "由于目标路径不存在，我需要重新考虑我的搜索策略。我可能需要检查项目中的其他目录，以找到可能包含玩家自动攻击敌人逻辑的脚本文件。我注意到在之前的检索结果中，有几个目录可能与敌人的行为和生成有关，例如：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:14:33,741 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:33,741 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:33,742 - INFO Retriever 0 - deep_think
+2024-11-03 05:14:33,742 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:33,742 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:33,742 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "由于目标路径不存在，我需要重新考虑我的搜索策略。我可能需要检查项目中的其他目录，以找到可能包含玩家自动攻击敌人逻辑的脚本文件。我注意到在之前的检索结果中，有几个目录可能与敌人的行为和生成有关，例如：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:14:33,742 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:14:33,743 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '由于目标路径不存在，我需要重新考虑我的搜索策略。我可能需要检查项目中的其他目录，以找到可能包含玩家自动攻击敌人逻辑的脚本文件。我注意到在之前的检索结果中，有几个目录可能与敌人的行为和生成有关，例如：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n我将尝试在这些目录中查找可能的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:14:33,744 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:14:33,745 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:33,745 - INFO Retriever 0 - 当前窗口总长度：23
+2024-11-03 05:14:33,745 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 05:14:33,746 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 05:14:33,746 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:37,946 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:14:37,946 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:37,947 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:37,947 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:14:37,947 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:37,947 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:37,947 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:14:37,948 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:14:37,948 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies'}
+2024-11-03 05:14:38,429 - INFO Retriever 0 - Observer: 目标路径D:\Unity\Survaval\Assets_MyAssets\RuntimePrefabs\Enemies不存在。
+2024-11-03 05:14:38,429 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:38,429 - INFO Retriever 0 - 当前窗口总长度：25
+2024-11-03 05:14:38,429 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 05:14:38,434 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 05:14:38,434 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:41,524 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players"
+    }
+}
+2024-11-03 05:14:41,524 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:41,524 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:41,525 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:14:41,525 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:41,525 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:41,525 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players"
+    }
+}
+2024-11-03 05:14:41,525 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:14:41,526 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players'}
+2024-11-03 05:14:42,029 - INFO Retriever 0 - Observer: 目标路径D:\Unity\Survaval\Assets_MyAssets\RuntimePrefabs\Players不存在。
+2024-11-03 05:14:42,031 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:42,031 - INFO Retriever 0 - 当前窗口总长度：27
+2024-11-03 05:14:42,031 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 05:14:42,031 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 05:14:42,032 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:45,130 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings"
+    }
+}
+2024-11-03 05:14:45,135 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:45,135 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:45,136 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:14:45,136 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:45,136 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:45,137 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings"
+    }
+}
+2024-11-03 05:14:45,137 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:14:45,137 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings'}
+2024-11-03 05:14:45,597 - INFO Retriever 0 - Observer: 目标路径D:\Unity\Survaval\Assets_MyAssets\SteerSettings不存在。
+2024-11-03 05:14:45,600 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:45,600 - INFO Retriever 0 - 当前窗口总长度：29
+2024-11-03 05:14:45,600 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 05:14:45,625 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 05:14:45,658 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:50,466 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns"
+    }
+}
+2024-11-03 05:14:50,466 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:50,468 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:50,468 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:14:50,468 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:50,469 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:50,469 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns"
+    }
+}
+2024-11-03 05:14:50,469 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:14:50,470 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns'}
+2024-11-03 05:14:50,968 - INFO Retriever 0 - Observer: 目标路径D:\Unity\Survaval\Assets_MyAssets\Data\Spawns不存在。
+2024-11-03 05:14:50,970 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:50,970 - INFO Retriever 0 - 当前窗口总长度：31
+2024-11-03 05:14:50,972 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 05:14:50,972 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 05:14:50,972 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:14:59,101 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "由于目标路径不存在，我需要重新考虑我的搜索策略。我可能需要检查项目中的其他目录，以找到可能包含玩家自动攻击敌人逻辑的脚本文件。我注意到在之前的检索结果中，有几个目录可能与敌人的行为和生成有关，例如：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:14:59,101 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:14:59,102 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:14:59,102 - INFO Retriever 0 - deep_think
+2024-11-03 05:14:59,102 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:14:59,102 - INFO Retriever 0 - Assistant:
+2024-11-03 05:14:59,102 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "由于目标路径不存在，我需要重新考虑我的搜索策略。我可能需要检查项目中的其他目录，以找到可能包含玩家自动攻击敌人逻辑的脚本文件。我注意到在之前的检索结果中，有几个目录可能与敌人的行为和生成有关，例如：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:14:59,103 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:14:59,103 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '由于目标路径不存在，我需要重新考虑我的搜索策略。我可能需要检查项目中的其他目录，以找到可能包含玩家自动攻击敌人逻辑的脚本文件。我注意到在之前的检索结果中，有几个目录可能与敌人的行为和生成有关，例如：\n1. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets_MyAssets\\RuntimePrefabs\\Players\n3. D:\\Unity\\Survaval\\Assets_MyAssets\\SteerSettings\n4. D:\\Unity\\Survaval\\Assets_MyAssets\\Data\\Spawns\n我将尝试在这些目录中查找可能的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:14:59,103 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:14:59,105 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:14:59,106 - INFO Retriever 0 - 当前窗口总长度：33
+2024-11-03 05:14:59,106 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 05:14:59,106 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 05:14:59,106 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:15:05,276 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets"
+    }
+}
+2024-11-03 05:15:05,277 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:15:05,277 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:15:05,277 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:15:05,278 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:15:05,278 - INFO Retriever 0 - Assistant:
+2024-11-03 05:15:05,278 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets"
+    }
+}
+2024-11-03 05:15:05,278 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:15:05,278 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets'}
+2024-11-03 05:15:05,334 - INFO Retriever 0 - Observer: 目标文件夹路径：D:\Unity\Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 05:15:05,338 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:15:05,338 - INFO Retriever 0 - 当前窗口总长度：35
+2024-11-03 05:15:05,338 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 05:15:05,338 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 05:15:05,338 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:15:11,894 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我注意到有几个目录可能与玩家自动攻击敌人的逻辑相关，例如：\n1. D:\\Unity\\Survaval\\Assets\\Editor\n2. D:\\Unity\\Survaval\\Assets\\Plugins\n3. D:\\Unity\\Survaval\\Assets\\Resources\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:15:11,894 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:15:11,894 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:15:11,894 - INFO Retriever 0 - deep_think
+2024-11-03 05:15:11,894 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:15:11,898 - INFO Retriever 0 - Assistant:
+2024-11-03 05:15:11,898 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我注意到有几个目录可能与玩家自动攻击敌人的逻辑相关，例如：\n1. D:\\Unity\\Survaval\\Assets\\Editor\n2. D:\\Unity\\Survaval\\Assets\\Plugins\n3. D:\\Unity\\Survaval\\Assets\\Resources\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:15:11,898 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:15:11,898 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '在获取了项目文件的顶层结构后，我注意到有几个目录可能与玩家自动攻击敌人的逻辑相关，例如：\n1. D:\\Unity\\Survaval\\Assets\\Editor\n2. D:\\Unity\\Survaval\\Assets\\Plugins\n3. D:\\Unity\\Survaval\\Assets\\Resources\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\n我将尝试在这些目录中查找可能的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:15:11,898 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:15:11,900 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:15:11,900 - INFO Retriever 0 - 当前窗口总长度：37
+2024-11-03 05:15:11,900 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 05:15:11,900 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 05:15:11,900 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:16:06,515 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets\\Editor"
+    }
+}
+2024-11-03 05:16:06,522 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:16:06,528 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:16:06,544 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:16:06,546 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:16:06,549 - INFO Retriever 0 - Assistant:
+2024-11-03 05:16:06,550 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets\\Editor"
+    }
+}
+2024-11-03 05:16:06,550 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:16:06,551 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets\\Editor'}
+2024-11-03 05:16:06,598 - INFO Retriever 0 - Observer: 目标文件夹路径：D:\Unity\Survaval\Assets\Editor
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── ChannelSetting.cs
+├── OrbiteExtenedEditor.cs
+├── Resources
+│   ├── SPUM
+├── ShaderStripSettings
+│   ├── UniversalRP-HighQualityShaderStrip.asset
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+2. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor\Resources
+# 内容概述:“Resources”文件夹汇集了游戏和动画设计所需的视觉资源与预制单元。其中，SPUM_Sprites子文件夹包含基础设计元素和主题资源包，而SPUM_Units则提供一系列预制文件，便于游戏开发中角色、道具和环境的构建。这些资源相互关联，共同支撑起项目的视觉和功能需求。
+
+3. ShaderStripSettings
+# 路径:D:\\Unity\\Survaval\Assets\Editor\ShaderStripSettings
+# 内容概述:### 文件夹内容精简总结
+
+“ShaderStripSettings”文件夹内包含一个Unity资产“UniversalRP-HighQualityShaderStrip.asset”，这是一个脚本组件，用于优化渲染设置，通过移除特定着色器关键字来提升渲染质量，尤其针对阴影和光照效果。
+
+4. ChannelSetting.cs
+# 路径:D:\\Unity\\Survaval\Assets\Editor\ChannelSetting.cs
+# 内容概述:该脚本为Unity编辑器插件，主要功能是管理不同渠道的SDK配置。它包含`ChannelSetting`类，其中定义了`ChangeChannelYouLoft`和`ChangeChannelTranssion`方法，用于切换至优路和传音渠道。这些方法会复制相应SDK至项目目录，更新项目设置（如公司名、产品名和应用标识符），并管理宏定义。脚本还提供了`CopyAllDirectory`和`DeleteAllDirectory`来处理文件夹的复制和删除，以及`AddScriptingDefineSymbolsForGroup`和`DeleteScriptingDefineSymbolsForGroup`来调整预定义宏。
+
+5. OrbiteExtenedEditor.cs
+# 路径:D:\\Unity\\Survaval\Assets\Editor\OrbiteExtenedEditor.cs
+# 内容概述:该脚本“OrbiteExtenedEditor.cs”是Unity编辑器的一个扩展，包含两个主要功能。首先，`TextmeshProRich`方法通过修改选中Transform下所有TextMeshProUGUI子组件的`richText`属性为true。其次，`Capture`方法用于捕获当前屏幕并保存为PNG文件至指定路径，同时根据游戏状态调整截图名称。
+
+
+2024-11-03 05:16:06,600 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:16:06,600 - INFO Retriever 0 - 当前窗口总长度：39
+2024-11-03 05:16:06,601 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 05:16:06,601 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 05:16:06,601 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:16:58,666 - INFO Retriever 0 - Agent主脑给出的回答为：项目文件查找任务计划列表
+- 现在，你需要通过行动和思考完成以下项目文件查找任务：
+请在D:/Unity/Survaval\Assets下各级目录中寻找：游戏中玩家自动攻击敌人的逻辑在什么地方实现的？
+2024-11-03 05:16:58,667 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:16:58,667 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:16:58,667 - INFO Retriever 0 - 项目文件查找任务计划列表
+2024-11-03 05:16:58,667 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:16:58,668 - INFO Retriever 0 - Assistant:
+2024-11-03 05:16:58,668 - INFO Retriever 0 - {
+  "项目文件查找任务计划列表": {
+    "- 现在，你需要通过行动和思考完成以下项目文件查找任务：": "",
+    "请在D:/Unity/Survaval\\Assets下各级目录中寻找：": "",
+    "游戏中玩家自动攻击敌人的逻辑在什么地方实现的？": ""
+  }
+}
+2024-11-03 05:16:58,668 - INFO Retriever 0 - dict_keys(['项目文件查找任务计划列表'])
+2024-11-03 05:16:58,669 - WARNING Retriever 0 - 你给出的操作类型不属于指定的操作类型。可以进行的操作类型有：['get_folder_info', 'read_file', 'read_long_details', 'retrieve_keywords', 'deep_think']，请重新给出你的操作。
+2024-11-03 05:16:58,670 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:16:58,670 - INFO Retriever 0 - 当前窗口总长度：41
+2024-11-03 05:16:58,671 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 05:16:58,671 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 05:16:58,671 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:17:51,286 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我注意到有几个目录可能与玩家自动攻击敌人的逻辑相关，例如：\n1. D:\\Unity\\Survaval\\Assets\\Editor\n2. D:\\Unity\\Survaval\\Assets\\Plugins\n3. D:\\Unity\\Survaval\\Assets\\Resources\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:17:51,287 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:17:51,287 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:17:51,287 - INFO Retriever 0 - deep_think
+2024-11-03 05:17:51,287 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:17:51,288 - INFO Retriever 0 - Assistant:
+2024-11-03 05:17:51,288 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我注意到有几个目录可能与玩家自动攻击敌人的逻辑相关，例如：\n1. D:\\Unity\\Survaval\\Assets\\Editor\n2. D:\\Unity\\Survaval\\Assets\\Plugins\n3. D:\\Unity\\Survaval\\Assets\\Resources\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\n我将尝试在这些目录中查找可能的脚本文件。"
+    }
+}
+2024-11-03 05:17:51,288 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:17:51,289 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '在获取了项目文件的顶层结构后，我注意到有几个目录可能与玩家自动攻击敌人的逻辑相关，例如：\n1. D:\\Unity\\Survaval\\Assets\\Editor\n2. D:\\Unity\\Survaval\\Assets\\Plugins\n3. D:\\Unity\\Survaval\\Assets\\Resources\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\n我将尝试在这些目录中查找可能的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:17:51,289 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:17:51,290 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:17:51,291 - INFO Retriever 0 - 当前窗口总长度：43
+2024-11-03 05:17:51,291 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 05:17:51,291 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 05:17:51,292 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:18:37,859 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets\\Plugins"
+    }
+}
+2024-11-03 05:18:37,859 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:18:37,859 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:18:37,860 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:18:37,860 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:18:37,860 - INFO Retriever 0 - Assistant:
+2024-11-03 05:18:37,860 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets\\Plugins"
+    }
+}
+2024-11-03 05:18:37,860 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:18:37,860 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets\\Plugins'}
+2024-11-03 05:18:37,908 - INFO Retriever 0 - Observer: 目标文件夹路径：D:\Unity\Survaval\Assets\Plugins
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── Android
+│   ├── Android.iml
+│   ├── AndroidManifest.xml
+│   ...
+│   ├── youloft-notification-release.aar
+├── DarkTonic
+│   ├── MasterAudio
+│   ├── MasterAudioMultiplayer
+├── Demigiant
+│   ├── DOTween
+├── Editor
+│   ├── DarkTonic
+│   ├── RelationsInspector
+├── RelationsInspector
+│   ├── AutoBackendAttributes.cs
+│   ├── RIEditor.asmdef
+├── Sirenix
+│   ├── Assemblies
+│   ├── Demos
+│   ├── Odin Inspector
+│   ├── Readme.txt
+├── iOS
+│   ├── AdAdmobSDK.framework
+│   ├── AdmobPottingMobileAppController.m
+│   ├── AdmobSdkUnityAdapter.mm
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+2. Android
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\Android
+# 内容概述:该“Android”文件夹汇集了Android应用开发所需的关键文件，包括项目配置（如AndroidManifest.xml、build.gradle）、构建脚本模板（如baseProjectTemplate.gradle、mainTemplate.gradle）以及第三方库的AAR文件（如youloft-ad-release.aar等），旨在构建和管理Android应用程序。
+
+3. DarkTonic
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\DarkTonic
+# 内容概述:“DarkTonic文件夹汇集了Unity游戏开发的音频和网络同步资源，包括MasterAudio子文件夹的音频管理工具和预制体，以及MasterAudioMultiplayer子文件夹的多玩家音频和网络插件。MasterAudio提供音频资源模板、预制体和脚本，而MasterAudioMultiplayer则集成了多种网络解决方案插件，如MAM_Mirror和MAM_Photon，以及专用的音频管理脚本，共同确保音频在多玩家环境中的同步与优化。”
+
+4. Demigiant
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\Demigiant
+# 内容概述:“Demigiant”文件夹汇集了Unity游戏开发插件DOTween的相关资源，包括编辑器工具、脚本模块和插件核心文件。其中，`Editor`子文件夹提供视觉资源和配置，`Modules`子文件夹包含动画脚本，而`DOTween.dll`则是插件的核心。此外，`readme.txt`为用户提供了安装指南。这些文件协同工作，为开发者提供了一套完整的动画解决方案。
+
+5. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\Editor
+# 内容概述:“Editor”文件夹汇集了Unity游戏开发中音频管理和编辑器扩展的脚本资源。其中，`DarkTonic`子文件夹专注于音频资源的持久化与事件配置，而`RelationsInspector`子文件夹则通过`RIScripts.asmdef`文件定义了编辑器脚本的组织结构，确保了脚本间的正确引用和加载，共同提升了音频配置和编辑的效率。
+
+6. iOS
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\iOS
+# 内容概述:该“iOS”文件夹汇集了iOS应用开发所需的多种资源，包括性能监控、广告集成、本地化支持等。其中，AdAdmobSDK框架和Admob相关控制器文件（如AdmobPottingMobileAppController.m和AdmobSdkUnityAdapter.mm）负责集成AdMob广告功能。同时，文件夹内还包含APMInsight性能监控、AppLovin和BUAdSDK广告展示、Facebook SDK本地化等模块，以及必要的接口定义和配置文件，共同支撑应用的全面开发。
+
+7. RelationsInspector
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\RelationsInspector
+# 内容概述:“RelationsInspector”文件夹汇集了用于关系检查器（RI）的C#脚本和项目配置，其中“AutoBackendAttributes.cs”定义了三个属性类，用于标记类和属性以实现后端自动化与关系关联，而“RIEditor.asmdef”则可能包含编辑器配置，两者协同支持关系检查器的自动化和编辑功能。
+
+8. Sirenix
+# 路径:D:\\Unity\\Survaval\Assets\Plugins\Sirenix
+# 内容概述:“Sirenix”文件夹汇集了Unity游戏开发的丰富资源，包括Sirenix软件库与工具（如序列化库和Odin Inspector编辑器组件），以及一系列Unity编辑器扩展的示例（如自定义属性处理器和RPG编辑器）。这些资源通过模块化配置和编辑器脚本，旨在提升开发效率和项目质量，为Unity开发者提供全面的工具和配置支持。
+
+
+2024-11-03 05:18:37,910 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:18:37,910 - INFO Retriever 0 - 当前窗口总长度：45
+2024-11-03 05:18:37,911 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 05:18:37,911 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 05:18:37,911 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:18:43,790 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "在检查了Plugins目录后，我发现该目录主要包含了一些第三方插件和工具，如音频管理、网络同步、编辑器扩展等，这些可能与玩家自动攻击敌人的逻辑关系不大。因此，我需要继续在其他目录中查找可能的脚本文件。接下来，我将检查Resources目录。"
+    }
+}
+2024-11-03 05:18:43,792 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:18:43,792 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:18:43,792 - INFO Retriever 0 - deep_think
+2024-11-03 05:18:43,792 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:18:43,793 - INFO Retriever 0 - Assistant:
+2024-11-03 05:18:43,793 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "在检查了Plugins目录后，我发现该目录主要包含了一些第三方插件和工具，如音频管理、网络同步、编辑器扩展等，这些可能与玩家自动攻击敌人的逻辑关系不大。因此，我需要继续在其他目录中查找可能的脚本文件。接下来，我将检查Resources目录。"
+    }
+}
+2024-11-03 05:18:43,793 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:18:43,794 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '在检查了Plugins目录后，我发现该目录主要包含了一些第三方插件和工具，如音频管理、网络同步、编辑器扩展等，这些可能与玩家自动攻击敌人的逻辑关系不大。因此，我需要继续在其他目录中查找可能的脚本文件。接下来，我将检查Resources目录。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:18:43,794 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:18:43,796 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:18:43,796 - INFO Retriever 0 - 当前窗口总长度：47
+2024-11-03 05:18:43,797 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 05:18:43,797 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 05:18:43,797 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:19:03,536 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets\\Resources"
+    }
+}
+2024-11-03 05:19:03,537 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:19:03,537 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:19:03,539 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:19:03,539 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:19:03,539 - INFO Retriever 0 - Assistant:
+2024-11-03 05:19:03,540 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:\\Unity\\Survaval\\Assets\\Resources"
+    }
+}
+2024-11-03 05:19:03,540 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:19:03,540 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:\\Unity\\Survaval\\Assets\\Resources'}
+2024-11-03 05:19:03,589 - INFO Retriever 0 - Observer: 目标文件夹路径：D:\Unity\Survaval\Assets\Resources
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── DOTweenSettings.asset
+├── MasterAudio
+│   ├── MasterAudioSettings.asset
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+2. MasterAudio
+# 路径:D:\\Unity\\Survaval\Assets\Resources\MasterAudio
+# 内容概述:## 文件夹内容精简总结
+
+“MasterAudio”文件夹包含一个Unity音频配置文件“MasterAudioSettings.asset”，该文件以YAML格式存储音频设置，涵盖脚本信息、音频处理选项（如分贝缩放、音高调整）和插件路径等，旨在优化音频播放和游戏体验。
+
+3. DOTweenSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\Resources\DOTweenSettings.asset
+# 内容概述:### 简要总结
+该文件记录了Unity中DOTween动画插件的配置，包括安全模式、时间缩放、缓动类型以及模块启用情况（如音频、物理、UI等）。这些设置确保了动画的平滑执行和性能优化。
+
+
+2024-11-03 05:19:03,591 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:19:03,592 - INFO Retriever 0 - 当前窗口总长度：49
+2024-11-03 05:19:03,592 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 05:19:03,592 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 05:19:03,592 - INFO Retriever 0 - -- updated_window_size >= self._compress_window_size --
+2024-11-03 05:19:03,593 - INFO Retriever 0 - 进行窗口压缩
+2024-11-03 05:19:27,542 - INFO Retriever 0 - window report:
+* 文件一：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets
+    * 文件内容概述：该路径指向Unity项目的Assets文件夹，包含了项目的所有资源，如脚本、音频、图像、动画等。
+    * 是否与问题相关：否
+    * 具体分析：该路径是Unity项目的根目录，包含了所有资源，但本身不包含具体的代码实现。
+
+* 文件二：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\AddressableAssetsData
+    * 文件内容概述：该路径指向Addressable Assets Data文件夹，包含了可寻址资源的配置文件。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹与资源管理相关，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件三：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\AmplifyShaderEditor
+    * 文件内容概述：该路径指向Amplify Shader Editor插件文件夹，包含了着色器编辑器相关的文件。
+    * 是否与问题相关：否
+    * 具体分析：该插件与着色器编辑相关，与玩家自动攻击敌人的逻辑无关。
+
+* 文件四：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\BlobHashMaps
+    * 文件内容概述：该路径指向BlobHashMaps文件夹，包含了BlobHashMaps数据结构脚本。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含数据结构脚本，与玩家自动攻击敌人的逻辑无关。
+
+* 文件五：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\BuildReport
+    * 文件内容概述：该路径指向Build Report文件夹，包含了构建报告工具和相关资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹与构建报告相关，与玩家自动攻击敌人的逻辑无关。
+
+* 文件六：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\CapturePath
+    * 文件内容概述：该路径指向Capture Path文件夹，内容为空。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹为空，与玩家自动攻击敌人的逻辑无关。
+
+* 文件七：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\DamageNumbersPro
+    * 文件内容概述：该路径指向Damage Numbers Pro文件夹，包含了游戏伤害数字相关的资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹与游戏伤害数字相关，与玩家自动攻击敌人的逻辑无关。
+
+* 文件八：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Editor
+    * 文件内容概述：该路径指向Editor文件夹，包含了编辑器脚本和资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含编辑器脚本和资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件九：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Editor Default Resources
+    * 文件内容概述：该路径指向Editor Default Resources文件夹，包含了音频处理相关的图标。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含音频处理相关的图标，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\EnhancedScroller v2
+    * 文件内容概述：该路径指向Enhanced Scroller v2文件夹，包含了Enhanced Scroller插件的相关资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含Enhanced Scroller插件的相关资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十一：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\FlockBox
+    * 文件内容概述：该路径指向Flock Box文件夹，包含了Flock Box插件的相关资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含Flock Box插件的相关资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十二：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Gizmos
+    * 文件内容概述：该路径指向Gizmos文件夹，包含了音频处理相关的图标设计。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含音频处理相关的图标设计，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十三：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Magic Spells Sound Effects V2.0
+    * 文件内容概述：该路径指向Magic Spells Sound Effects V2.0文件夹，包含了魔法音效资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含魔法音效资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十四：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Pixel Arsenal
+    * 文件内容概述：该路径指向Pixel Arsenal文件夹，包含了游戏开发资源，如视觉素材、预制体、场景素材等。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏开发资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十五：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Plugins
+    * 文件内容概述：该路径指向Plugins文件夹，包含了第三方插件和工具。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含第三方插件和工具，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十六：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Resources
+    * 文件内容概述：该路径指向Resources文件夹，包含了游戏项目的关键配置资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏项目的关键配置资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十七：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\RPG Icons Pixel Art
+    * 文件内容概述：该路径指向RPG Icons Pixel Art文件夹，包含了RPG风格的图标资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含RPG风格的图标资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十八：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\SPUM
+    * 文件内容概述：该路径指向SPUM文件夹，包含了游戏开发资源，如怪物与角色预制体、动画素材、图像资源等。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏开发资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十九：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\StreamingAssets
+    * 文件内容概述：该路径指向Streaming Assets文件夹，包含了流媒体应用所需的资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含流媒体应用所需的资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\TextMesh Pro
+    * 文件内容概述：该路径指向TextMesh Pro文件夹，包含了TextMesh Pro软件的用户指南、字体资源、Unity项目资源包以及表情符号素材。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含TextMesh Pro软件的资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十一：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\VirtualButtonsForUnity
+    * 文件内容概述：该路径指向Virtual Buttons For Unity文件夹，包含了虚拟按钮、方向垫和摇杆预制体及脚本。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含虚拟按钮和摇杆的资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十二：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\YouLoftSDK
+    * 文件内容概述：该路径指向YouLoft SDK文件夹，包含了广告管理、支付、用户管理、数据同步等功能模块。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含功能模块，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十三：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\ZTools
+    * 文件内容概述：该路径指向ZTools文件夹，包含了本地化和字符串操作的工具。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含本地化和字符串操作的工具，与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十四：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\_MyAssets
+    * 文件内容概述：该路径指向_MyAssets文件夹，包含了游戏开发的核心资源库，如动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏开发的核心资源库，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十五：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\UniversalRenderPipelineGlobalSettings.asset
+    * 文件内容概述：该文件是Unity的通用渲染管道全局设置配置，定义了光照层、阴影质量、后处理效果以及性能优化等设置。
+    * 是否与问题相关：否
+    * 具体分析：该文件是渲染设置配置，与玩家自动攻击敌人的逻辑无关。
+2024-11-03 05:19:27,544 - INFO Retriever 0 - 
+
+
+
+
+
+——————————————————————————————Log compressed history list—————————————————————————————————
+2024-11-03 05:19:27,544 - INFO Retriever 0 - ——————————————————————————————————————————order 1————————————————————————————————————————————
+
+
+
+
+2024-11-03 05:19:27,544 - INFO Retriever 0 - user:
+请在D:/Unity/Survaval\Assets下各级目录中寻找：游戏中玩家自动攻击敌人的逻辑在什么地方实现的？
+2024-11-03 05:19:27,545 - INFO Retriever 0 - assistant:
+{
+    "deep_think": {
+        "thoughts": "好的，接下来我将通过深度思考、仔细计划以及逐步执行的方式，来完成该任务。\n\n首先，在阅读详细的代码细节之前，应该先整体把握整个项目。\n\n在提供的可选的action中，可以通过get_folder_info操作，通过将项目顶层路径作为target_folder_path参数进行传入，来获取获取项目中主要文件夹和主要文件的描述，从而能够先大致把握项目文件的主要文件的文件树结构、基本内容、主要代码概述以及大致功能板块的分布。"
+    }
+}
+2024-11-03 05:19:27,545 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 05:19:27,545 - INFO Retriever 0 - assistant:
+{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 05:19:27,545 - INFO Retriever 0 - user:
+目标文件夹路径：D:/Unity/Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 05:19:27,548 - INFO Retriever 0 - assistant:
+{
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\\Assets下各级目录中寻找：游戏中玩家自动攻击敌人的逻辑在什么地方实现的？”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“玩家”，“敌人”，“player”，“automatic”，“automation”，“enemy”，“attack”，“Automated Attack”，“adversary”，“Automatic Attack”，“assault”，“自动”，“自动攻击”，“攻击”。\n接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。"
+    }
+}
+2024-11-03 05:19:27,548 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 05:19:27,548 - INFO Retriever 0 - assistant:
+{
+    "retrieve_keywords": {
+        "keyword_list": [
+            "玩家",
+            "敌人",
+            "player",
+            "automatic",
+            "automation",
+            "enemy",
+            "attack",
+            "Automated Attack",
+            "adversary",
+            "Automatic Attack",
+            "assault",
+            "自动",
+            "自动攻击",
+            "攻击"
+        ]
+    }
+}
+2024-11-03 05:19:27,549 - INFO Retriever 0 - user:
+根据你提供的关键词，我检索到以下目录或文件，它们的绝对路径如下：
+
+
+1. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Enemies
+### 文件夹内容总结
+
+“Enemies”文件夹汇集了多种游戏敌人预制文件，包括基础敌人、金币奖励敌人、无尽模式敌人、困难模式敌人以及特殊能力敌人，如骷髅敌人，这些文件按类型和特性分类，为游戏开发者提供了丰富的敌人资源。
+
+2. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Players\player_5.prefab
+这是一个名为“player_5.prefab”的文件。
+
+3. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Players
+### 文件夹内容概述
+“Players”文件夹汇集了从player_1到player_59的玩家预制文件，以及一个基础玩家预制文件player_base，这些文件共同构成了游戏中的玩家角色配置，其中每个编号文件可能代表不同的角色变体或角色。
+
+4. D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs\Players\player_41.prefab
+这是一个名为“player_41.prefab”的文件。
+
+5. D:\\Unity\\Survaval\Assets\_MyAssets\SteerSettings\enemy_steer_speed_2.5.asset
+### 简要总结
+该文件为Unity游戏中的敌人行为脚本，设定了敌人的最大速度为2.5，并配置了搜索特定标签玩家的行为，有效半径达10000，视野覆盖360度，以实现高效追踪。
+
+6. D:\\Unity\\Survaval\Assets\_MyAssets\Data\Spawns\enemy_spawn_2.asset
+### 文件内容概要
+“enemy_spawn_2.asset”文件是Unity游戏中的敌人生成配置，详细规定了不同时间点的敌人生成计划，包括敌人类型、数量、生成间隔和冷却时间。文件还包含了奖励生成的设置，确保游戏体验的丰富性。
+
+7. D:\\Unity\\Survaval\Assets\_MyAssets\SteerSettings\enemy_steer_speed_5.asset
+### 简化总结
+
+该文件为Unity游戏中的敌人资产“enemy_steer_speed_5”，配置了敌人的最大力量和速度，并定义了包含行为和搜索玩家标签的行为配置，使敌人能够在360度视野内追踪玩家。
+
+8. D:\\Unity\\Survaval\Assets\_MyAssets\Data\Spawns
+### 文件夹内容总结
+“Spawns”文件夹汇集了Unity游戏引擎中用于配置敌人生成逻辑的多个文件。这些文件共同定义了敌人的种类、生成时间、冷却时间、难度等级、奖励生成和音乐播放等关键参数。例如，`enemy_spawn_0.asset`和`enemy_spawn_1.asset`详细描述了基础生成配置，而`enemy_spawn_endless_0.asset`则专注于无限生成模式。此外，`enemy_spawn_teach.asset`提供了敌人生成规则的教学示例。这些文件相互补充，确保了游戏敌人生成系统的精确性和多样性。
+
+
+请注意，这些目录或文件可能不全都和你的任务目标相关，仅供参考。请你基于具体的文件内容概述，结合你的任务目标，认真思考分析后，优先选择最有可能与任务相关的目录或文件进行进一步的检查。
+2024-11-03 05:19:27,549 - INFO Retriever 0 - assistant:
+好的。在我进行下一步行动或思考前，我又回顾了一下，以下是之前已经遍历过的文件信息：
+
+* 文件一：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets
+    * 文件内容概述：该路径指向Unity项目的Assets文件夹，包含了项目的所有资源，如脚本、音频、图像、动画等。
+    * 是否与问题相关：否
+    * 具体分析：该路径是Unity项目的根目录，包含了所有资源，但本身不包含具体的代码实现。
+
+* 文件二：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\AddressableAssetsData
+    * 文件内容概述：该路径指向Addressable Assets Data文件夹，包含了可寻址资源的配置文件。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹与资源管理相关，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件三：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\AmplifyShaderEditor
+    * 文件内容概述：该路径指向Amplify Shader Editor插件文件夹，包含了着色器编辑器相关的文件。
+    * 是否与问题相关：否
+    * 具体分析：该插件与着色器编辑相关，与玩家自动攻击敌人的逻辑无关。
+
+* 文件四：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\BlobHashMaps
+    * 文件内容概述：该路径指向BlobHashMaps文件夹，包含了BlobHashMaps数据结构脚本。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含数据结构脚本，与玩家自动攻击敌人的逻辑无关。
+
+* 文件五：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\BuildReport
+    * 文件内容概述：该路径指向Build Report文件夹，包含了构建报告工具和相关资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹与构建报告相关，与玩家自动攻击敌人的逻辑无关。
+
+* 文件六：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\CapturePath
+    * 文件内容概述：该路径指向Capture Path文件夹，内容为空。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹为空，与玩家自动攻击敌人的逻辑无关。
+
+* 文件七：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\DamageNumbersPro
+    * 文件内容概述：该路径指向Damage Numbers Pro文件夹，包含了游戏伤害数字相关的资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹与游戏伤害数字相关，与玩家自动攻击敌人的逻辑无关。
+
+* 文件八：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Editor
+    * 文件内容概述：该路径指向Editor文件夹，包含了编辑器脚本和资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含编辑器脚本和资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件九：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Editor Default Resources
+    * 文件内容概述：该路径指向Editor Default Resources文件夹，包含了音频处理相关的图标。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含音频处理相关的图标，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\EnhancedScroller v2
+    * 文件内容概述：该路径指向Enhanced Scroller v2文件夹，包含了Enhanced Scroller插件的相关资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含Enhanced Scroller插件的相关资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十一：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\FlockBox
+    * 文件内容概述：该路径指向Flock Box文件夹，包含了Flock Box插件的相关资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含Flock Box插件的相关资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十二：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Gizmos
+    * 文件内容概述：该路径指向Gizmos文件夹，包含了音频处理相关的图标设计。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含音频处理相关的图标设计，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十三：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Magic Spells Sound Effects V2.0
+    * 文件内容概述：该路径指向Magic Spells Sound Effects V2.0文件夹，包含了魔法音效资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含魔法音效资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十四：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Pixel Arsenal
+    * 文件内容概述：该路径指向Pixel Arsenal文件夹，包含了游戏开发资源，如视觉素材、预制体、场景素材等。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏开发资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十五：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Plugins
+    * 文件内容概述：该路径指向Plugins文件夹，包含了第三方插件和工具。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含第三方插件和工具，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十六：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\Resources
+    * 文件内容概述：该路径指向Resources文件夹，包含了游戏项目的关键配置资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏项目的关键配置资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十七：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\RPG Icons Pixel Art
+    * 文件内容概述：该路径指向RPG Icons Pixel Art文件夹，包含了RPG风格的图标资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含RPG风格的图标资源，与玩家自动攻击敌人的逻辑无关。
+
+* 文件十八：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\SPUM
+    * 文件内容概述：该路径指向SPUM文件夹，包含了游戏开发资源，如怪物与角色预制体、动画素材、图像资源等。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏开发资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件十九：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\StreamingAssets
+    * 文件内容概述：该路径指向Streaming Assets文件夹，包含了流媒体应用所需的资源。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含流媒体应用所需的资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\TextMesh Pro
+    * 文件内容概述：该路径指向TextMesh Pro文件夹，包含了TextMesh Pro软件的用户指南、字体资源、Unity项目资源包以及表情符号素材。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含TextMesh Pro软件的资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十一：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\VirtualButtonsForUnity
+    * 文件内容概述：该路径指向Virtual Buttons For Unity文件夹，包含了虚拟按钮、方向垫和摇杆预制体及脚本。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含虚拟按钮和摇杆的资源，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十二：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\YouLoftSDK
+    * 文件内容概述：该路径指向YouLoft SDK文件夹，包含了广告管理、支付、用户管理、数据同步等功能模块。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含功能模块，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十三：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\ZTools
+    * 文件内容概述：该路径指向ZTools文件夹，包含了本地化和字符串操作的工具。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含本地化和字符串操作的工具，与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十四：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\_MyAssets
+    * 文件内容概述：该路径指向_MyAssets文件夹，包含了游戏开发的核心资源库，如动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等。
+    * 是否与问题相关：否
+    * 具体分析：该文件夹包含游戏开发的核心资源库，但与玩家自动攻击敌人的逻辑无关。
+
+* 文件二十五：
+    * 文件绝对路径：D:\\Unity\\Survaval\\Assets\\UniversalRenderPipelineGlobalSettings.asset
+    * 文件内容概述：该文件是Unity的通用渲染管道全局设置配置，定义了光照层、阴影质量、后处理效果以及性能优化等设置。
+    * 是否与问题相关：否
+    * 具体分析：该文件是渲染设置配置，与玩家自动攻击敌人的逻辑无关。
+
+以上是我回顾的之前已经遍历过的文件信息。接下来，我将基于上述的进度，继续进行任务。
+2024-11-03 05:19:27,551 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 05:19:27,551 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:19:27,551 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:19:27,552 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:20:42,363 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据关键词检索的结果，我注意到几个可能的文件或目录与玩家自动攻击敌人的逻辑相关。这些包括：\n\n1. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\\player_5.prefab\n3. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\\player_41.prefab\n5. D:\\Unity\\Survaval\\Assets\\_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset\n6. D:\\Unity\\Survaval\\Assets\\_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset\n7. D:\\Unity\\Survaval\\Assets\\_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset\n8. D:\\Unity\\Survaval\\Assets\\_MyAssets\\Data\\Spawns\n\n在这些文件或目录中，'Enemies'文件夹可能包含敌人的预制体，而'Players'文件夹可能包含玩家的预制体。'SteerSettings'文件夹可能包含敌人的行为设置，而'Spawns'文件夹可能包含敌人生成的配置。这些文件或目录看起来与玩家自动攻击敌人的逻辑相关，因此我需要进一步检查这些文件的内容。\n\n接下来，我将使用'read_file'操作，读取这些文件的内容，以便更深入地了解它们是否包含玩家自动攻击敌人的逻辑。"
+    }
+}
+2024-11-03 05:20:42,364 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:20:42,364 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:20:42,365 - INFO Retriever 0 - deep_think
+2024-11-03 05:20:42,365 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:20:42,365 - INFO Retriever 0 - Assistant:
+2024-11-03 05:20:42,365 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据关键词检索的结果，我注意到几个可能的文件或目录与玩家自动攻击敌人的逻辑相关。这些包括：\n\n1. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\\player_5.prefab\n3. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\\player_41.prefab\n5. D:\\Unity\\Survaval\\Assets\\_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset\n6. D:\\Unity\\Survaval\\Assets\\_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset\n7. D:\\Unity\\Survaval\\Assets\\_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset\n8. D:\\Unity\\Survaval\\Assets\\_MyAssets\\Data\\Spawns\n\n在这些文件或目录中，'Enemies'文件夹可能包含敌人的预制体，而'Players'文件夹可能包含玩家的预制体。'SteerSettings'文件夹可能包含敌人的行为设置，而'Spawns'文件夹可能包含敌人生成的配置。这些文件或目录看起来与玩家自动攻击敌人的逻辑相关，因此我需要进一步检查这些文件的内容。\n\n接下来，我将使用'read_file'操作，读取这些文件的内容，以便更深入地了解它们是否包含玩家自动攻击敌人的逻辑。"
+    }
+}
+2024-11-03 05:20:42,365 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:20:42,366 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "根据关键词检索的结果，我注意到几个可能的文件或目录与玩家自动攻击敌人的逻辑相关。这些包括：\n\n1. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\n2. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\\player_5.prefab\n3. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\n4. D:\\Unity\\Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Players\\player_41.prefab\n5. D:\\Unity\\Survaval\\Assets\\_MyAssets\\SteerSettings\\enemy_steer_speed_2.5.asset\n6. D:\\Unity\\Survaval\\Assets\\_MyAssets\\Data\\Spawns\\enemy_spawn_2.asset\n7. D:\\Unity\\Survaval\\Assets\\_MyAssets\\SteerSettings\\enemy_steer_speed_5.asset\n8. D:\\Unity\\Survaval\\Assets\\_MyAssets\\Data\\Spawns\n\n在这些文件或目录中，'Enemies'文件夹可能包含敌人的预制体，而'Players'文件夹可能包含玩家的预制体。'SteerSettings'文件夹可能包含敌人的行为设置，而'Spawns'文件夹可能包含敌人生成的配置。这些文件或目录看起来与玩家自动攻击敌人的逻辑相关，因此我需要进一步检查这些文件的内容。\n\n接下来，我将使用'read_file'操作，读取这些文件的内容，以便更深入地了解它们是否包含玩家自动攻击敌人的逻辑。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:20:42,366 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:20:42,367 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:20:42,367 - INFO Retriever 0 - 当前窗口总长度：13
+2024-11-03 05:20:42,368 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 05:20:42,368 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 05:20:42,368 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:21:40,527 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:21:40,529 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:21:40,529 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:21:40,529 - INFO Retriever 0 - read_file
+2024-11-03 05:21:40,529 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:21:40,529 - INFO Retriever 0 - Assistant:
+2024-11-03 05:21:40,529 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:21:40,529 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:21:40,529 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:21:40,531 - INFO Retriever 0 - Observer: 这是一个名为“Enemies”的文件夹。请使用get_folder_info操作来获取其信息。
+2024-11-03 05:21:40,533 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:21:40,535 - INFO Retriever 0 - 当前窗口总长度：15
+2024-11-03 05:21:40,535 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 05:21:40,536 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 05:21:40,536 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:21:45,254 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:21:45,254 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:21:45,254 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:21:45,254 - INFO Retriever 0 - get_folder_info
+2024-11-03 05:21:45,255 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:21:45,256 - INFO Retriever 0 - Assistant:
+2024-11-03 05:21:45,256 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:21:45,256 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 05:21:45,256 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies'}
+2024-11-03 05:21:45,508 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets\_MyAssets\RuntimePrefabs\Enemies
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── default_enemy_0.prefab
+├── enemy_coin_1.prefab
+...
+├── enemy_skeleton_magnet_0.prefab
+由于该文件夹中子文件/子文件夹数量过多，结构树暂时省略一部分文件名称。该文件夹下文件名称所包含的所有关键词表如下：
+default，luck，skeleton，level，chest，teach，nochest，epic，coin，big，hard，magnet，enemy，endless，food，3，4，7，9，5，8，0，2，1，10，6，30。
+2024-11-03 05:21:45,511 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:21:45,511 - INFO Retriever 0 - 当前窗口总长度：17
+2024-11-03 05:21:45,511 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 05:21:45,511 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 05:21:45,511 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:22:09,386 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据获取的'Enemies'文件夹信息，我注意到该文件夹包含了多个敌人的预制体文件，如'default_enemy_0.prefab'、'enemy_coin_1.prefab'等。这些预制体文件可能包含了敌人的属性和行为设置，但无法直接从文件名判断是否包含玩家自动攻击敌人的逻辑。\n\n为了进一步确认这些预制体文件是否包含玩家自动攻击敌人的逻辑，我需要使用'read_long_details'操作来读取这些文件的具体内容。"
+    }
+}
+2024-11-03 05:22:09,386 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:22:09,386 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:22:09,387 - INFO Retriever 0 - deep_think
+2024-11-03 05:22:09,387 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:22:09,388 - INFO Retriever 0 - Assistant:
+2024-11-03 05:22:09,388 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据获取的'Enemies'文件夹信息，我注意到该文件夹包含了多个敌人的预制体文件，如'default_enemy_0.prefab'、'enemy_coin_1.prefab'等。这些预制体文件可能包含了敌人的属性和行为设置，但无法直接从文件名判断是否包含玩家自动攻击敌人的逻辑。\n\n为了进一步确认这些预制体文件是否包含玩家自动攻击敌人的逻辑，我需要使用'read_long_details'操作来读取这些文件的具体内容。"
+    }
+}
+2024-11-03 05:22:09,388 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:22:09,388 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "根据获取的'Enemies'文件夹信息，我注意到该文件夹包含了多个敌人的预制体文件，如'default_enemy_0.prefab'、'enemy_coin_1.prefab'等。这些预制体文件可能包含了敌人的属性和行为设置，但无法直接从文件名判断是否包含玩家自动攻击敌人的逻辑。\n\n为了进一步确认这些预制体文件是否包含玩家自动攻击敌人的逻辑，我需要使用'read_long_details'操作来读取这些文件的具体内容。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:22:09,389 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:22:09,390 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:22:09,391 - INFO Retriever 0 - 当前窗口总长度：19
+2024-11-03 05:22:09,391 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 05:22:09,391 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 05:22:09,391 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:22:29,337 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_long_details": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:22:29,337 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:22:29,337 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:22:29,337 - INFO Retriever 0 - read_long_details
+2024-11-03 05:22:29,337 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:22:29,337 - INFO Retriever 0 - Assistant:
+2024-11-03 05:22:29,337 - INFO Retriever 0 - {
+    "read_long_details": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies"
+    }
+}
+2024-11-03 05:22:29,337 - INFO Retriever 0 - dict_keys(['read_long_details'])
+2024-11-03 05:22:29,339 - INFO Retriever 0 - Agent主脑给出的行动：read_long_details
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:22:29,339 - INFO Retriever 0 - Observer: 这是一个名为“Enemies”的文件目录。该目录下的所有一级文件名称如下（已省略.meta文件，因为文件数量太多且.meta文件对当前任务无用）：
+default_enemy_0.prefab
+enemy_coin_1.prefab
+enemy_coin_10.prefab
+enemy_endless_0.prefab
+enemy_endless_0_big_0.prefab
+enemy_endless_0_epic_1.prefab
+enemy_endless_0_epic_2.prefab
+enemy_endless_0_epic_3.prefab
+enemy_endless_0_epic_4_chest.prefab
+enemy_endless_0_epic_4_nochest.prefab
+enemy_endless_0_epic_5.prefab
+enemy_endless_1_big_0.prefab
+enemy_endless_2_big_0.prefab
+enemy_endless_3_big_0.prefab
+enemy_endless_coin_1.prefab
+enemy_endless_coin_10.prefab
+enemy_endless_food_30.prefab
+enemy_endless_hard_1_0.prefab
+enemy_endless_hard_1_1.prefab
+enemy_endless_hard_1_2.prefab
+enemy_endless_hard_1_3.prefab
+enemy_endless_hard_1_4.prefab
+enemy_endless_hard_1_5.prefab
+enemy_endless_hard_1_6.prefab
+enemy_endless_hard_1_7.prefab
+enemy_endless_hard_1_8.prefab
+enemy_endless_hard_1_9.prefab
+enemy_endless_hard_2_0.prefab
+enemy_endless_hard_2_1.prefab
+enemy_endless_hard_2_2.prefab
+enemy_endless_hard_2_3.prefab
+enemy_endless_hard_2_4.prefab
+enemy_endless_hard_2_5.prefab
+enemy_endless_hard_2_6.prefab
+enemy_endless_hard_2_7.prefab
+enemy_endless_hard_2_8.prefab
+enemy_endless_hard_2_9.prefab
+enemy_endless_hard_3_0.prefab
+enemy_endless_hard_3_1.prefab
+enemy_endless_hard_3_2.prefab
+enemy_endless_hard_3_3.prefab
+enemy_endless_hard_3_4.prefab
+enemy_endless_hard_3_5.prefab
+enemy_endless_hard_3_6.prefab
+enemy_endless_hard_3_7.prefab
+enemy_endless_hard_3_8.prefab
+enemy_endless_hard_3_9.prefab
+enemy_endless_hard_4_0.prefab
+enemy_endless_hard_4_1.prefab
+enemy_endless_hard_4_2.prefab
+enemy_endless_hard_4_3.prefab
+enemy_endless_hard_4_4.prefab
+enemy_endless_hard_5_0.prefab
+enemy_endless_hard_5_1.prefab
+enemy_endless_hard_5_2.prefab
+enemy_endless_hard_5_3.prefab
+enemy_endless_hard_5_4.prefab
+enemy_endless_luck_10.prefab
+enemy_endless_magnet_0.prefab
+enemy_food_30.prefab
+enemy_luck_10.prefab
+enemy_magnet_0.prefab
+enemy_skeleton_0.prefab
+enemy_skeleton_0_big_0.prefab
+enemy_skeleton_0_big_0_level2.prefab
+enemy_skeleton_0_big_0_level3.prefab
+enemy_skeleton_0_big_0_level4.prefab
+enemy_skeleton_0_big_0_level5.prefab
+enemy_skeleton_0_epic_1.prefab
+enemy_skeleton_0_epic_1_level2.prefab
+enemy_skeleton_0_epic_1_level3.prefab
+enemy_skeleton_0_epic_1_level4.prefab
+enemy_skeleton_0_epic_1_level5.prefab
+enemy_skeleton_0_epic_1_teach.prefab
+enemy_skeleton_0_epic_2.prefab
+enemy_skeleton_0_epic_2_level2.prefab
+enemy_skeleton_0_epic_2_level3.prefab
+enemy_skeleton_0_epic_2_level4.prefab
+enemy_skeleton_0_epic_2_level5.prefab
+enemy_skeleton_0_epic_2_teach.prefab
+enemy_skeleton_0_epic_3.prefab
+enemy_skeleton_0_epic_3_level2.prefab
+enemy_skeleton_0_epic_3_level3.prefab
+enemy_skeleton_0_epic_3_level4.prefab
+enemy_skeleton_0_epic_3_level5.prefab
+enemy_skeleton_0_epic_4_chest.prefab
+enemy_skeleton_0_epic_4_chest_level2.prefab
+enemy_skeleton_0_epic_4_chest_level3.prefab
+enemy_skeleton_0_epic_4_chest_level4.prefab
+enemy_skeleton_0_epic_4_chest_level5.prefab
+enemy_skeleton_0_epic_4_nochest.prefab
+enemy_skeleton_0_epic_4_nochest_level2.prefab
+enemy_skeleton_0_epic_4_nochest_level3.prefab
+enemy_skeleton_0_epic_4_nochest_level4.prefab
+enemy_skeleton_0_epic_4_nochest_level5.prefab
+enemy_skeleton_0_epic_4_nochest_teach.prefab
+enemy_skeleton_0_epic_5.prefab
+enemy_skeleton_0_epic_5_level5.prefab
+enemy_skeleton_0_level2.prefab
+enemy_skeleton_0_level3.prefab
+enemy_skeleton_0_level4.prefab
+enemy_skeleton_0_level5.prefab
+enemy_skeleton_1.prefab
+enemy_skeleton_1_big_0.prefab
+enemy_skeleton_1_big_0_level2.prefab
+enemy_skeleton_1_big_0_level3.prefab
+enemy_skeleton_1_big_0_level4.prefab
+enemy_skeleton_1_big_0_level5.prefab
+enemy_skeleton_1_level2.prefab
+enemy_skeleton_1_level3.prefab
+enemy_skeleton_1_level4.prefab
+enemy_skeleton_1_level5.prefab
+enemy_skeleton_2.prefab
+enemy_skeleton_2_big_0.prefab
+enemy_skeleton_2_big_0_level2.prefab
+enemy_skeleton_2_big_0_level3.prefab
+enemy_skeleton_2_big_0_level4.prefab
+enemy_skeleton_2_big_0_level5.prefab
+enemy_skeleton_2_level2.prefab
+enemy_skeleton_2_level3.prefab
+enemy_skeleton_2_level4.prefab
+enemy_skeleton_2_level5.prefab
+enemy_skeleton_3.prefab
+enemy_skeleton_3_big_0.prefab
+enemy_skeleton_3_big_0_level2.prefab
+enemy_skeleton_3_big_0_level3.prefab
+enemy_skeleton_3_big_0_level4.prefab
+enemy_skeleton_3_big_0_level5.prefab
+enemy_skeleton_3_level2.prefab
+enemy_skeleton_3_level3.prefab
+enemy_skeleton_3_level4.prefab
+enemy_skeleton_3_level5.prefab
+enemy_skeleton_4.prefab
+enemy_skeleton_4_level2.prefab
+enemy_skeleton_4_level3.prefab
+enemy_skeleton_4_level4.prefab
+enemy_skeleton_4_level5.prefab
+enemy_skeleton_5_level3.prefab
+enemy_skeleton_5_level4.prefab
+enemy_skeleton_5_level5.prefab
+enemy_skeleton_coin_1.prefab
+enemy_skeleton_coin_10.prefab
+enemy_skeleton_coin_1_level4_1.prefab
+enemy_skeleton_coin_1_level4_2.prefab
+enemy_skeleton_coin_1_level4_3.prefab
+enemy_skeleton_coin_1_level4_4.prefab
+enemy_skeleton_food_30.prefab
+enemy_skeleton_luck_10.prefab
+enemy_skeleton_magnet_0.prefab
+2024-11-03 05:22:29,343 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:22:29,345 - INFO Retriever 0 - 当前窗口总长度：21
+2024-11-03 05:22:29,345 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 05:22:29,345 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 05:22:29,345 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:22:38,718 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "从'Enemies'文件夹中的文件列表来看，这些文件似乎是敌人的预制体，其中包含了一些关键词，如'enemy'、'skeleton'、'coin'等。这些关键词表明这些预制体可能与敌人的类型或行为有关。然而，要确定是否包含玩家自动攻击敌人的逻辑，我需要进一步检查这些预制体的具体内容。\n\n由于预制体文件通常包含Unity的资产信息，我需要使用'read_file'操作来读取这些预制体的内容。但是，由于文件数量众多，我需要选择一些具有代表性的文件进行读取。我将选择'default_enemy_0.prefab'和'enemy_coin_1.prefab'这两个文件，因为它们可能是最基础的敌人预制体，可能包含通用的敌人行为逻辑。"
+    }
+}
+2024-11-03 05:22:38,719 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:22:38,719 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:22:38,720 - INFO Retriever 0 - deep_think
+2024-11-03 05:22:38,720 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:22:38,720 - INFO Retriever 0 - Assistant:
+2024-11-03 05:22:38,720 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "从'Enemies'文件夹中的文件列表来看，这些文件似乎是敌人的预制体，其中包含了一些关键词，如'enemy'、'skeleton'、'coin'等。这些关键词表明这些预制体可能与敌人的类型或行为有关。然而，要确定是否包含玩家自动攻击敌人的逻辑，我需要进一步检查这些预制体的具体内容。\n\n由于预制体文件通常包含Unity的资产信息，我需要使用'read_file'操作来读取这些预制体的内容。但是，由于文件数量众多，我需要选择一些具有代表性的文件进行读取。我将选择'default_enemy_0.prefab'和'enemy_coin_1.prefab'这两个文件，因为它们可能是最基础的敌人预制体，可能包含通用的敌人行为逻辑。"
+    }
+}
+2024-11-03 05:22:38,721 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:22:38,721 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "从'Enemies'文件夹中的文件列表来看，这些文件似乎是敌人的预制体，其中包含了一些关键词，如'enemy'、'skeleton'、'coin'等。这些关键词表明这些预制体可能与敌人的类型或行为有关。然而，要确定是否包含玩家自动攻击敌人的逻辑，我需要进一步检查这些预制体的具体内容。\n\n由于预制体文件通常包含Unity的资产信息，我需要使用'read_file'操作来读取这些预制体的内容。但是，由于文件数量众多，我需要选择一些具有代表性的文件进行读取。我将选择'default_enemy_0.prefab'和'enemy_coin_1.prefab'这两个文件，因为它们可能是最基础的敌人预制体，可能包含通用的敌人行为逻辑。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:22:38,722 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:22:38,723 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:22:38,723 - INFO Retriever 0 - 当前窗口总长度：23
+2024-11-03 05:22:38,723 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 05:22:38,724 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 05:22:38,724 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:22:45,195 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:22:45,195 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:22:45,196 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:22:45,196 - INFO Retriever 0 - read_file
+2024-11-03 05:22:45,196 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:22:45,196 - INFO Retriever 0 - Assistant:
+2024-11-03 05:22:45,197 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:22:45,197 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:22:45,197 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:22:45,198 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:22:45,202 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:22:45,202 - INFO Retriever 0 - 当前窗口总长度：25
+2024-11-03 05:22:45,202 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 05:22:45,203 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 05:22:45,203 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:23:43,407 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:23:43,407 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:23:43,407 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:23:43,408 - INFO Retriever 0 - deep_think
+2024-11-03 05:23:43,408 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:23:43,408 - INFO Retriever 0 - Assistant:
+2024-11-03 05:23:43,408 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:23:43,409 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:23:43,409 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "我已经读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:23:43,409 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:23:43,411 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:23:43,411 - INFO Retriever 0 - 当前窗口总长度：27
+2024-11-03 05:23:43,412 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 05:23:43,412 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 05:23:43,412 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:23:47,933 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:23:47,933 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:23:47,934 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:23:47,934 - INFO Retriever 0 - read_file
+2024-11-03 05:23:47,934 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:23:47,934 - INFO Retriever 0 - Assistant:
+2024-11-03 05:23:47,935 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:23:47,935 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:23:47,935 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:23:47,936 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:23:47,939 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:23:47,939 - INFO Retriever 0 - 当前窗口总长度：29
+2024-11-03 05:23:47,939 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 05:23:47,939 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 05:23:47,940 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:23:54,726 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:23:54,727 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:23:54,727 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:23:54,727 - INFO Retriever 0 - deep_think
+2024-11-03 05:23:54,727 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:23:54,728 - INFO Retriever 0 - Assistant:
+2024-11-03 05:23:54,728 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:23:54,728 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:23:54,729 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:23:54,729 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:23:54,730 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:23:54,731 - INFO Retriever 0 - 当前窗口总长度：31
+2024-11-03 05:23:54,731 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 05:23:54,731 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 05:23:54,731 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:24:03,265 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:24:03,265 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:24:03,265 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:24:03,265 - INFO Retriever 0 - read_file
+2024-11-03 05:24:03,265 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:24:03,265 - INFO Retriever 0 - Assistant:
+2024-11-03 05:24:03,265 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:24:03,265 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:24:03,265 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:24:03,268 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:24:03,271 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:24:03,271 - INFO Retriever 0 - 当前窗口总长度：33
+2024-11-03 05:24:03,271 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 05:24:03,271 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 05:24:03,271 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:24:16,785 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:24:16,787 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:24:16,788 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:24:16,788 - INFO Retriever 0 - deep_think
+2024-11-03 05:24:16,790 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:24:16,791 - INFO Retriever 0 - Assistant:
+2024-11-03 05:24:16,791 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:24:16,791 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:24:16,792 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:24:16,792 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:24:16,794 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:24:16,794 - INFO Retriever 0 - 当前窗口总长度：35
+2024-11-03 05:24:16,795 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 05:24:16,796 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 05:24:16,796 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:24:41,577 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:24:41,578 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:24:41,578 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:24:41,578 - INFO Retriever 0 - read_file
+2024-11-03 05:24:41,578 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:24:41,579 - INFO Retriever 0 - Assistant:
+2024-11-03 05:24:41,579 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:24:41,579 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:24:41,580 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:24:41,580 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:24:41,583 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:24:41,583 - INFO Retriever 0 - 当前窗口总长度：37
+2024-11-03 05:24:41,583 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 05:24:41,585 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 05:24:41,585 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:24:56,391 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:24:56,392 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:24:56,392 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:24:56,392 - INFO Retriever 0 - deep_think
+2024-11-03 05:24:56,392 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:24:56,392 - INFO Retriever 0 - Assistant:
+2024-11-03 05:24:56,392 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:24:56,392 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:24:56,392 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:24:56,392 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:24:56,395 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:24:56,395 - INFO Retriever 0 - 当前窗口总长度：39
+2024-11-03 05:24:56,395 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 05:24:56,395 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 05:24:56,395 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:25:16,513 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:25:16,514 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:25:16,514 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:25:16,515 - INFO Retriever 0 - read_file
+2024-11-03 05:25:16,515 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:25:16,515 - INFO Retriever 0 - Assistant:
+2024-11-03 05:25:16,515 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:25:16,515 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:25:16,516 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:25:16,517 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:25:16,520 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:25:16,520 - INFO Retriever 0 - 当前窗口总长度：41
+2024-11-03 05:25:16,521 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 05:25:16,521 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 05:25:16,521 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:25:26,654 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:25:26,658 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:25:26,658 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:25:26,658 - INFO Retriever 0 - deep_think
+2024-11-03 05:25:26,658 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:25:26,659 - INFO Retriever 0 - Assistant:
+2024-11-03 05:25:26,659 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:25:26,659 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:25:26,659 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:25:26,659 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:25:26,661 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:25:26,661 - INFO Retriever 0 - 当前窗口总长度：43
+2024-11-03 05:25:26,661 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 05:25:26,661 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 05:25:26,661 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:25:31,409 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:25:31,409 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:25:31,410 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:25:31,410 - INFO Retriever 0 - read_file
+2024-11-03 05:25:31,410 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:25:31,410 - INFO Retriever 0 - Assistant:
+2024-11-03 05:25:31,410 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:25:31,411 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:25:31,411 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:25:31,412 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:25:31,415 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:25:31,416 - INFO Retriever 0 - 当前窗口总长度：45
+2024-11-03 05:25:31,416 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 05:25:31,416 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 05:25:31,417 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:25:42,790 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:25:42,795 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:25:42,796 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:25:42,796 - INFO Retriever 0 - deep_think
+2024-11-03 05:25:42,796 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:25:42,796 - INFO Retriever 0 - Assistant:
+2024-11-03 05:25:42,796 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。"
+    }
+}
+2024-11-03 05:25:42,797 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 05:25:42,797 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': "我已经再次读取了'default_enemy_0.prefab'文件的内容，这是一个Unity预制体的YAML格式描述。从文件内容来看，这个预制体包含了多个组件，包括Transform、MeshRenderer、MeshFilter以及几个MonoBehaviour脚本组件。这些组件可能定义了敌人的位置、渲染、网格过滤以及行为逻辑。\n\n为了进一步分析敌人预制体的行为逻辑，我需要检查这些MonoBehaviour脚本组件的具体内容。由于这些脚本组件是以GUID标识的，我需要使用'read_file'操作来读取这些脚本的源代码。", 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 05:25:42,797 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 05:25:42,801 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:25:42,801 - INFO Retriever 0 - 当前窗口总长度：47
+2024-11-03 05:25:42,801 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 05:25:42,802 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 05:25:42,802 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 05:27:50,663 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:27:50,663 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 05:27:50,664 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 05:27:50,664 - INFO Retriever 0 - read_file
+2024-11-03 05:27:50,664 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 05:27:50,664 - INFO Retriever 0 - Assistant:
+2024-11-03 05:27:50,664 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab"
+    }
+}
+2024-11-03 05:27:50,665 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 05:27:50,665 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets\\_MyAssets\\RuntimePrefabs\\Enemies\\default_enemy_0.prefab', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F26E040A0>>}
+2024-11-03 05:27:50,666 - INFO Retriever 0 - Observer: 这是一个名为“default_enemy_0.prefab”的文件，该文件里的内容为：
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040563576298773591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214186027875092558}
+  - component: {fileID: 3617397216089966378}
+  - component: {fileID: 3748978912186658453}
+  - component: {fileID: 7770878888935869}
+  - component: {fileID: -547228821332103527}
+  - component: {fileID: 4651044983613288027}
+  - component: {fileID: -6101232228053383280}
+  - component: {fileID: 5038376988448791085}
+  - component: {fileID: 2721883560745400920}
+  - component: {fileID: 1160559384557180444}
+  m_Layer: 0
+  m_Name: default_enemy_0
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214186027875092558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3617397216089966378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca30d25de2ecd7488f81da0eaebe811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flockBox: {fileID: 0}
+  shape:
+    type: 0
+    radius: 0
+  debugDrawShape: 0
+  is2D: 1
+  activeSettings: {fileID: 11400000, guid: bb66a370cd481084d99409b0123237bc, type: 2}
+--- !u!23 &3748978912186658453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4e4a293d488e2114e8bbf4a36ae65b1c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &7770878888935869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-547228821332103527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd9bf86f39b40568207b96105cc4766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4651044983613288027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7afc7f771819b4fba2d01c83105bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6101232228053383280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388484be0cf45e14d94e13cedab2fd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    Category00: 0
+    Category01: 1
+    Category02: 0
+  dropData: {fileID: 0}
+  dropChance: 1
+  defences: []
+  damage: 2
+--- !u!114 &5038376988448791085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0c00ac43704c8094c8173da34074e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  hp: 20
+  shield: 0
+  hasDamageCd: 0
+  damageCdCollisionOnly: 0
+  damageCd: 0
+  defences: []
+  deathMethod: 5
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2721883560745400920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33122c4c8476d604293f1a829ab2d77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 16
+  walkSheetIndexRange: {x: 0, y: 1}
+  deadSheetIndexRange: {x: 0, y: 0}
+--- !u!114 &1160559384557180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040563576298773591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ef802665cc846369696e8d273b0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundRadius: 1
+  sortLayer: 0
+
+2024-11-03 05:27:50,668 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 05:27:50,668 - INFO Retriever 0 - 当前窗口总长度：49
+2024-11-03 05:27:50,672 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 05:27:50,672 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 05:27:50,675 - INFO Retriever 0 - -- updated_window_size >= self._compress_window_size --
+2024-11-03 05:27:50,675 - INFO Retriever 0 - 进行窗口压缩
