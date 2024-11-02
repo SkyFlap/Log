@@ -1,0 +1,3498 @@
+2024-11-03 02:44:46,989 - INFO Retriever 0 - Init Retriever.
+2024-11-03 02:46:55,439 - INFO Retriever 0 - keywords:“level”，“time”，“hour”，“关卡”，“时间”
+2024-11-03 02:46:55,451 - INFO Retriever 0 - deep_think_conent
+:在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\Assets下各级目录中寻找：有关关卡时间设置的相关文件”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“level”，“time”，“hour”，“关卡”，“时间”。
+接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。
+2024-11-03 02:46:55,484 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:46:55,488 - INFO Retriever 0 - Assistant:
+2024-11-03 02:46:55,490 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "好的，接下来我将通过深度思考、仔细计划以及逐步执行的方式，来完成该任务。\n\n首先，在阅读详细的代码细节之前，应该先整体把握整个项目。\n\n在提供的可选的action中，可以通过get_folder_info操作，通过将项目顶层路径作为target_folder_path参数进行传入，来获取获取项目中主要文件夹和主要文件的描述，从而能够先大致把握项目文件的主要文件的文件树结构、基本内容、主要代码概述以及大致功能板块的分布。"
+    }
+}
+2024-11-03 02:46:55,490 - INFO Retriever 0 - 
+Observer:
+2024-11-03 02:46:55,501 - INFO Retriever 0 - 好的，请继续你的下一步行动或思考。
+2024-11-03 02:46:55,504 - INFO Retriever 0 - 
+2024-11-03 02:46:55,886 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:46:55,889 - INFO Retriever 0 - Assistant:
+2024-11-03 02:46:55,890 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 02:46:55,892 - INFO Retriever 0 - 
+Observer:
+2024-11-03 02:46:55,893 - INFO Retriever 0 - 目标文件夹路径：D:/Unity/Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 02:46:55,914 - INFO Retriever 0 - 
+2024-11-03 02:46:55,937 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:46:55,938 - INFO Retriever 0 - Assistant:
+2024-11-03 02:46:55,938 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\\Assets下各级目录中寻找：有关关卡时间设置的相关文件”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“level”，“time”，“hour”，“关卡”，“时间”。\n接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。"
+    }
+}
+2024-11-03 02:46:55,941 - INFO Retriever 0 - 
+Observer:
+2024-11-03 02:46:55,944 - INFO Retriever 0 - 好的，请继续你的下一步行动或思考。
+2024-11-03 02:46:55,946 - INFO Retriever 0 - 
+2024-11-03 02:46:56,448 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:46:56,490 - INFO Retriever 0 - Assistant:
+2024-11-03 02:46:56,498 - INFO Retriever 0 - {
+    "retrieve_keywords": {
+        "keyword_list": [
+            "level",
+            "time",
+            "hour",
+            "关卡",
+            "时间"
+        ]
+    }
+}
+2024-11-03 02:46:56,498 - INFO Retriever 0 - 
+Observer:
+2024-11-03 02:46:56,502 - INFO Retriever 0 - 根据你提供的关键词，我检索到以下目录或文件，它们的绝对路径如下：
+
+
+1. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_31-40.asset
+### 简要总结
+该文件定义了Unity游戏关卡31至40的奖励系统，涵盖正常和升级奖励。每个关卡对应不同的奖励类型和数值，旨在激励玩家完成挑战。
+
+2. D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI\MainUI\StagePanel
+## 文件夹内容精简总结
+
+“StagePanel”文件夹内包含两个关键脚本：`StageSelectItem.cs`和`StageSelectPanel.cs`。`StageSelectItem.cs`负责在关卡选择界面中展示单个关卡的信息，包括解锁状态和事件处理；而`StageSelectPanel.cs`则管理整个关卡选择界面的逻辑，包括关卡列表的显示和用户交互。这两个脚本协同工作，共同实现了关卡选择界面的功能。
+
+3. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_41-50.asset
+### 关键点融合
+该文件详细定义了Unity游戏关卡41至50的奖励系统，涵盖每个级别的正常和升级奖励。奖励类型包括金币、道具和特殊奖励，具体奖励值和关联数据如地图、角色等均有所配置。
+
+4. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_81-90.asset
+### 文本总结
+该文件为Unity游戏资产“level_81-90.asset”，记录了81至90级关卡的正常与升级奖励配置。每个关卡设有类型7的奖励，正常奖励值为50，升级奖励值为150，涉及地图、物品等数据，但具体引用的数据文件ID均为0。
+
+5. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_91-100.asset
+### 文本总结
+该文件是Unity3D游戏关卡91至100的奖励配置，详细列出了每级关卡的普通和升级奖励，包括奖励类型和数值。配置涵盖了地图、物品、属性等数据，但具体内容以占位符表示。
+
+6. D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI\MainUI\StagePanel\StageSelectItem.cs
+该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。类继承自`EnhancedScrollerCellView`，负责显示关卡图标、标题、描述等，并处理解锁状态和事件响应。主要功能包括初始化按钮监听、设置关卡数据、根据解锁情况更新界面样式，以及处理选中事件和按钮点击事件，以实现关卡选择和引导功能。
+
+7. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_11-20.asset
+### 简要总结
+该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励，包括经验、货币、物品等多种奖励类型，并关联了角色、物品等游戏内数据。
+
+8. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass
+## 简化版文件夹内容分析总结
+
+“BattlePass”文件夹汇集了Unity游戏开发中的关键配置文件，涵盖战斗通行证数据结构、经验值和奖励设置，以及从等级1至100的关卡奖励配置。这些文件协同定义了游戏的奖励系统，为玩家提供完成关卡和参与战斗的激励，同时部分奖励配置涉及外部数据引用，表明系统可能包含更复杂的数据结构。文件夹内文件如“BattlePassData.asset”定义了战斗通行证的整体框架，而“Level_1-100.asset”系列文件则详细列出了各等级的奖励配置，包括正常和升级奖励。
+
+
+请注意，这些目录或文件可能不全都和你的任务目标相关，仅供参考。请你基于具体的文件内容概述，结合你的任务目标，认真思考分析后，优先选择最有可能与任务相关的目录或文件进行进一步的检查。
+2024-11-03 02:46:56,502 - INFO Retriever 0 - 
+2024-11-03 02:46:58,794 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据检索到的文件和目录，我注意到其中一些文件和目录的名称或内容描述与“关卡时间设置”相关。例如，level_11-20.asset和level_31-40.asset等文件可能包含了关卡时间设置的相关信息。为了进一步确认这些文件是否包含所需的信息，我需要检查这些文件的内容。我将使用read_file操作来读取这些文件的内容，并寻找与“关卡时间设置”相关的信息。"
+    }
+}
+2024-11-03 02:46:58,798 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:46:58,799 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:46:58,799 - INFO Retriever 0 - deep_think
+2024-11-03 02:46:58,800 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:46:58,801 - INFO Retriever 0 - Assistant:
+2024-11-03 02:46:58,818 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据检索到的文件和目录，我注意到其中一些文件和目录的名称或内容描述与“关卡时间设置”相关。例如，level_11-20.asset和level_31-40.asset等文件可能包含了关卡时间设置的相关信息。为了进一步确认这些文件是否包含所需的信息，我需要检查这些文件的内容。我将使用read_file操作来读取这些文件的内容，并寻找与“关卡时间设置”相关的信息。"
+    }
+}
+2024-11-03 02:46:58,832 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:46:58,837 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据检索到的文件和目录，我注意到其中一些文件和目录的名称或内容描述与“关卡时间设置”相关。例如，level_11-20.asset和level_31-40.asset等文件可能包含了关卡时间设置的相关信息。为了进一步确认这些文件是否包含所需的信息，我需要检查这些文件的内容。我将使用read_file操作来读取这些文件的内容，并寻找与“关卡时间设置”相关的信息。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:46:58,842 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:46:58,859 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:46:58,873 - INFO Retriever 0 - 当前窗口总长度：11
+2024-11-03 02:46:58,878 - INFO Retriever 0 - 当前更新窗口长度：2
+2024-11-03 02:46:58,882 - INFO Retriever 0 - 当前更新窗口长度：2
+2024-11-03 02:46:58,887 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:01,583 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset"
+    }
+}
+2024-11-03 02:47:01,583 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:01,593 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:01,600 - INFO Retriever 0 - read_file
+2024-11-03 02:47:01,603 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:01,603 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:01,607 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset"
+    }
+}
+2024-11-03 02:47:01,608 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:47:01,610 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:47:01,696 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Data/BattlePass/level_11-20.asset”的文件，该文件里的内容为：
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 5e0d72fb687ee89469221744dc16b378
+    type: 3
+  m_Name: level_11-20
+  m_EditorClassIdentifier: None
+  internalID: 421900950
+  Reward: 这是一个包含10个字典元素的列表，该列表中每个字典元素包含如下key：upReward,level,nomalReward，由于列表内容太长因此省略，目前不会影响你的任务。
+  AssetName: level_51-60
+2024-11-03 02:47:01,718 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:01,722 - INFO Retriever 0 - 当前窗口总长度：13
+2024-11-03 02:47:01,743 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 02:47:01,749 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 02:47:01,749 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:06,769 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "从读取的文件内容来看，level_11-20.asset文件似乎是一个Unity的资产文件，其中包含了一个名为“Reward”的列表，该列表包含了10个字典元素，每个字典元素包含“upReward”、“level”和“nomalReward”等键。然而，这些信息似乎与关卡时间设置无关，而是关于关卡奖励的配置。因此，我需要继续检查其他文件以寻找与关卡时间设置相关的信息。接下来，我将读取level_31-40.asset文件的内容。"
+    }
+}
+2024-11-03 02:47:06,784 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:06,787 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:06,787 - INFO Retriever 0 - deep_think
+2024-11-03 02:47:06,788 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:06,788 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:06,789 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "从读取的文件内容来看，level_11-20.asset文件似乎是一个Unity的资产文件，其中包含了一个名为“Reward”的列表，该列表包含了10个字典元素，每个字典元素包含“upReward”、“level”和“nomalReward”等键。然而，这些信息似乎与关卡时间设置无关，而是关于关卡奖励的配置。因此，我需要继续检查其他文件以寻找与关卡时间设置相关的信息。接下来，我将读取level_31-40.asset文件的内容。"
+    }
+}
+2024-11-03 02:47:06,825 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:47:06,831 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '从读取的文件内容来看，level_11-20.asset文件似乎是一个Unity的资产文件，其中包含了一个名为“Reward”的列表，该列表包含了10个字典元素，每个字典元素包含“upReward”、“level”和“nomalReward”等键。然而，这些信息似乎与关卡时间设置无关，而是关于关卡奖励的配置。因此，我需要继续检查其他文件以寻找与关卡时间设置相关的信息。接下来，我将读取level_31-40.asset文件的内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:47:06,831 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:47:06,834 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:06,837 - INFO Retriever 0 - 当前窗口总长度：15
+2024-11-03 02:47:06,837 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 02:47:06,839 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 02:47:06,839 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:09,540 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset"
+    }
+}
+2024-11-03 02:47:09,541 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:09,541 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:09,541 - INFO Retriever 0 - read_file
+2024-11-03 02:47:09,541 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:09,541 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:09,541 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset"
+    }
+}
+2024-11-03 02:47:09,543 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:47:09,543 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:47:09,581 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Data/BattlePass/level_31-40.asset”的文件，该文件里的内容为：
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 5e0d72fb687ee89469221744dc16b378
+    type: 3
+  m_Name: level_31-40
+  m_EditorClassIdentifier: None
+  internalID: 868555749
+  Reward: 这是一个包含10个字典元素的列表，该列表中每个字典元素包含如下key：upReward,level,nomalReward，由于列表内容太长因此省略，目前不会影响你的任务。
+  AssetName: level31-40
+2024-11-03 02:47:09,582 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:09,583 - INFO Retriever 0 - 当前窗口总长度：17
+2024-11-03 02:47:09,583 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 02:47:09,583 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 02:47:09,584 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:17,384 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据读取的level_31-40.asset文件内容，这个文件也是一个Unity的资产文件，其中包含了一个名为“Reward”的列表，该列表包含了10个字典元素，每个字典元素包含“upReward”、“level”和“nomalReward”等键。这些信息同样与关卡时间设置无关，而是关于关卡奖励的配置。由于我已经检查了两个文件，但都没有找到与关卡时间设置相关的信息，我需要重新考虑我的搜索策略。可能需要更具体的关键词来缩小搜索范围，或者检查其他类型的文件，比如脚本文件（.cs）或配置文件（.asset），这些文件可能包含关卡时间设置的代码或配置。接下来，我将使用get_folder_info操作来获取Assets目录下所有.cs文件的信息，以便进一步搜索。"
+    }
+}
+2024-11-03 02:47:17,384 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:17,384 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:17,384 - INFO Retriever 0 - deep_think
+2024-11-03 02:47:17,384 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:17,384 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:17,384 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据读取的level_31-40.asset文件内容，这个文件也是一个Unity的资产文件，其中包含了一个名为“Reward”的列表，该列表包含了10个字典元素，每个字典元素包含“upReward”、“level”和“nomalReward”等键。这些信息同样与关卡时间设置无关，而是关于关卡奖励的配置。由于我已经检查了两个文件，但都没有找到与关卡时间设置相关的信息，我需要重新考虑我的搜索策略。可能需要更具体的关键词来缩小搜索范围，或者检查其他类型的文件，比如脚本文件（.cs）或配置文件（.asset），这些文件可能包含关卡时间设置的代码或配置。接下来，我将使用get_folder_info操作来获取Assets目录下所有.cs文件的信息，以便进一步搜索。"
+    }
+}
+2024-11-03 02:47:17,384 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:47:17,384 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据读取的level_31-40.asset文件内容，这个文件也是一个Unity的资产文件，其中包含了一个名为“Reward”的列表，该列表包含了10个字典元素，每个字典元素包含“upReward”、“level”和“nomalReward”等键。这些信息同样与关卡时间设置无关，而是关于关卡奖励的配置。由于我已经检查了两个文件，但都没有找到与关卡时间设置相关的信息，我需要重新考虑我的搜索策略。可能需要更具体的关键词来缩小搜索范围，或者检查其他类型的文件，比如脚本文件（.cs）或配置文件（.asset），这些文件可能包含关卡时间设置的代码或配置。接下来，我将使用get_folder_info操作来获取Assets目录下所有.cs文件的信息，以便进一步搜索。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:47:17,386 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:47:17,386 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:17,387 - INFO Retriever 0 - 当前窗口总长度：19
+2024-11-03 02:47:17,387 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 02:47:17,387 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 02:47:17,387 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:18,825 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 02:47:18,825 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:18,825 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:18,826 - INFO Retriever 0 - get_folder_info
+2024-11-03 02:47:18,826 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:18,826 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:18,826 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 02:47:18,826 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 02:47:18,826 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets'}
+2024-11-03 02:47:18,856 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 02:47:18,862 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:18,862 - INFO Retriever 0 - 当前窗口总长度：21
+2024-11-03 02:47:18,862 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 02:47:18,863 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 02:47:18,863 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:23,420 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "从获取的文件结构树中，我注意到Editor文件夹下可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Editor文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。"
+    }
+}
+2024-11-03 02:47:23,421 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:23,422 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:23,422 - INFO Retriever 0 - deep_think
+2024-11-03 02:47:23,422 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:23,422 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:23,424 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "从获取的文件结构树中，我注意到Editor文件夹下可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Editor文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。"
+    }
+}
+2024-11-03 02:47:23,424 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:47:23,424 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '从获取的文件结构树中，我注意到Editor文件夹下可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Editor文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:47:23,425 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:47:23,426 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:23,426 - INFO Retriever 0 - 当前窗口总长度：23
+2024-11-03 02:47:23,426 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 02:47:23,427 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 02:47:23,427 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:29,286 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/Editor"
+    }
+}
+2024-11-03 02:47:29,287 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:29,287 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:29,287 - INFO Retriever 0 - get_folder_info
+2024-11-03 02:47:29,288 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:29,288 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:29,288 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/Editor"
+    }
+}
+2024-11-03 02:47:29,288 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 02:47:29,289 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets/Editor'}
+2024-11-03 02:47:29,325 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets/Editor
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── ChannelSetting.cs
+├── OrbiteExtenedEditor.cs
+├── Resources
+│   ├── SPUM
+├── ShaderStripSettings
+│   ├── UniversalRP-HighQualityShaderStrip.asset
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+2. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor\Resources
+# 内容概述:“Resources”文件夹汇集了游戏和动画设计所需的视觉资源与预制单元。其中，SPUM_Sprites子文件夹包含基础设计元素和主题资源包，而SPUM_Units则提供一系列预制文件，便于游戏开发中角色、道具和环境的构建。这些资源相互关联，共同支撑起项目的视觉和功能需求。
+
+3. ShaderStripSettings
+# 路径:D:\\Unity\\Survaval\Assets\Editor\ShaderStripSettings
+# 内容概述:### 文件夹内容精简总结
+
+“ShaderStripSettings”文件夹内包含一个Unity资产“UniversalRP-HighQualityShaderStrip.asset”，这是一个脚本组件，用于优化渲染设置，通过移除特定着色器关键字来提升渲染质量，尤其针对阴影和光照效果。
+
+4. ChannelSetting.cs
+# 路径:D:\\Unity\\Survaval\Assets\Editor\ChannelSetting.cs
+# 内容概述:该脚本为Unity编辑器插件，主要功能是管理不同渠道的SDK配置。它包含`ChannelSetting`类，其中定义了`ChangeChannelYouLoft`和`ChangeChannelTranssion`方法，用于切换至优路和传音渠道。这些方法会复制相应SDK至项目目录，更新项目设置（如公司名、产品名和应用标识符），并管理宏定义。脚本还提供了`CopyAllDirectory`和`DeleteAllDirectory`来处理文件夹的复制和删除，以及`AddScriptingDefineSymbolsForGroup`和`DeleteScriptingDefineSymbolsForGroup`来调整预定义宏。
+
+5. OrbiteExtenedEditor.cs
+# 路径:D:\\Unity\\Survaval\Assets\Editor\OrbiteExtenedEditor.cs
+# 内容概述:该脚本“OrbiteExtenedEditor.cs”是Unity编辑器的一个扩展，包含两个主要功能。首先，`TextmeshProRich`方法通过修改选中Transform下所有TextMeshProUGUI子组件的`richText`属性为true。其次，`Capture`方法用于捕获当前屏幕并保存为PNG文件至指定路径，同时根据游戏状态调整截图名称。
+
+
+2024-11-03 02:47:29,329 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:29,331 - INFO Retriever 0 - 当前窗口总长度：25
+2024-11-03 02:47:29,331 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 02:47:29,331 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 02:47:29,332 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:36,143 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据获取的Editor文件夹下的文件信息，我注意到ChannelSetting.cs和OrbiteExtenedEditor.cs这两个文件可能与关卡时间设置无关。ChannelSetting.cs脚本主要用于管理不同渠道的SDK配置，而OrbiteExtenedEditor.cs脚本是一个编辑器扩展，用于增强文本编辑和屏幕截图功能。因此，我需要继续在其他文件夹中搜索可能包含关卡时间设置的脚本文件。接下来，我将使用get_folder_info操作来获取Assets目录下所有.cs文件的信息，以便进一步搜索。"
+    }
+}
+2024-11-03 02:47:36,145 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:36,145 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:36,146 - INFO Retriever 0 - deep_think
+2024-11-03 02:47:36,146 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:36,146 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:36,146 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据获取的Editor文件夹下的文件信息，我注意到ChannelSetting.cs和OrbiteExtenedEditor.cs这两个文件可能与关卡时间设置无关。ChannelSetting.cs脚本主要用于管理不同渠道的SDK配置，而OrbiteExtenedEditor.cs脚本是一个编辑器扩展，用于增强文本编辑和屏幕截图功能。因此，我需要继续在其他文件夹中搜索可能包含关卡时间设置的脚本文件。接下来，我将使用get_folder_info操作来获取Assets目录下所有.cs文件的信息，以便进一步搜索。"
+    }
+}
+2024-11-03 02:47:36,146 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:47:36,146 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据获取的Editor文件夹下的文件信息，我注意到ChannelSetting.cs和OrbiteExtenedEditor.cs这两个文件可能与关卡时间设置无关。ChannelSetting.cs脚本主要用于管理不同渠道的SDK配置，而OrbiteExtenedEditor.cs脚本是一个编辑器扩展，用于增强文本编辑和屏幕截图功能。因此，我需要继续在其他文件夹中搜索可能包含关卡时间设置的脚本文件。接下来，我将使用get_folder_info操作来获取Assets目录下所有.cs文件的信息，以便进一步搜索。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:47:36,146 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:47:36,149 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:36,149 - INFO Retriever 0 - 当前窗口总长度：27
+2024-11-03 02:47:36,149 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 02:47:36,149 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 02:47:36,149 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:40,167 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets"
+    }
+}
+2024-11-03 02:47:40,167 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:40,167 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:40,167 - INFO Retriever 0 - get_folder_info
+2024-11-03 02:47:40,167 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:40,168 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:40,168 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets"
+    }
+}
+2024-11-03 02:47:40,168 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 02:47:40,168 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets/_MyAssets'}
+2024-11-03 02:47:40,196 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets/_MyAssets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── Animations
+│   ├── PlayerAnimator.controller
+│   ├── PlayerOnHorseAnimator.controller
+│   ├── UIAnim
+├── ArtAssets
+│   ├── Enemies
+│   ├── Items
+│   ├── Terrains
+│   ├── UI
+├── Audio
+│   ├── Music
+│   ├── Sound
+├── Data
+│   ├── Achivements
+│   ├── BattlePass
+│   ...
+│   ├── _GameData.asset
+├── Editor_Reource
+│   ├── Resources
+├── FontPixel
+│   ├── PixelMplus12.ttf
+│   ├── unifont  Offset.mat
+│   ...
+│   ├── unifont.ttf
+├── Icon
+├── InputSettings
+├── OutputData
+│   ├── default_android_build.buildconfiguration
+├── RuntimePrefabs
+│   ├── Bullets
+│   ├── DamageTexts
+│   ...
+│   ├── VFX
+├── SceneTemplates
+├── Scenes
+├── Scripts
+│   ├── Character
+│   ├── DOTSSimpleRenderer
+│   ...
+│   ├── Utility
+├── Shaders
+│   ├── DOTSDropLight.shader
+│   ├── DOTSSimpleParticle.shader
+│   ├── DOTSSimpleSprite.shader
+│   ├── UI_Light_Ase.shader
+│   ├── UI_White_ASE.shader
+│   ├── UI_guide_Ase.shader
+│   ├── used_shaders.shadervariants
+├── StaticPrefabs
+│   ├── Sounds
+│   ├── UI
+│   ├── VFXTrails
+│   ├── WeaponGunPoints
+├── SteerSettings
+│   ├── enemy_steer_speed_0.5.asset
+│   ├── enemy_steer_speed_0.asset
+│   ...
+│   ├── enemy_steer_speed_5.asset
+├── Test
+│   ├── 01.png
+│   ├── 02.png
+│   ├── 03.png
+│   ├── 04.png
+├── Texture
+│   ├── BattleTexture
+│   ├── IconAtlas.spriteatlas
+│   ├── Materials
+│   ├── Textures
+│   ├── TexturesIcon
+│   ├── icon
+├── URPSettings
+│   ├── ForwardRenderer.asset
+│   ├── UniversalRP-HighQuality.asset
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+2. Animations
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Animations
+# 内容概述:### 简化版文件夹内容分析总结
+
+“Animations”文件夹汇集了针对游戏或应用UI元素的动画资源，包含多个子文件夹，如战斗界面、礼堂面板等，每个子文件夹内含特定动画和控制文件。控制器文件如`PlayerAnimator.controller`和`PlayerOnHorseAnimator.controller`负责协调玩家角色及其骑马状态下的动画逻辑，确保动画流畅且与用户交互紧密结合。
+
+3. ArtAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\ArtAssets
+# 内容概述:“ArtAssets”文件夹汇集了游戏开发所需的视觉和交互资源，包括敌人角色和Boss的静态图像及材质（在“Enemies”文件夹中），游戏物品的材质（在“Items”文件夹中），以及地形和景观图像（在“Terrains”文件夹中）。此外，还包含用户界面配置数据（在“UI”文件夹中），这些资源共同支撑起游戏的角色、环境与交互界面设计。
+
+4. Audio
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Audio
+# 内容概述:“Audio”文件夹内部分为“Music”和“Sound”两个子文件夹，前者收录了针对游戏不同场景设计的背景音乐，如Boss战和地图背景；后者则集成了游戏中的各种声音效果，包括活动声音和界面操作声音，共同构建了游戏的整体音效体验。
+
+5. Data
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Data
+# 内容概述:“Data”文件夹是Unity游戏项目的核心，汇集了游戏配置和脚本资产，涵盖成就、战斗通行证、任务、物品掉落、角色装备、地图、技能、敌人生成等多个方面。文件夹内各子文件夹如Achivements、BattlePass和DailyTask等，分别管理成就解锁、奖励系统和日常任务等游戏机制；而Equip、Items和Map等则专注于角色、物品和地图的详细配置。这些文件和配置相互关联，共同构建了游戏的数据结构和功能框架。
+
+6. Editor_Reource
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Editor_Reource
+# 内容概述:“Editor_Reource”文件夹汇集了游戏本地化资源，包含“Configs”子文件夹，内含多种语言的本地化文本文件，确保游戏在不同语言环境下的文本一致性和准确性。
+
+7. FontPixel
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\FontPixel
+# 内容概述:### 简化版文件夹内容总结
+
+“FontPixel”文件夹汇集了多种字体文件，包括PixelMplus12.ttf和一系列以“unifont”开头的字体数据文件，如Offset、OutLine等，这些文件提供了不同风格和效果的字体资源，适用于字体设计和应用场景。
+
+8. Icon
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Icon
+# 内容概述:该文件夹内容为空。
+
+9. InputSettings
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\InputSettings
+# 内容概述:该文件夹内容为空。
+
+10. OutputData
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\OutputData
+# 内容概述:在“OutputData”文件夹中，主要包含一个名为“default_android_build.buildconfiguration”的文件，该文件记录了Android应用的构建配置信息。
+
+11. RuntimePrefabs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\RuntimePrefabs
+# 内容概述:“RuntimePrefabs”文件夹汇集了游戏开发所需的预制资源，包括多样化的子弹和攻击效果（如天使球、火球等），伤害显示配置，游戏内掉落物品（如宝箱、硬币），以及敌人、玩家角色和视觉效果（如技能效果、元素射线）。此外，还包含玩家角色预制文件和基础配置，以及空白的“Requirements”文件夹。视觉效果和用户界面元素，如技能和UI升级效果，丰富了游戏体验。
+
+12. Scenes
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scenes
+# 内容概述:“Scenes文件夹汇集了多种场景相关的文件，包含图片、文档和视频等，旨在展示不同环境下的视觉元素。其中，图片子文件夹展示了多样化的场景图像，文档子文件夹则收录了场景描述和设计理念，而视频子文件夹则提供了动态场景演示。这些文件相互关联，共同构成了一个全面展示各类场景的资料库。”
+
+13. SceneTemplates
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\SceneTemplates
+# 内容概述:该文件夹内容为空。
+
+14. Scripts
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts
+# 内容概述:“Scripts”文件夹是Unity游戏项目的核心脚本库，集成了角色管理、数据管理、渲染优化、声音处理、环境构建、游戏玩法、系统组件、UI设计和辅助工具等多种功能。它包含的角色脚本如动画和敌人管理，与游戏玩法和数据管理脚本紧密协作，共同构建了游戏的角色系统和核心逻辑。同时，渲染和声音优化脚本提升了性能，而UI脚本则负责交互界面。此外，通用工具和扩展功能脚本为游戏提供了额外的辅助和灵活性，确保了项目的整体流畅性和功能性。
+
+15. Shaders
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Shaders
+# 内容概述:“Shaders”文件夹汇集了多种图形和UI着色器文件，包括实现点光源衰减、粒子效果、精灵渲染、UI引导照明等功能的DOTS系列和UI系列着色器，以及记录着色器变体信息的`used_shaders.shadervariants`文件，旨在提升游戏或应用的视觉效果。
+
+16. StaticPrefabs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\StaticPrefabs
+# 内容概述:“StaticPrefabs”文件夹汇集了游戏开发所需的静态资源，包括音频管理、UI界面设计、视觉效果以及武器和枪械模型。音频资源如“Sounds”文件夹中的音效，与UI设计如“UI”文件夹中的战斗和主界面元素相辅相成，共同构建游戏交互体验。视觉效果“VFXTrails”则丰富了游戏场景，而“WeaponGunPoints”中的武器预制件则增强了游戏中的战斗元素。这些资源紧密关联，共同支撑起游戏的整体架构。
+
+17. SteerSettings
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\SteerSettings
+# 内容概述:### 文件夹内容总结
+“SteerSettings”文件夹汇集了Unity游戏引擎中敌人AI的配置文件，旨在详细设定敌人的移动速度、转向行为、视野范围和搜索策略。文件夹内包含多个资产文件，如`enemy_steer_speed_0.5.asset`至`enemy_steer_speed_5.asset`，每个文件针对特定敌人的行为属性进行定制，包括速度、转向参数、视野角度和搜索目标等。这些配置文件共同构成了敌人AI的行为逻辑，确保它们在游戏中能够以不同的方式移动和交互，从而丰富游戏体验。
+
+18. Test
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Test
+# 内容概述:该“Test”文件夹内包含四张PNG格式图片，分别为01.png、02.png、03.png和04.png，可能为同一主题或系列。
+
+19. Texture
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Texture
+# 内容概述:“BattleTexture”文件夹汇集了与战斗相关的纹理图片，如奖励掉落效果，用于游戏视觉设计。在“icon”文件夹中，子文件夹和图片文件分类存储，涵盖游戏装备、角色属性、场景和界面元素，如技能图标和按钮。而“Materials”文件夹专注于材料设计数据，如“小光柱-白.mat”。此外，“Textures”和“TexturesIcon”文件夹则分别包含游戏界面元素和图标资源，通过纹理压缩优化游戏性能。最后，“IconAtlas.spriteatlas”文件整合了多个图标资源，提升游戏资源管理和加载效率。
+
+20. URPSettings
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\URPSettings
+# 内容概述:### 文件夹内容精简总结
+
+“URPSettings”文件夹汇集了Unity游戏引擎的渲染优化配置，包括**ForwardRenderer.asset**文件，它针对视觉效果和伤害文本渲染进行细致配置，以及**UniversalRP-HighQuality.asset**，该文件通过调整多种渲染参数如阴影、抗锯齿和性能优化选项，旨在提升整体视觉效果和性能。这两个文件共同构成了游戏渲染的核心设置，确保了高质量的渲染效果和流畅的性能表现。
+
+
+2024-11-03 02:47:40,200 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:40,201 - INFO Retriever 0 - 当前窗口总长度：29
+2024-11-03 02:47:40,201 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 02:47:40,201 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 02:47:40,201 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:47:46,297 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "从获取的_MyAssets文件夹下的文件信息来看，Scripts文件夹可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Scripts文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。"
+    }
+}
+2024-11-03 02:47:46,297 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:47:46,299 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:47:46,299 - INFO Retriever 0 - deep_think
+2024-11-03 02:47:46,299 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:47:46,299 - INFO Retriever 0 - Assistant:
+2024-11-03 02:47:46,299 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "从获取的_MyAssets文件夹下的文件信息来看，Scripts文件夹可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Scripts文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。"
+    }
+}
+2024-11-03 02:47:46,299 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:47:46,299 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '从获取的_MyAssets文件夹下的文件信息来看，Scripts文件夹可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Scripts文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:47:46,299 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:47:46,301 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:47:46,301 - INFO Retriever 0 - 当前窗口总长度：31
+2024-11-03 02:47:46,301 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 02:47:46,301 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 02:47:46,304 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:48:10,222 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts"
+    }
+}
+2024-11-03 02:48:10,222 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:48:10,222 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:48:10,223 - INFO Retriever 0 - get_folder_info
+2024-11-03 02:48:10,223 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:48:10,223 - INFO Retriever 0 - Assistant:
+2024-11-03 02:48:10,223 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts"
+    }
+}
+2024-11-03 02:48:10,224 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 02:48:10,224 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts'}
+2024-11-03 02:48:10,406 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── Character
+│   ├── AlwaysTtrans
+│   ├── CriSprite
+│   ...
+│   ├── Tag
+├── DOTSSimpleRenderer
+│   ├── DOTSSimpleCullingSystem.cs
+│   ├── DOTSSimpleRenderFeature.cs
+│   ├── DOTSSimpleRenderGroup.cs
+│   ├── DOTSSimpleRenderer.cs
+│   ├── DOTSSimpleRendererComponents.cs
+├── DOTSSound
+│   ├── DOTSSoundComponent.cs
+│   ├── DOTSSoundComponentData.cs
+│   ├── DOTSSoundPlaySystem.cs
+├── Data
+│   ├── AchivementData.cs
+│   ├── BattlePassData.cs
+│   ...
+│   ├── WeaponData.cs
+├── Enviorment
+│   ├── EnvironmentGrid.cs
+├── GameSystem
+│   ├── DamageNumberSpawner.cs
+│   ├── FlushBuffSystem.cs
+│   ...
+│   ├── WeaponRootSystem.cs
+├── Gameplay
+│   ├── BuffValue.cs
+│   ├── FlockBoxBoundarySyncSystem.cs
+│   ...
+│   ├── WeaponFireOnceTag.cs
+├── Item
+│   ├── DropOrb.cs
+│   ├── DropOrbComponent.cs
+│   ...
+│   ├── WeaponUpgradeInfo.cs
+├── Save
+│   ├── SaveData.cs
+│   ├── SaveManager.cs
+├── UI
+│   ├── AdAndPurchase.cs
+│   ├── AudioSourceInit.cs
+│   ...
+│   ├── Utility
+├── Utility
+│   ├── AssetReferenceUIFolderRestriction.cs
+│   ├── GameCommon.cs
+│   ├── GameExtension.cs
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Scripts
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts
+# 内容概述:“Scripts”文件夹是Unity游戏项目的核心脚本库，集成了角色管理、数据管理、渲染优化、声音处理、环境构建、游戏玩法、系统组件、UI设计和辅助工具等多种功能。它包含的角色脚本如动画和敌人管理，与游戏玩法和数据管理脚本紧密协作，共同构建了游戏的角色系统和核心逻辑。同时，渲染和声音优化脚本提升了性能，而UI脚本则负责交互界面。此外，通用工具和扩展功能脚本为游戏提供了额外的辅助和灵活性，确保了项目的整体流畅性和功能性。
+
+2. Character
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Character
+# 内容概述:“Character”文件夹汇集了Unity游戏引擎中角色系统的关键脚本，包括角色属性、技能、动画和交互逻辑。其中，**AlwaysTtrans**、**CriSprite**、**Equip**等子文件夹分别处理角色旋转、暴击图标动画和装备系统，而**Enemy**、**Player**等子文件夹则专注于敌人管理和玩家控制。这些脚本通过定义数据结构和系统组件，确保角色和敌人能够正确交互，并实现动画和视觉效果。整体上，文件夹内容紧密关联，共同构建了游戏角色的动态和互动体验。
+
+3. Data
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Data
+# 内容概述:### 文件夹内容概要
+
+“Data”文件夹汇集了Unity游戏开发的核心数据管理脚本，涵盖成就、战令、奖励、技能、属性、角色、地图等关键游戏元素。文件夹内包含多个C#脚本，如管理成就和战令数据的脚本，以及处理物品、装备和地图配置的脚本。这些脚本不仅定义了游戏数据结构，还提供了编辑器集成功能，便于在Unity编辑器中创建和管理游戏资产，确保了游戏数据的一致性和可维护性。
+
+4. DOTSSimpleRenderer
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\DOTSSimpleRenderer
+# 内容概述:### 文件夹内容概要
+
+该“DOTSSimpleRenderer”文件夹汇集了Unity游戏引擎中用于优化渲染性能的脚本文件。主要包含以下内容：
+
+- **DOTSSimpleCullingSystem.cs**：实现物体剔除逻辑，优化渲染效率。
+- **DOTSSimpleRenderer.cs**：负责将GameObject转换为DOTS组件数据，便于在DOTS系统中处理。
+- **DOTSSimpleRendererComponents.cs**：定义了存储渲染数据的结构体，支持Unity实体系统。
+- **DOTSSimpleRenderFeature.cs**：管理渲染通道，处理不透明和透明物体的渲染。
+- **DOTSSimpleRenderGroup.cs**：创建DOTS渲染组，组织和管理渲染相关系统。
+
+这些脚本相互协作，通过剔除、数据转换和渲染通道管理，共同提升渲染性能和效率。
+
+5. DOTSSound
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\DOTSSound
+# 内容概述:该“DOTSSound”文件夹汇集了Unity ECS架构下的声音管理脚本。主要文件DOTSSoundComponent.cs负责将游戏对象转换为ECS实体，并利用DOTSSoundComponentData.cs中定义的数据结构来配置声音源。DOTSSoundPlaySystem.cs则包含负责生成和执行声音播放命令的系统，包括处理声音源生成和粒子效果关联的子系统。整体上，这些脚本协同工作，以高效地在Unity游戏中管理声音播放。
+
+6. Enviorment
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Enviorment
+# 内容概述:## 文件夹内容简述
+
+“Enviorment”文件夹内包含的“EnvironmentGrid.cs”脚本，是Unity游戏环境网格管理的核心。该脚本定义了`EnvironmentGrid`类，负责根据玩家选择加载相应地图纹理，并在玩家移动时同步更新网格纹理，确保游戏环境与玩家动作实时匹配。
+
+7. Gameplay
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay
+# 内容概述:“Gameplay”文件夹汇集了Unity游戏开发的关键脚本，包括增益效果管理（BuffValue.cs）、边界同步（FlockBoxBoundarySyncSystem.cs）、游戏组件数据定义（GameplayComponents.cs）、游戏数据存储（GameplayData.cs）、属性升级计算（GameplayFormula.cs）、游戏管理（GameplayManager.cs）和游戏系统（GameplaySystem.cs）。这些脚本协同工作，定义了游戏的核心玩法逻辑、数据结构和系统管理，确保游戏流程的顺畅和玩家交互的连贯性。
+
+8. GameSystem
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\GameSystem
+# 内容概述:“GameSystem”文件夹汇集了Unity游戏开发的关键脚本，包括DamageNumberSpawner.cs用于生成攻击伤害数字，FlushBuffSystem.cs处理技能效果刷新，NPCWeaponKeepFireSystem.cs确保NPC持续射击，以及WeaponRootSystem.cs管理武器生命周期。此外，GameDataSystem.cs负责游戏数据管理，PrefabWarmingSystem.cs优化预制体加载，WeaponBaseParameterSyncSystem.cs同步武器参数。这些脚本相互协作，共同支撑起游戏的核心功能。
+
+9. Item
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Item
+# 内容概述:“Item”文件夹汇集了Unity游戏开发中的关键脚本，专注于武器系统、掉落物管理、经验球处理、NPC武器设置、时间控制、武器升级以及实体转换等功能。这些脚本通过ECS架构优化性能，包括武器缩放与粒子效果控制（WeaponRound）、掉落物生成与销毁逻辑（DropOrb系列）、经验球生成与收集管理（ExpOrb系列）、NPC武器数据转换（NPCWeaponObject）、时间组件更新（TimeComponent和TimeWaitSystem）、武器技能标识与升级信息处理（WeaponActiveSkillUsageTag和WeaponUpgradeInfo），以及武器与玩家关系的管理（WeaponAlignWithPlayer和WeaponConstantFollowPlayer）。这些脚本相互关联，共同构成了游戏的核心交互和系统功能。
+
+10. Save
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Save
+# 内容概述:“Save”文件夹汇集了Unity游戏开发中的数据管理脚本，其中`SaveData.cs`定义了用于存储玩家游戏数据的结构体，而`SaveManager.cs`则负责这些数据的保存与加载，包括使用`PlayerPrefs`进行序列化处理和数据版本管理，确保玩家进度和设置得以持久化。
+
+11. UI
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI
+# 内容概述:“UI”文件夹汇集了Unity游戏开发的UI脚本，涵盖战斗、货币、新手引导、主界面、工具类和辅助功能。其中，`BattleUI`管理战斗相关UI，`CurrencyUI`处理货币系统，`Guide`负责新手引导，`MainUI`构建游戏主界面框架。此外，`Utility`提供UI适配和辅助工具，`AdAndPurchase`整合广告和支付功能，而`UIHelper`等脚本则辅助数据管理和UI控制，确保游戏UI的完整性和功能性。
+
+12. Utility
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Utility
+# 内容概述:“Utility”文件夹汇集了Unity游戏开发辅助脚本，包含`AssetReferenceUIFolderRestriction.cs`用于UI界面资产引用限制，`GameCommon.cs`提供通用工具如日志记录和时间处理，以及`GameExtension.cs`实现游戏扩展功能，如本地化和音频处理，这些脚本相互协作，共同支撑游戏逻辑的构建。
+
+
+2024-11-03 02:48:10,413 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:48:10,413 - INFO Retriever 0 - 当前窗口总长度：33
+2024-11-03 02:48:10,414 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 02:48:10,414 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 02:48:10,414 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:48:46,503 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "从获取的Scripts文件夹下的文件信息来看，Gameplay文件夹可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Gameplay文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。"
+    }
+}
+2024-11-03 02:48:46,503 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:48:46,504 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:48:46,504 - INFO Retriever 0 - deep_think
+2024-11-03 02:48:46,504 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:48:46,504 - INFO Retriever 0 - Assistant:
+2024-11-03 02:48:46,504 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "从获取的Scripts文件夹下的文件信息来看，Gameplay文件夹可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Gameplay文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。"
+    }
+}
+2024-11-03 02:48:46,505 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:48:46,505 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '从获取的Scripts文件夹下的文件信息来看，Gameplay文件夹可能包含了一些与关卡时间设置相关的脚本文件。我将使用get_folder_info操作来获取Gameplay文件夹下的文件信息，以便进一步查找可能包含关卡时间设置的脚本文件。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:48:46,505 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:48:46,507 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:48:46,507 - INFO Retriever 0 - 当前窗口总长度：35
+2024-11-03 02:48:46,507 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 02:48:46,507 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 02:48:46,507 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:48:52,463 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay"
+    }
+}
+2024-11-03 02:48:52,463 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:48:52,463 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:48:52,464 - INFO Retriever 0 - get_folder_info
+2024-11-03 02:48:52,464 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:48:52,464 - INFO Retriever 0 - Assistant:
+2024-11-03 02:48:52,464 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay"
+    }
+}
+2024-11-03 02:48:52,464 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 02:48:52,464 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay'}
+2024-11-03 02:48:52,650 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── BuffValue.cs
+├── FlockBoxBoundarySyncSystem.cs
+├── GameplayComponents.cs
+├── GameplayData.cs
+├── GameplayFormula.cs
+├── GameplayManager.cs
+├── GameplaySystem.cs
+├── WeaponFireOnceTag.cs
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Gameplay
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay
+# 内容概述:“Gameplay”文件夹汇集了Unity游戏开发的关键脚本，包括增益效果管理（BuffValue.cs）、边界同步（FlockBoxBoundarySyncSystem.cs）、游戏组件数据定义（GameplayComponents.cs）、游戏数据存储（GameplayData.cs）、属性升级计算（GameplayFormula.cs）、游戏管理（GameplayManager.cs）和游戏系统（GameplaySystem.cs）。这些脚本协同工作，定义了游戏的核心玩法逻辑、数据结构和系统管理，确保游戏流程的顺畅和玩家交互的连贯性。
+
+2. BuffValue.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\BuffValue.cs
+# 内容概述:该脚本定义了`BuffValue`结构体，用于管理游戏中的增益效果。结构体包含增益操作类型枚举和四个浮点数属性，以及方法用于添加、移除增益效果，并计算最终影响值。主要功能模块包括：增益效果的累加与移除、基于基础值的最终值计算、以及增益效果的创建和表示。通过运算符重载，实现了增益效果的简单叠加。
+
+3. FlockBoxBoundarySyncSystem.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\FlockBoxBoundarySyncSystem.cs
+# 内容概述:该脚本定义了一个Unity实体系统`FlockBoxBoundarySyncSystem`，负责同步游戏中的`FlockBox`边界与`weaponRoot`的位置。系统在每帧更新时，首先检查`GameplayManager`实例，然后计算并更新`flockBox`的`WorldOffset`以与`weaponRoot`中心对齐。
+
+4. GameplayComponents.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayComponents.cs
+# 内容概述:该脚本文件“GameplayComponents.cs”定义了多个Unity游戏组件数据结构，用于管理游戏状态和配置。主要模块包括玩家角色选择、游戏运行时数据（如暂停状态、时间、伤害值）、冻结敌人、宝箱获取、角色经验等级、金币获取、清除敌人命令以及游戏设置（如伤害数字显示）。每个结构体如`GameplayComponentData`至`GamePlaySettingData`都专注于存储特定类型的数据，便于在游戏逻辑中高效访问和更新。
+
+5. GameplayData.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayData.cs
+# 内容概述:该脚本定义了`GameplayData`类，用于存储和管理游戏中的静态数据，如金币、生命值、属性增强等。类中包含多个静态字段，如金币数、最大生命值、属性提升百分比等。主要功能包括通过`GainCoins`方法拾取金币，其中`GetActualCoins`方法根据贪婪属性计算拾取金币的实际金额。
+
+6. GameplayFormula.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayFormula.cs
+# 内容概述:该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。`GetUpgradePrice`根据基准价格和升级次数计算升级所需金币数，每次升级价格增加基准价格的10%。`CalculateMaxExp`方法计算特定等级的最大经验值，公式为等级乘以5再加等级的平方。`CalculateMaxHP`方法计算特定等级的最大血量，但实现上似乎有误，仅返回基础血量。
+
+7. GameplayManager.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayManager.cs
+# 内容概述:`GameplayManager.cs` 文件定义了一个核心游戏管理类，继承自 `SkillDataContainer`。该类负责游戏的主要流程控制，包括游戏开始、暂停、恢复和停止，以及添加游戏物品等功能。它管理着游戏资源，如精灵列表和游戏对象，并在 `Awake` 和 `Start` 阶段初始化游戏设置。`GameplayManager` 包含多个方法，如 `CreateFlockBox` 用于创建和管理游戏环境，`StartGame`、`StopGame`、`PauseGame` 和 `ResumeGame` 用于控制游戏状态，以及 `BetterWeapon` 用于添加游戏物品。此外，它还处理玩家角色和技能数据，确保游戏数据的正确转换和存储。
+
+8. GameplaySystem.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplaySystem.cs
+# 内容概述:"GameplaySystem.cs" 是一个Unity游戏开发中的核心类，负责管理游戏中的物品、玩家等级、暂停/恢复状态以及武器和技能。该类通过ECS架构实现，包含初始化、销毁、每帧更新等功能，以处理玩家血量恢复、等级提升、宝箱开启等游戏逻辑。它还管理物品的添加与移除，包括升级和临时效果，同时支持暂停/恢复游戏以及与武器和技能相关的操作。
+
+9. WeaponFireOnceTag.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\WeaponFireOnceTag.cs
+# 内容概述:该脚本定义了一个名为`WeaponFireOnceTag`的类，该类实现了Unity的`IConvertGameObjectToEntity`接口，用于将Unity游戏对象转换为Entity并添加`DOTSWeaponFireOnceTag`组件。`DOTSWeaponFireOnceTag`是一个无状态的组件数据结构，可能用于标记武器只能发射一次。主要逻辑是`Convert`方法将组件添加到Entity上。
+
+
+2024-11-03 02:48:52,652 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:48:52,652 - INFO Retriever 0 - 当前窗口总长度：37
+2024-11-03 02:48:52,652 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 02:48:52,652 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 02:48:52,652 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:48:57,390 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "从获取的Gameplay文件夹下的文件信息来看，GameplayData.cs文件可能包含了一些与关卡时间设置相关的信息。我将使用read_file操作来读取GameplayData.cs文件的内容，并寻找与“关卡时间设置”相关的信息。"
+    }
+}
+2024-11-03 02:48:57,391 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:48:57,391 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:48:57,391 - INFO Retriever 0 - deep_think
+2024-11-03 02:48:57,391 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:48:57,391 - INFO Retriever 0 - Assistant:
+2024-11-03 02:48:57,391 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "从获取的Gameplay文件夹下的文件信息来看，GameplayData.cs文件可能包含了一些与关卡时间设置相关的信息。我将使用read_file操作来读取GameplayData.cs文件的内容，并寻找与“关卡时间设置”相关的信息。"
+    }
+}
+2024-11-03 02:48:57,393 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:48:57,393 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '从获取的Gameplay文件夹下的文件信息来看，GameplayData.cs文件可能包含了一些与关卡时间设置相关的信息。我将使用read_file操作来读取GameplayData.cs文件的内容，并寻找与“关卡时间设置”相关的信息。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:48:57,393 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:48:57,394 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:48:57,394 - INFO Retriever 0 - 当前窗口总长度：39
+2024-11-03 02:48:57,394 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 02:48:57,394 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 02:48:57,394 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:49:01,369 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs"
+    }
+}
+2024-11-03 02:49:01,370 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:49:01,370 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:49:01,370 - INFO Retriever 0 - read_file
+2024-11-03 02:49:01,370 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:49:01,371 - INFO Retriever 0 - Assistant:
+2024-11-03 02:49:01,371 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs"
+    }
+}
+2024-11-03 02:49:01,371 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:49:01,371 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:49:01,516 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+该脚本文件“GameplayData.cs”定义了一个名为`GameplayData`的公共类，该类用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。类中的数据成员是静态的，意味着它们属于类本身，而不是类的实例。
+
+### 模块和功能
+- **数据存储模块**：包含多个静态字段，用于存储游戏中的各种统计数据和属性。
+- **金币获取模块**：提供`GainCoins`方法用于增加金币数。
+- **金币计算模块**：提供`GetActualCoins`方法用于计算拾取金币的实际金额。
+
+### 类和函数
+- **类**：`GameplayData`
+  - **字段**：`Coins`, `MaxHp`, `Recovery`, `Defence`, `MoveSpeed`, `PowerExtra`, `RangeExtra`, `SpeedExtra`, `DurationExtra`, `BulletAmountExtra`, `CoolingExtra`, `LuckyExtra`, `GrowthExtra`, `GreedExtra`, `CurseExtra`, `MagnetExtra`, `Reborn`, `Reselect`, `Skip`
+- **函数**：
+  - `GainCoins(int notes)`: 增加金币数。
+  - `GetActualCoins(int notes)`: 根据原始面值和贪婪属性计算实际获得的金币数。
+
+### 实现逻辑
+- `GameplayData`类包含一系列静态字段，用于存储游戏中的各种数据。
+- `GainCoins`方法通过调用`GetActualCoins`方法来计算拾取金币的实际金额，并更新`Coins`字段。
+- `GetActualCoins`方法根据原始面值和`GreedExtra`（贪婪属性）计算实际获得的金币数，该值是原始面值乘以（1 + 贪婪属性）。
+2024-11-03 02:49:01,518 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:49:01,518 - INFO Retriever 0 - 当前窗口总长度：41
+2024-11-03 02:49:01,519 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 02:49:01,519 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 02:49:01,519 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:49:09,545 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据读取的GameplayData.cs文件内容，这个文件定义了一个名为`GameplayData`的公共类，用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。然而，这些信息似乎与关卡时间设置无关，而是关于游戏中的统计数据和属性。因此，我需要继续在其他文件中搜索可能包含关卡时间设置的脚本文件。接下来，我将使用get_folder_info操作来获取Gameplay文件夹下所有.cs文件的信息，以便进一步搜索。"
+    }
+}
+2024-11-03 02:49:09,546 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:49:09,546 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:49:09,546 - INFO Retriever 0 - deep_think
+2024-11-03 02:49:09,546 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:49:09,546 - INFO Retriever 0 - Assistant:
+2024-11-03 02:49:09,546 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据读取的GameplayData.cs文件内容，这个文件定义了一个名为`GameplayData`的公共类，用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。然而，这些信息似乎与关卡时间设置无关，而是关于游戏中的统计数据和属性。因此，我需要继续在其他文件中搜索可能包含关卡时间设置的脚本文件。接下来，我将使用get_folder_info操作来获取Gameplay文件夹下所有.cs文件的信息，以便进一步搜索。"
+    }
+}
+2024-11-03 02:49:09,548 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:49:09,548 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据读取的GameplayData.cs文件内容，这个文件定义了一个名为`GameplayData`的公共类，用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。然而，这些信息似乎与关卡时间设置无关，而是关于游戏中的统计数据和属性。因此，我需要继续在其他文件中搜索可能包含关卡时间设置的脚本文件。接下来，我将使用get_folder_info操作来获取Gameplay文件夹下所有.cs文件的信息，以便进一步搜索。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:49:09,548 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:49:09,549 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:49:09,549 - INFO Retriever 0 - 当前窗口总长度：43
+2024-11-03 02:49:09,551 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 02:49:09,551 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 02:49:09,551 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:49:15,033 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay"
+    }
+}
+2024-11-03 02:49:15,033 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:49:15,033 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:49:15,033 - INFO Retriever 0 - get_folder_info
+2024-11-03 02:49:15,033 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:49:15,036 - INFO Retriever 0 - Assistant:
+2024-11-03 02:49:15,036 - INFO Retriever 0 - {
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay"
+    }
+}
+2024-11-03 02:49:15,036 - INFO Retriever 0 - dict_keys(['get_folder_info'])
+2024-11-03 02:49:15,036 - INFO Retriever 0 - Agent主脑给出的行动：get_folder_info
+参数：{'target_folder_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay'}
+2024-11-03 02:49:15,194 - INFO Retriever 0 - Observer: 目标文件夹路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── BuffValue.cs
+├── FlockBoxBoundarySyncSystem.cs
+├── GameplayComponents.cs
+├── GameplayData.cs
+├── GameplayFormula.cs
+├── GameplayManager.cs
+├── GameplaySystem.cs
+├── WeaponFireOnceTag.cs
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Gameplay
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay
+# 内容概述:“Gameplay”文件夹汇集了Unity游戏开发的关键脚本，包括增益效果管理（BuffValue.cs）、边界同步（FlockBoxBoundarySyncSystem.cs）、游戏组件数据定义（GameplayComponents.cs）、游戏数据存储（GameplayData.cs）、属性升级计算（GameplayFormula.cs）、游戏管理（GameplayManager.cs）和游戏系统（GameplaySystem.cs）。这些脚本协同工作，定义了游戏的核心玩法逻辑、数据结构和系统管理，确保游戏流程的顺畅和玩家交互的连贯性。
+
+2. BuffValue.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\BuffValue.cs
+# 内容概述:该脚本定义了`BuffValue`结构体，用于管理游戏中的增益效果。结构体包含增益操作类型枚举和四个浮点数属性，以及方法用于添加、移除增益效果，并计算最终影响值。主要功能模块包括：增益效果的累加与移除、基于基础值的最终值计算、以及增益效果的创建和表示。通过运算符重载，实现了增益效果的简单叠加。
+
+3. FlockBoxBoundarySyncSystem.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\FlockBoxBoundarySyncSystem.cs
+# 内容概述:该脚本定义了一个Unity实体系统`FlockBoxBoundarySyncSystem`，负责同步游戏中的`FlockBox`边界与`weaponRoot`的位置。系统在每帧更新时，首先检查`GameplayManager`实例，然后计算并更新`flockBox`的`WorldOffset`以与`weaponRoot`中心对齐。
+
+4. GameplayComponents.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayComponents.cs
+# 内容概述:该脚本文件“GameplayComponents.cs”定义了多个Unity游戏组件数据结构，用于管理游戏状态和配置。主要模块包括玩家角色选择、游戏运行时数据（如暂停状态、时间、伤害值）、冻结敌人、宝箱获取、角色经验等级、金币获取、清除敌人命令以及游戏设置（如伤害数字显示）。每个结构体如`GameplayComponentData`至`GamePlaySettingData`都专注于存储特定类型的数据，便于在游戏逻辑中高效访问和更新。
+
+5. GameplayData.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayData.cs
+# 内容概述:该脚本定义了`GameplayData`类，用于存储和管理游戏中的静态数据，如金币、生命值、属性增强等。类中包含多个静态字段，如金币数、最大生命值、属性提升百分比等。主要功能包括通过`GainCoins`方法拾取金币，其中`GetActualCoins`方法根据贪婪属性计算拾取金币的实际金额。
+
+6. GameplayFormula.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayFormula.cs
+# 内容概述:该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。`GetUpgradePrice`根据基准价格和升级次数计算升级所需金币数，每次升级价格增加基准价格的10%。`CalculateMaxExp`方法计算特定等级的最大经验值，公式为等级乘以5再加等级的平方。`CalculateMaxHP`方法计算特定等级的最大血量，但实现上似乎有误，仅返回基础血量。
+
+7. GameplayManager.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplayManager.cs
+# 内容概述:`GameplayManager.cs` 文件定义了一个核心游戏管理类，继承自 `SkillDataContainer`。该类负责游戏的主要流程控制，包括游戏开始、暂停、恢复和停止，以及添加游戏物品等功能。它管理着游戏资源，如精灵列表和游戏对象，并在 `Awake` 和 `Start` 阶段初始化游戏设置。`GameplayManager` 包含多个方法，如 `CreateFlockBox` 用于创建和管理游戏环境，`StartGame`、`StopGame`、`PauseGame` 和 `ResumeGame` 用于控制游戏状态，以及 `BetterWeapon` 用于添加游戏物品。此外，它还处理玩家角色和技能数据，确保游戏数据的正确转换和存储。
+
+8. GameplaySystem.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\GameplaySystem.cs
+# 内容概述:"GameplaySystem.cs" 是一个Unity游戏开发中的核心类，负责管理游戏中的物品、玩家等级、暂停/恢复状态以及武器和技能。该类通过ECS架构实现，包含初始化、销毁、每帧更新等功能，以处理玩家血量恢复、等级提升、宝箱开启等游戏逻辑。它还管理物品的添加与移除，包括升级和临时效果，同时支持暂停/恢复游戏以及与武器和技能相关的操作。
+
+9. WeaponFireOnceTag.cs
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\Gameplay\WeaponFireOnceTag.cs
+# 内容概述:该脚本定义了一个名为`WeaponFireOnceTag`的类，该类实现了Unity的`IConvertGameObjectToEntity`接口，用于将Unity游戏对象转换为Entity并添加`DOTSWeaponFireOnceTag`组件。`DOTSWeaponFireOnceTag`是一个无状态的组件数据结构，可能用于标记武器只能发射一次。主要逻辑是`Convert`方法将组件添加到Entity上。
+
+
+2024-11-03 02:49:15,194 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:49:15,197 - INFO Retriever 0 - 当前窗口总长度：45
+2024-11-03 02:49:15,197 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 02:49:15,197 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 02:49:15,197 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:49:25,101 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据获取的Gameplay文件夹下的文件信息，我注意到GameplayComponents.cs文件可能包含了一些与关卡时间设置相关的信息。我将使用read_file操作来读取GameplayComponents.cs文件的内容，并寻找与“关卡时间设置”相关的信息。"
+    }
+}
+2024-11-03 02:49:25,101 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:49:25,101 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:49:25,101 - INFO Retriever 0 - deep_think
+2024-11-03 02:49:25,101 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:49:25,101 - INFO Retriever 0 - Assistant:
+2024-11-03 02:49:25,101 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据获取的Gameplay文件夹下的文件信息，我注意到GameplayComponents.cs文件可能包含了一些与关卡时间设置相关的信息。我将使用read_file操作来读取GameplayComponents.cs文件的内容，并寻找与“关卡时间设置”相关的信息。"
+    }
+}
+2024-11-03 02:49:25,101 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:49:25,101 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据获取的Gameplay文件夹下的文件信息，我注意到GameplayComponents.cs文件可能包含了一些与关卡时间设置相关的信息。我将使用read_file操作来读取GameplayComponents.cs文件的内容，并寻找与“关卡时间设置”相关的信息。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:49:25,106 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:49:25,106 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:49:25,106 - INFO Retriever 0 - 当前窗口总长度：47
+2024-11-03 02:49:25,106 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 02:49:25,106 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 02:49:25,106 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:49:29,461 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs"
+    }
+}
+2024-11-03 02:49:29,461 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:49:29,461 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:49:29,461 - INFO Retriever 0 - read_file
+2024-11-03 02:49:29,461 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:49:29,461 - INFO Retriever 0 - Assistant:
+2024-11-03 02:49:29,461 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs"
+    }
+}
+2024-11-03 02:49:29,461 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:49:29,464 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:49:29,611 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+该脚本文件“GameplayComponents.cs”是一个Unity游戏开发中的组件数据定义文件。它定义了一系列的结构体（structs），这些结构体用于存储游戏中的各种状态和配置信息。这些结构体将被附加到Unity的Entity对象上，以实现游戏逻辑的数据管理。
+
+### 模块和功能
+- **组件数据结构**：定义了多个结构体，每个结构体代表游戏中的一个特定组件，如玩家选择的角色、游戏运行时数据、冻结敌人数据、宝箱运行时数据、经验等级数据、获取金币数据、清除所有敌人命令和游戏设置数据。
+
+### 类和函数
+- **结构体**：
+  - `GameplayComponentData`：存储玩家选择的角色信息。
+  - `GameplayRuntimeData`：存储游戏暂停状态、游戏时间、冷却计时器、杀敌数、伤害和范围、清除所有敌人标志、冻结时间和临时武器。
+  - `GamePlayFreezeEnemyData`：存储冻结敌人的时间。
+  - `GamePlayChestRunTimeData`：存储获得的宝箱编号和排名。
+  - `GamePlayExpLevelData`：存储角色等级、当前经验值和升级目标经验值。
+  - `GamePlayGetGoldData`：存储已获取的金币数。
+  - `ClearAllEnemyCommand`：清除所有敌人的命令。
+  - `GamePlaySettingData`：存储游戏设置，如是否显示伤害数字。
+
+### 实现逻辑
+- 代码通过定义多个结构体来组织游戏状态和配置信息，这些结构体被设计为轻量级的数据容器，可以高效地存储和访问。
+- 每个结构体都包含与游戏逻辑相关的特定数据，如游戏时间、角色等级、伤害值等。
+- 通过将结构体附加到Unity的Entity对象上，可以在游戏运行时动态地读取和更新这些数据。
+2024-11-03 02:49:29,614 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:49:29,616 - INFO Retriever 0 - 当前窗口总长度：49
+2024-11-03 02:49:29,616 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 02:49:29,616 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 02:49:29,616 - INFO Retriever 0 - -- updated_window_size >= self._compress_window_size --
+2024-11-03 02:49:29,616 - INFO Retriever 0 - 进行窗口压缩
+2024-11-03 02:52:44,817 - INFO Retriever 0 - window report:
+* 文件一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡11至20的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡31至40的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_81-90.asset
+    * 文件内容概述：该文件记录了81至90级关卡的正常与升级奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_91-100.asset
+    * 文件内容概述：该文件是Unity3D游戏关卡91至100的奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs
+    * 文件内容概述：该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。
+    * 是否与问题相关：否
+    * 具体分析：脚本内容与关卡选择界面相关，但未提及关卡时间设置。
+
+* 文件六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件七：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_31-40.asset”的配置，详细列出了第31至40级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件八：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs
+    * 文件内容概述：该脚本定义了`GameplayData`类，用于存储和管理游戏中的静态数据，如金币、生命值、属性增强等。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏中的统计数据和属性相关，但未提及关卡时间设置。
+
+* 文件九：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs
+    * 文件内容概述：该脚本文件“GameplayComponents.cs”定义了多个Unity游戏组件数据结构，用于管理游戏状态和配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏状态和配置相关，但未提及关卡时间设置。
+
+* 文件十：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏逻辑计算相关，但未提及关卡时间设置。
+
+* 文件十一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs
+    * 文件内容概述：`GameplayManager.cs` 文件定义了一个核心游戏管理类，继承自 `SkillDataContainer`。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏管理相关，但未提及关卡时间设置。
+
+* 文件十二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplaySystem.cs
+    * 文件内容概述："GameplaySystem.cs" 是一个Unity游戏开发中的核心类，负责管理游戏中的物品、玩家等级、暂停/恢复状态以及武器和技能。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏物品、玩家等级、游戏状态以及武器和技能相关，但未提及关卡时间设置。
+
+* 文件十三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/WeaponFireOnceTag.cs
+    * 文件内容概述：该脚本定义了一个名为`WeaponFireOnceTag`的类，该类实现了Unity的`IConvertGameObjectToEntity`接口。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与武器标签相关，但未提及关卡时间设置。
+
+* 文件十四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/BuffValue.cs
+    * 文件内容概述：该脚本定义了`BuffValue`结构体，用于管理游戏中的增益效果。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏增益效果相关，但未提及关卡时间设置。
+
+* 文件十五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/FlockBoxBoundarySyncSystem.cs
+    * 文件内容概述：该脚本定义了一个Unity实体系统`FlockBoxBoundarySyncSystem`，负责同步游戏中的`FlockBox`边界与`weaponRoot`的位置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏边界同步相关，但未提及关卡时间设置。
+
+* 文件十六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件
+2024-11-03 02:52:44,819 - INFO Retriever 0 - 
+
+
+
+
+
+——————————————————————————————Log compressed history list—————————————————————————————————
+2024-11-03 02:52:44,819 - INFO Retriever 0 - ——————————————————————————————————————————order 1————————————————————————————————————————————
+
+
+
+
+2024-11-03 02:52:44,819 - INFO Retriever 0 - user:
+请在D:/Unity/Survaval\Assets下各级目录中寻找：有关关卡时间设置的相关文件
+2024-11-03 02:52:44,819 - INFO Retriever 0 - assistant:
+{
+    "deep_think": {
+        "thoughts": "好的，接下来我将通过深度思考、仔细计划以及逐步执行的方式，来完成该任务。\n\n首先，在阅读详细的代码细节之前，应该先整体把握整个项目。\n\n在提供的可选的action中，可以通过get_folder_info操作，通过将项目顶层路径作为target_folder_path参数进行传入，来获取获取项目中主要文件夹和主要文件的描述，从而能够先大致把握项目文件的主要文件的文件树结构、基本内容、主要代码概述以及大致功能板块的分布。"
+    }
+}
+2024-11-03 02:52:44,821 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 02:52:44,821 - INFO Retriever 0 - assistant:
+{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 02:52:44,821 - INFO Retriever 0 - user:
+目标文件夹路径：D:/Unity/Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 02:52:44,824 - INFO Retriever 0 - assistant:
+{
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\\Assets下各级目录中寻找：有关关卡时间设置的相关文件”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“level”，“time”，“hour”，“关卡”，“时间”。\n接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。"
+    }
+}
+2024-11-03 02:52:44,824 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 02:52:44,824 - INFO Retriever 0 - assistant:
+{
+    "retrieve_keywords": {
+        "keyword_list": [
+            "level",
+            "time",
+            "hour",
+            "关卡",
+            "时间"
+        ]
+    }
+}
+2024-11-03 02:52:44,824 - INFO Retriever 0 - user:
+根据你提供的关键词，我检索到以下目录或文件，它们的绝对路径如下：
+
+
+1. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_31-40.asset
+### 简要总结
+该文件定义了Unity游戏关卡31至40的奖励系统，涵盖正常和升级奖励。每个关卡对应不同的奖励类型和数值，旨在激励玩家完成挑战。
+
+2. D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI\MainUI\StagePanel
+## 文件夹内容精简总结
+
+“StagePanel”文件夹内包含两个关键脚本：`StageSelectItem.cs`和`StageSelectPanel.cs`。`StageSelectItem.cs`负责在关卡选择界面中展示单个关卡的信息，包括解锁状态和事件处理；而`StageSelectPanel.cs`则管理整个关卡选择界面的逻辑，包括关卡列表的显示和用户交互。这两个脚本协同工作，共同实现了关卡选择界面的功能。
+
+3. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_41-50.asset
+### 关键点融合
+该文件详细定义了Unity游戏关卡41至50的奖励系统，涵盖每个级别的正常和升级奖励。奖励类型包括金币、道具和特殊奖励，具体奖励值和关联数据如地图、角色等均有所配置。
+
+4. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_81-90.asset
+### 文本总结
+该文件为Unity游戏资产“level_81-90.asset”，记录了81至90级关卡的正常与升级奖励配置。每个关卡设有类型7的奖励，正常奖励值为50，升级奖励值为150，涉及地图、物品等数据，但具体引用的数据文件ID均为0。
+
+5. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_91-100.asset
+### 文本总结
+该文件是Unity3D游戏关卡91至100的奖励配置，详细列出了每级关卡的普通和升级奖励，包括奖励类型和数值。配置涵盖了地图、物品、属性等数据，但具体内容以占位符表示。
+
+6. D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI\MainUI\StagePanel\StageSelectItem.cs
+该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。类继承自`EnhancedScrollerCellView`，负责显示关卡图标、标题、描述等，并处理解锁状态和事件响应。主要功能包括初始化按钮监听、设置关卡数据、根据解锁情况更新界面样式，以及处理选中事件和按钮点击事件，以实现关卡选择和引导功能。
+
+7. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_11-20.asset
+### 简要总结
+该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励，包括经验、货币、物品等多种奖励类型，并关联了角色、物品等游戏内数据。
+
+8. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass
+## 简化版文件夹内容分析总结
+
+“BattlePass”文件夹汇集了Unity游戏开发中的关键配置文件，涵盖战斗通行证数据结构、经验值和奖励设置，以及从等级1至100的关卡奖励配置。这些文件协同定义了游戏的奖励系统，为玩家提供完成关卡和参与战斗的激励，同时部分奖励配置涉及外部数据引用，表明系统可能包含更复杂的数据结构。文件夹内文件如“BattlePassData.asset”定义了战斗通行证的整体框架，而“Level_1-100.asset”系列文件则详细列出了各等级的奖励配置，包括正常和升级奖励。
+
+
+请注意，这些目录或文件可能不全都和你的任务目标相关，仅供参考。请你基于具体的文件内容概述，结合你的任务目标，认真思考分析后，优先选择最有可能与任务相关的目录或文件进行进一步的检查。
+2024-11-03 02:52:44,825 - INFO Retriever 0 - assistant:
+好的。在我进行下一步行动或思考前，我又回顾了一下，以下是之前已经遍历过的文件信息：
+
+* 文件一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡11至20的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡31至40的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_81-90.asset
+    * 文件内容概述：该文件记录了81至90级关卡的正常与升级奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_91-100.asset
+    * 文件内容概述：该文件是Unity3D游戏关卡91至100的奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs
+    * 文件内容概述：该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。
+    * 是否与问题相关：否
+    * 具体分析：脚本内容与关卡选择界面相关，但未提及关卡时间设置。
+
+* 文件六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件七：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_31-40.asset”的配置，详细列出了第31至40级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件八：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs
+    * 文件内容概述：该脚本定义了`GameplayData`类，用于存储和管理游戏中的静态数据，如金币、生命值、属性增强等。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏中的统计数据和属性相关，但未提及关卡时间设置。
+
+* 文件九：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs
+    * 文件内容概述：该脚本文件“GameplayComponents.cs”定义了多个Unity游戏组件数据结构，用于管理游戏状态和配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏状态和配置相关，但未提及关卡时间设置。
+
+* 文件十：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏逻辑计算相关，但未提及关卡时间设置。
+
+* 文件十一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs
+    * 文件内容概述：`GameplayManager.cs` 文件定义了一个核心游戏管理类，继承自 `SkillDataContainer`。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏管理相关，但未提及关卡时间设置。
+
+* 文件十二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplaySystem.cs
+    * 文件内容概述："GameplaySystem.cs" 是一个Unity游戏开发中的核心类，负责管理游戏中的物品、玩家等级、暂停/恢复状态以及武器和技能。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏物品、玩家等级、游戏状态以及武器和技能相关，但未提及关卡时间设置。
+
+* 文件十三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/WeaponFireOnceTag.cs
+    * 文件内容概述：该脚本定义了一个名为`WeaponFireOnceTag`的类，该类实现了Unity的`IConvertGameObjectToEntity`接口。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与武器标签相关，但未提及关卡时间设置。
+
+* 文件十四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/BuffValue.cs
+    * 文件内容概述：该脚本定义了`BuffValue`结构体，用于管理游戏中的增益效果。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏增益效果相关，但未提及关卡时间设置。
+
+* 文件十五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/FlockBoxBoundarySyncSystem.cs
+    * 文件内容概述：该脚本定义了一个Unity实体系统`FlockBoxBoundarySyncSystem`，负责同步游戏中的`FlockBox`边界与`weaponRoot`的位置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏边界同步相关，但未提及关卡时间设置。
+
+* 文件十六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件
+
+以上是我回顾的之前已经遍历过的文件信息。接下来，我将基于上述的进度，继续进行任务。
+2024-11-03 02:52:44,826 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 02:52:44,826 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:52:44,826 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:52:44,827 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:52:49,787 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "根据关键词检索的结果，我找到了一些可能与关卡时间设置相关的文件或目录。接下来，我将优先选择最有可能与任务相关的目录或文件进行进一步的检查。由于文件内容概述中并未明确提及关卡时间设置，我将使用read_file操作来读取这些文件的内容，以便进一步确认它们是否与任务相关。"
+    }
+}
+2024-11-03 02:52:49,787 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:52:49,787 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:52:49,787 - INFO Retriever 0 - deep_think
+2024-11-03 02:52:49,787 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:52:49,789 - INFO Retriever 0 - Assistant:
+2024-11-03 02:52:49,789 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "根据关键词检索的结果，我找到了一些可能与关卡时间设置相关的文件或目录。接下来，我将优先选择最有可能与任务相关的目录或文件进行进一步的检查。由于文件内容概述中并未明确提及关卡时间设置，我将使用read_file操作来读取这些文件的内容，以便进一步确认它们是否与任务相关。"
+    }
+}
+2024-11-03 02:52:49,789 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:52:49,789 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '根据关键词检索的结果，我找到了一些可能与关卡时间设置相关的文件或目录。接下来，我将优先选择最有可能与任务相关的目录或文件进行进一步的检查。由于文件内容概述中并未明确提及关卡时间设置，我将使用read_file操作来读取这些文件的内容，以便进一步确认它们是否与任务相关。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:52:49,789 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:52:49,792 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:52:49,792 - INFO Retriever 0 - 当前窗口总长度：13
+2024-11-03 02:52:49,792 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 02:52:49,792 - INFO Retriever 0 - 当前更新窗口长度：4
+2024-11-03 02:52:49,793 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:52:52,460 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset"
+    }
+}
+2024-11-03 02:52:52,460 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:52:52,460 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:52:52,460 - INFO Retriever 0 - read_file
+2024-11-03 02:52:52,461 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:52:52,461 - INFO Retriever 0 - Assistant:
+2024-11-03 02:52:52,461 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset"
+    }
+}
+2024-11-03 02:52:52,461 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:52:52,462 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:52:52,490 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Data/BattlePass/level_11-20.asset”的文件，该文件里的内容为：
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 5e0d72fb687ee89469221744dc16b378
+    type: 3
+  m_Name: level_11-20
+  m_EditorClassIdentifier: None
+  internalID: 421900950
+  Reward: 这是一个包含10个字典元素的列表，该列表中每个字典元素包含如下key：upReward,level,nomalReward，由于列表内容太长因此省略，目前不会影响你的任务。
+  AssetName: level_51-60
+2024-11-03 02:52:52,492 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:52:52,492 - INFO Retriever 0 - 当前窗口总长度：15
+2024-11-03 02:52:52,492 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 02:52:52,492 - INFO Retriever 0 - 当前更新窗口长度：6
+2024-11-03 02:52:52,493 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:00,483 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset的内容。从文件内容来看，该文件似乎是一个Unity的资产文件，其中包含了关于关卡11至20的奖励信息。然而，文件内容并没有提及关卡时间设置。因此，我可以确定这个文件与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:00,483 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:00,483 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:00,483 - INFO Retriever 0 - deep_think
+2024-11-03 02:53:00,483 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:00,486 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:00,486 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset的内容。从文件内容来看，该文件似乎是一个Unity的资产文件，其中包含了关于关卡11至20的奖励信息。然而，文件内容并没有提及关卡时间设置。因此，我可以确定这个文件与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:00,486 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:53:00,486 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_11-20.asset的内容。从文件内容来看，该文件似乎是一个Unity的资产文件，其中包含了关于关卡11至20的奖励信息。然而，文件内容并没有提及关卡时间设置。因此，我可以确定这个文件与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:53:00,487 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:53:00,487 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:00,487 - INFO Retriever 0 - 当前窗口总长度：17
+2024-11-03 02:53:00,487 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 02:53:00,487 - INFO Retriever 0 - 当前更新窗口长度：8
+2024-11-03 02:53:00,487 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:03,989 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset"
+    }
+}
+2024-11-03 02:53:03,989 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:03,989 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:03,990 - INFO Retriever 0 - read_file
+2024-11-03 02:53:03,990 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:03,990 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:03,990 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset"
+    }
+}
+2024-11-03 02:53:03,990 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:53:03,990 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:53:04,021 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Data/BattlePass/level_31-40.asset”的文件，该文件里的内容为：
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 5e0d72fb687ee89469221744dc16b378
+    type: 3
+  m_Name: level_31-40
+  m_EditorClassIdentifier: None
+  internalID: 868555749
+  Reward: 这是一个包含10个字典元素的列表，该列表中每个字典元素包含如下key：upReward,level,nomalReward，由于列表内容太长因此省略，目前不会影响你的任务。
+  AssetName: level31-40
+2024-11-03 02:53:04,021 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:04,021 - INFO Retriever 0 - 当前窗口总长度：19
+2024-11-03 02:53:04,021 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 02:53:04,023 - INFO Retriever 0 - 当前更新窗口长度：10
+2024-11-03 02:53:04,023 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:08,544 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset的内容。从文件内容来看，该文件同样是一个Unity的资产文件，其中包含了关于关卡31至40的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:08,544 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:08,544 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:08,544 - INFO Retriever 0 - deep_think
+2024-11-03 02:53:08,544 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:08,544 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:08,544 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset的内容。从文件内容来看，该文件同样是一个Unity的资产文件，其中包含了关于关卡31至40的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:08,544 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:53:08,544 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_31-40.asset的内容。从文件内容来看，该文件同样是一个Unity的资产文件，其中包含了关于关卡31至40的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:53:08,544 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:53:08,549 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:08,549 - INFO Retriever 0 - 当前窗口总长度：21
+2024-11-03 02:53:08,549 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 02:53:08,549 - INFO Retriever 0 - 当前更新窗口长度：12
+2024-11-03 02:53:08,549 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:14,074 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_81-90.asset"
+    }
+}
+2024-11-03 02:53:14,075 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:14,075 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:14,075 - INFO Retriever 0 - read_file
+2024-11-03 02:53:14,075 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:14,076 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:14,076 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_81-90.asset"
+    }
+}
+2024-11-03 02:53:14,076 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:53:14,076 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_81-90.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:53:14,107 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Data/BattlePass/level_81-90.asset”的文件，该文件里的内容为：
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 5e0d72fb687ee89469221744dc16b378
+    type: 3
+  m_Name: level_81-90
+  m_EditorClassIdentifier: None
+  internalID: 1311100035
+  Reward: 这是一个包含10个字典元素的列表，该列表中每个字典元素包含如下key：upReward,level,nomalReward，由于列表内容太长因此省略，目前不会影响你的任务。
+  AssetName: level_91-100
+2024-11-03 02:53:14,112 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:14,112 - INFO Retriever 0 - 当前窗口总长度：23
+2024-11-03 02:53:14,112 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 02:53:14,112 - INFO Retriever 0 - 当前更新窗口长度：14
+2024-11-03 02:53:14,113 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:19,311 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_81-90.asset的内容。从文件内容来看，该文件是一个Unity的资产文件，其中包含了关于关卡81至90的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:19,313 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:19,313 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:19,313 - INFO Retriever 0 - deep_think
+2024-11-03 02:53:19,313 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:19,313 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:19,314 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_81-90.asset的内容。从文件内容来看，该文件是一个Unity的资产文件，其中包含了关于关卡81至90的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:19,314 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:53:19,314 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_81-90.asset的内容。从文件内容来看，该文件是一个Unity的资产文件，其中包含了关于关卡81至90的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:53:19,314 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:53:19,315 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:19,315 - INFO Retriever 0 - 当前窗口总长度：25
+2024-11-03 02:53:19,316 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 02:53:19,316 - INFO Retriever 0 - 当前更新窗口长度：16
+2024-11-03 02:53:19,316 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:24,995 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_91-100.asset"
+    }
+}
+2024-11-03 02:53:24,995 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:24,995 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:24,995 - INFO Retriever 0 - read_file
+2024-11-03 02:53:24,995 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:24,995 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:24,995 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_91-100.asset"
+    }
+}
+2024-11-03 02:53:24,997 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:53:24,997 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_91-100.asset', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:53:25,027 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Data/BattlePass/level_91-100.asset”的文件，该文件里的内容为：
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_GameObject:
+    fileID: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script:
+    fileID: 11500000
+    guid: 5e0d72fb687ee89469221744dc16b378
+    type: 3
+  m_Name: level_91-100
+  m_EditorClassIdentifier: None
+  internalID: 1343785237
+  Reward: 这是一个包含10个字典元素的列表，该列表中每个字典元素包含如下key：upReward,level,nomalReward，由于列表内容太长因此省略，目前不会影响你的任务。
+  AssetName: level_91-100
+2024-11-03 02:53:25,028 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:25,028 - INFO Retriever 0 - 当前窗口总长度：27
+2024-11-03 02:53:25,028 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 02:53:25,028 - INFO Retriever 0 - 当前更新窗口长度：18
+2024-11-03 02:53:25,029 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:34,732 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_91-100.asset的内容。从文件内容来看，该文件是一个Unity的资产文件，其中包含了关于关卡91至100的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:34,732 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:34,732 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:34,734 - INFO Retriever 0 - deep_think
+2024-11-03 02:53:34,734 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:34,734 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:34,734 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_91-100.asset的内容。从文件内容来看，该文件是一个Unity的资产文件，其中包含了关于关卡91至100的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:34,734 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:53:34,734 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Data/BattlePass/level_91-100.asset的内容。从文件内容来看，该文件是一个Unity的资产文件，其中包含了关于关卡91至100的奖励信息。文件内容并没有提及关卡时间设置。因此，我可以确定这个文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:53:34,734 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:53:34,737 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:34,737 - INFO Retriever 0 - 当前窗口总长度：29
+2024-11-03 02:53:34,737 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 02:53:34,737 - INFO Retriever 0 - 当前更新窗口长度：20
+2024-11-03 02:53:34,737 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:38,357 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs"
+    }
+}
+2024-11-03 02:53:38,357 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:38,357 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:38,360 - INFO Retriever 0 - read_file
+2024-11-03 02:53:38,360 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:38,360 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:38,360 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs"
+    }
+}
+2024-11-03 02:53:38,360 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:53:38,360 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:53:38,542 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+- **框架和模块化结构**：该脚本定义了一个名为 `StageSelectItem` 的类，继承自 `EnhancedScrollerCellView`，用于在Unity游戏中的关卡选择界面中显示单个关卡的信息。
+- **主要功能和目标**：脚本的主要功能是展示关卡信息，包括图标、标题、描述、解锁状态等，并提供解锁逻辑和事件处理。
+
+### 模块和功能
+- **关卡信息展示**：显示关卡名称、描述、图标、解锁状态等。
+- **解锁逻辑**：根据玩家的解锁状态和成就数据来判断关卡是否可解锁。
+- **事件处理**：处理关卡选择事件，包括选中样式和按钮点击事件。
+
+### 类和函数
+- **类**：`StageSelectItem`
+  - **作用**：表示关卡选择界面中的一个单元视图。
+- **函数**：
+  - `Awake()`: 初始化时调用，添加按钮监听器。
+  - `OnEnable()`: 当对象变为启用状态时调用，添加事件监听。
+  - `OnDisable()`: 当对象变为禁用状态时调用，移除事件监听。
+  - `SetData(MapData data, int Index)`: 设置关卡数据。
+  - `SelectStyle(bool isSlect)`: 设置选中样式。
+  - `IsUnlockStyle(bool isUnlock)`: 设置解锁样式。
+  - `SelectStyleEvent(IEvent ievent)`: 处理关卡选择事件。
+  - `OnItemBtn()`: 处理单元按钮点击事件。
+
+### 实现逻辑
+- 初始化时设置按钮监听器和事件监听。
+- 设置数据时，更新关卡信息，包括标题、描述、图标等。
+- 根据解锁状态更新解锁样式和提示信息。
+- 处理事件时，更新选中样式，并处理按钮点击事件，包括解锁关卡和触发新手引导。
+2024-11-03 02:53:38,546 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:38,546 - INFO Retriever 0 - 当前窗口总长度：31
+2024-11-03 02:53:38,546 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 02:53:38,546 - INFO Retriever 0 - 当前更新窗口长度：22
+2024-11-03 02:53:38,546 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:44,834 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs的内容。从文件内容来看，该脚本定义了一个名为`StageSelectItem`的类，用于在Unity游戏中的关卡选择界面中显示单个关卡的信息。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:44,834 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:44,834 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:44,834 - INFO Retriever 0 - deep_think
+2024-11-03 02:53:44,834 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:44,834 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:44,834 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs的内容。从文件内容来看，该脚本定义了一个名为`StageSelectItem`的类，用于在Unity游戏中的关卡选择界面中显示单个关卡的信息。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:44,834 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:53:44,834 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs的内容。从文件内容来看，该脚本定义了一个名为`StageSelectItem`的类，用于在Unity游戏中的关卡选择界面中显示单个关卡的信息。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:53:44,834 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:53:44,839 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:44,839 - INFO Retriever 0 - 当前窗口总长度：33
+2024-11-03 02:53:44,839 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 02:53:44,839 - INFO Retriever 0 - 当前更新窗口长度：24
+2024-11-03 02:53:44,839 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:47,705 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs"
+    }
+}
+2024-11-03 02:53:47,705 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:47,705 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:47,705 - INFO Retriever 0 - read_file
+2024-11-03 02:53:47,705 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:47,706 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:47,706 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs"
+    }
+}
+2024-11-03 02:53:47,706 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:53:47,706 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:53:47,853 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+该脚本文件“GameplayData.cs”定义了一个名为`GameplayData`的公共类，该类用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。类中的数据成员是静态的，意味着它们属于类本身，而不是类的实例。
+
+### 模块和功能
+- **数据存储模块**：包含多个静态字段，用于存储游戏中的各种统计数据和属性。
+- **金币获取模块**：提供`GainCoins`方法用于增加金币数。
+- **金币计算模块**：提供`GetActualCoins`方法用于计算拾取金币的实际金额。
+
+### 类和函数
+- **类**：`GameplayData`
+  - **字段**：`Coins`, `MaxHp`, `Recovery`, `Defence`, `MoveSpeed`, `PowerExtra`, `RangeExtra`, `SpeedExtra`, `DurationExtra`, `BulletAmountExtra`, `CoolingExtra`, `LuckyExtra`, `GrowthExtra`, `GreedExtra`, `CurseExtra`, `MagnetExtra`, `Reborn`, `Reselect`, `Skip`
+- **函数**：
+  - `GainCoins(int notes)`: 增加金币数。
+  - `GetActualCoins(int notes)`: 根据原始面值和贪婪属性计算实际获得的金币数。
+
+### 实现逻辑
+- `GameplayData`类包含一系列静态字段，用于存储游戏中的各种数据。
+- `GainCoins`方法通过调用`GetActualCoins`方法来计算拾取金币的实际金额，并更新`Coins`字段。
+- `GetActualCoins`方法根据原始面值和`GreedExtra`（贪婪属性）计算实际获得的金币数，该值是原始面值乘以（1 + 贪婪属性）。
+2024-11-03 02:53:47,853 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:47,853 - INFO Retriever 0 - 当前窗口总长度：35
+2024-11-03 02:53:47,853 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 02:53:47,853 - INFO Retriever 0 - 当前更新窗口长度：26
+2024-11-03 02:53:47,853 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:56,261 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayData`的公共类，用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:56,261 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:56,262 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:56,262 - INFO Retriever 0 - deep_think
+2024-11-03 02:53:56,262 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:56,262 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:56,262 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayData`的公共类，用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:53:56,263 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:53:56,263 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayData`的公共类，用于存储和管理游戏中的各种数据，如金币数、生命值、属性增强等。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:53:56,263 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:53:56,264 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:56,265 - INFO Retriever 0 - 当前窗口总长度：37
+2024-11-03 02:53:56,265 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 02:53:56,265 - INFO Retriever 0 - 当前更新窗口长度：28
+2024-11-03 02:53:56,265 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:53:59,172 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs"
+    }
+}
+2024-11-03 02:53:59,172 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:53:59,172 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:53:59,172 - INFO Retriever 0 - read_file
+2024-11-03 02:53:59,173 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:53:59,173 - INFO Retriever 0 - Assistant:
+2024-11-03 02:53:59,173 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs"
+    }
+}
+2024-11-03 02:53:59,173 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:53:59,174 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:53:59,320 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+该脚本文件“GameplayComponents.cs”是一个Unity游戏开发中的组件数据定义文件。它定义了一系列的结构体（structs），这些结构体用于存储游戏中的各种状态和配置信息。这些结构体将被附加到Unity的Entity对象上，以实现游戏逻辑的数据管理。
+
+### 模块和功能
+- **组件数据结构**：定义了多个结构体，每个结构体代表游戏中的一个特定组件，如玩家选择的角色、游戏运行时数据、冻结敌人数据、宝箱运行时数据、经验等级数据、获取金币数据、清除所有敌人命令和游戏设置数据。
+
+### 类和函数
+- **结构体**：
+  - `GameplayComponentData`：存储玩家选择的角色信息。
+  - `GameplayRuntimeData`：存储游戏暂停状态、游戏时间、冷却计时器、杀敌数、伤害和范围、清除所有敌人标志、冻结时间和临时武器。
+  - `GamePlayFreezeEnemyData`：存储冻结敌人的时间。
+  - `GamePlayChestRunTimeData`：存储获得的宝箱编号和排名。
+  - `GamePlayExpLevelData`：存储角色等级、当前经验值和升级目标经验值。
+  - `GamePlayGetGoldData`：存储已获取的金币数。
+  - `ClearAllEnemyCommand`：清除所有敌人的命令。
+  - `GamePlaySettingData`：存储游戏设置，如是否显示伤害数字。
+
+### 实现逻辑
+- 代码通过定义多个结构体来组织游戏状态和配置信息，这些结构体被设计为轻量级的数据容器，可以高效地存储和访问。
+- 每个结构体都包含与游戏逻辑相关的特定数据，如游戏时间、角色等级、伤害值等。
+- 通过将结构体附加到Unity的Entity对象上，可以在游戏运行时动态地读取和更新这些数据。
+2024-11-03 02:53:59,320 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:53:59,320 - INFO Retriever 0 - 当前窗口总长度：39
+2024-11-03 02:53:59,320 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 02:53:59,320 - INFO Retriever 0 - 当前更新窗口长度：30
+2024-11-03 02:53:59,320 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:54:09,650 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs的内容。从文件内容来看，该脚本定义了一系列的结构体，用于存储游戏中的各种状态和配置信息。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:54:09,650 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:54:09,650 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:54:09,650 - INFO Retriever 0 - deep_think
+2024-11-03 02:54:09,650 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:54:09,650 - INFO Retriever 0 - Assistant:
+2024-11-03 02:54:09,650 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs的内容。从文件内容来看，该脚本定义了一系列的结构体，用于存储游戏中的各种状态和配置信息。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:54:09,650 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:54:09,650 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs的内容。从文件内容来看，该脚本定义了一系列的结构体，用于存储游戏中的各种状态和配置信息。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:54:09,650 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:54:09,653 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:54:09,653 - INFO Retriever 0 - 当前窗口总长度：41
+2024-11-03 02:54:09,653 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 02:54:09,653 - INFO Retriever 0 - 当前更新窗口长度：32
+2024-11-03 02:54:09,653 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:54:12,189 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs"
+    }
+}
+2024-11-03 02:54:12,189 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:54:12,189 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:54:12,189 - INFO Retriever 0 - read_file
+2024-11-03 02:54:12,189 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:54:12,189 - INFO Retriever 0 - Assistant:
+2024-11-03 02:54:12,189 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs"
+    }
+}
+2024-11-03 02:54:12,191 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:54:12,191 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:54:12,334 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+该脚本文件“GameplayFormula.cs”是一个C#代码文件，定义了一个名为`GameplayFormula`的静态类，该类包含三个静态方法，用于计算游戏中的属性升级所需金币数、特定等级的最大经验值和特定等级的最大血量。
+
+### 模块和功能
+- **属性升级所需金币数计算**：根据基准价格和已升级次数计算升级所需金币数。
+- **等级最大经验值计算**：根据等级计算该等级的最大经验值。
+- **等级最大血量计算**：根据基础血量和等级计算该等级的最大血量。
+
+### 类和函数
+- **类**：`GameplayFormula` - 一个静态类，包含与游戏逻辑相关的计算方法。
+- **函数**：
+  - `GetUpgradePrice(int _basePrice, int _upgradeCount)`: 计算属性升级所需金币数。
+  - `CalculateMaxExp(int level)`: 计算特定等级的最大经验值。
+  - `CalculateMaxHP(float baseHP, int level)`: 计算特定等级的最大血量。
+
+### 实现逻辑
+- `GetUpgradePrice`方法通过基准价格和升级次数计算升级价格，每次升级价格增加基准价格的10%。
+- `CalculateMaxExp`方法通过等级计算最大经验值，公式为`level * 5 + level * level`。
+- `CalculateMaxHP`方法根据基础血量和等级计算最大血量，这里似乎有误，因为方法体中只返回了基础血量，没有根据等级进行计算。
+2024-11-03 02:54:12,334 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:54:12,338 - INFO Retriever 0 - 当前窗口总长度：43
+2024-11-03 02:54:12,338 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 02:54:12,338 - INFO Retriever 0 - 当前更新窗口长度：34
+2024-11-03 02:54:12,338 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:54:19,453 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayFormula`的静态类，包含三个静态方法，用于计算游戏中的属性升级所需金币数、特定等级的最大经验值和特定等级的最大血量。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:54:19,455 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:54:19,455 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:54:19,456 - INFO Retriever 0 - deep_think
+2024-11-03 02:54:19,456 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:54:19,456 - INFO Retriever 0 - Assistant:
+2024-11-03 02:54:19,456 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayFormula`的静态类，包含三个静态方法，用于计算游戏中的属性升级所需金币数、特定等级的最大经验值和特定等级的最大血量。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:54:19,456 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:54:19,456 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayFormula`的静态类，包含三个静态方法，用于计算游戏中的属性升级所需金币数、特定等级的最大经验值和特定等级的最大血量。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:54:19,456 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:54:19,459 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:54:19,459 - INFO Retriever 0 - 当前窗口总长度：45
+2024-11-03 02:54:19,459 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 02:54:19,459 - INFO Retriever 0 - 当前更新窗口长度：36
+2024-11-03 02:54:19,459 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:54:22,656 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs"
+    }
+}
+2024-11-03 02:54:22,658 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:54:22,658 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:54:22,658 - INFO Retriever 0 - read_file
+2024-11-03 02:54:22,658 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:54:22,658 - INFO Retriever 0 - Assistant:
+2024-11-03 02:54:22,658 - INFO Retriever 0 - {
+    "read_file": {
+        "file_path": "D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs"
+    }
+}
+2024-11-03 02:54:22,658 - INFO Retriever 0 - dict_keys(['read_file'])
+2024-11-03 02:54:22,658 - INFO Retriever 0 - Agent主脑给出的行动：read_file
+参数：{'file_path': 'D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs', 'top_path': 'D:/Unity/Survaval\\Assets', 'return_file_sum': <bound method TreeGenerationAction.return_file_sum of <Action.tree_gen_action.TreeGenerationAction object at 0x0000012F24949DF0>>}
+2024-11-03 02:54:22,830 - INFO Retriever 0 - Observer: 这是一个名为“Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs”的文件，该文件里的内容为：
+由于脚本文件内容过长，暂时仅给出该脚本文件的内容总结:
+- ### 总体概述
+- **框架和模块化结构**：该脚本定义了一个名为 `GameplayManager` 的类，该类继承自 `SkillDataContainer`。它负责管理游戏的主要功能，如游戏开始、停止、暂停、恢复和添加物品。
+- **主要功能和目标**：`GameplayManager` 的目标是作为游戏的核心管理器，负责游戏流程的控制和数据的存储。
+
+### 模块和功能
+- **游戏管理**：包括游戏开始、停止、暂停和恢复。
+- **物品管理**：添加物品到游戏中。
+- **玩家数据**：处理玩家角色和技能数据。
+- **资源管理**：创建和管理游戏资源，如精灵列表和游戏对象。
+
+### 类和函数
+- **类**：
+  - `GameplayManager`：游戏管理器类，负责游戏流程。
+  - `hourseStruct`：结构体，用于存储精灵列表。
+
+- **函数**：
+  - `CreateFlockBox`：创建并配置 `FlockBox` 组件。
+  - `Awake`：初始化时调用的函数，用于处理颜色转换。
+  - `Start`：游戏开始时调用的函数，初始化游戏。
+  - `OnDestroy`：对象销毁时调用的函数，用于清理资源。
+  - `StartGame`：开始游戏的函数。
+  - `StopGame`：停止游戏的函数。
+  - `PauseGame`：暂停游戏的函数。
+  - `ResumeGame`：恢复游戏的函数。
+  - `BetterWeapon`：添加更强大的武器到游戏的函数。
+  - `BeforeConvertingInsideEditor`：编辑器中转换数据前调用的函数。
+
+### 实现逻辑
+- **初始化**：在 `Awake` 和 `Start` 方法中初始化游戏设置和资源。
+- **游戏控制**：通过 `StartGame`、`StopGame`、`PauseGame` 和 `ResumeGame` 方法控制游戏流程。
+- **资源管理**：通过 `CreateFlockBox` 和 `BetterWeapon` 方法管理游戏资源。
+- **数据管理**：通过 `StartGame` 方法管理玩家数据和角色数据。
+2024-11-03 02:54:22,833 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:54:22,833 - INFO Retriever 0 - 当前窗口总长度：47
+2024-11-03 02:54:22,833 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 02:54:22,833 - INFO Retriever 0 - 当前更新窗口长度：38
+2024-11-03 02:54:22,833 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:54:32,749 - INFO Retriever 0 - Agent主脑给出的回答为：{
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayManager`的类，负责管理游戏的主要功能，如游戏开始、停止、暂停、恢复和添加物品。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:54:32,750 - INFO Retriever 0 - 是否成功解析：True
+2024-11-03 02:54:32,750 - INFO Retriever 0 - operation_type (__det_dir_action):
+2024-11-03 02:54:32,750 - INFO Retriever 0 - deep_think
+2024-11-03 02:54:32,750 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:54:32,751 - INFO Retriever 0 - Assistant:
+2024-11-03 02:54:32,751 - INFO Retriever 0 - {
+    "deep_think": {
+        "thoughts": "我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayManager`的类，负责管理游戏的主要功能，如游戏开始、停止、暂停、恢复和添加物品。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。"
+    }
+}
+2024-11-03 02:54:32,751 - INFO Retriever 0 - dict_keys(['deep_think'])
+2024-11-03 02:54:32,751 - INFO Retriever 0 - Agent主脑给出的行动：deep_think
+参数：{'thoughts': '我已经读取了文件D:/Unity/Survaval\\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs的内容。从文件内容来看，该脚本定义了一个名为`GameplayManager`的类，负责管理游戏的主要功能，如游戏开始、停止、暂停、恢复和添加物品。脚本内容并没有提及关卡时间设置。因此，我可以确定这个脚本文件也与任务目标不相关。接下来，我将继续读取其他可能与任务相关的文件内容。', 'repeat_counter': 1, 'continue_think_counter': 1}
+2024-11-03 02:54:32,752 - INFO Retriever 0 - Observer: 好的，请继续你的下一步行动或思考。
+2024-11-03 02:54:32,753 - INFO Retriever 0 - 
+
+————————————————————————————————————————————————————————————————
+2024-11-03 02:54:32,753 - INFO Retriever 0 - 当前窗口总长度：49
+2024-11-03 02:54:32,753 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 02:54:32,753 - INFO Retriever 0 - 当前更新窗口长度：40
+2024-11-03 02:54:32,754 - INFO Retriever 0 - -- updated_window_size >= self._compress_window_size --
+2024-11-03 02:54:32,754 - INFO Retriever 0 - 进行窗口压缩
+2024-11-03 02:55:38,834 - INFO Retriever 0 - window report:
+* 文件一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡11至20的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡31至40的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_81-90.asset
+    * 文件内容概述：该文件记录了81至90级关卡的正常与升级奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_91-100.asset
+    * 文件内容概述：该文件是Unity3D游戏关卡91至100的奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs
+    * 文件内容概述：该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。
+    * 是否与问题相关：否
+    * 具体分析：脚本内容与关卡选择界面相关，但未提及关卡时间设置。
+
+* 文件六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件七：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_31-40.asset”的配置，详细列出了第31至40级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件八：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs
+    * 文件内容概述：该脚本定义了`GameplayData`类，用于存储和管理游戏中的静态数据，如金币、生命值、属性增强等。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏中的统计数据和属性相关，但未提及关卡时间设置。
+
+* 文件九：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs
+    * 文件内容概述：该脚本文件“GameplayComponents.cs”定义了多个Unity游戏组件数据结构，用于管理游戏状态和配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏状态和配置相关，但未提及关卡时间设置。
+
+* 文件十：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏逻辑计算相关，但未提及关卡时间设置。
+
+* 文件十一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs
+    * 文件内容概述：`GameplayManager.cs` 文件定义了一个核心游戏管理类，继承自 `SkillDataContainer`。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏管理相关，但未提及关卡时间设置。
+
+* 文件十二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplaySystem.cs
+    * 文件内容概述："GameplaySystem.cs" 是一个Unity游戏开发中的核心类，负责管理游戏中的物品、玩家等级、暂停/恢复状态以及武器和技能。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏物品、玩家等级、游戏状态以及武器和技能相关，但未提及关卡时间设置。
+
+* 文件十三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/WeaponFireOnceTag.cs
+    * 文件内容概述：该脚本定义了一个名为`WeaponFireOnceTag`的类，该类实现了Unity的`IConvertGameObjectToEntity`接口。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与武器标签相关，但未提及关卡时间设置。
+
+* 文件十四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/BuffValue.cs
+    * 文件内容概述：该脚本定义了`BuffValue`结构体，用于管理游戏中的增益效果。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏增益效果相关，但未提及关卡时间设置。
+
+* 文件十五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/FlockBoxBoundarySyncSystem.cs
+    * 文件内容概述：该脚本定义了一个Unity实体系统`FlockBoxBoundarySyncSystem`，负责同步游戏中的`FlockBox`边界与`weaponRoot`的位置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏边界同步相关，但未提及关卡时间设置。
+
+* 文件十六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏逻辑计算相关，但未提及关卡时间设置。
+
+以上是我根据你的要求，按照遍历顺序，列出的在本次项目文件搜索过程中所搜索到的过程文件绝对路径及其内容概述。
+2024-11-03 02:55:38,836 - INFO Retriever 0 - 
+
+
+
+
+
+——————————————————————————————Log compressed history list—————————————————————————————————
+2024-11-03 02:55:38,837 - INFO Retriever 0 - ——————————————————————————————————————————order 2————————————————————————————————————————————
+
+
+
+
+2024-11-03 02:55:38,837 - INFO Retriever 0 - user:
+请在D:/Unity/Survaval\Assets下各级目录中寻找：有关关卡时间设置的相关文件
+2024-11-03 02:55:38,837 - INFO Retriever 0 - assistant:
+{
+    "deep_think": {
+        "thoughts": "好的，接下来我将通过深度思考、仔细计划以及逐步执行的方式，来完成该任务。\n\n首先，在阅读详细的代码细节之前，应该先整体把握整个项目。\n\n在提供的可选的action中，可以通过get_folder_info操作，通过将项目顶层路径作为target_folder_path参数进行传入，来获取获取项目中主要文件夹和主要文件的描述，从而能够先大致把握项目文件的主要文件的文件树结构、基本内容、主要代码概述以及大致功能板块的分布。"
+    }
+}
+2024-11-03 02:55:38,837 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 02:55:38,838 - INFO Retriever 0 - assistant:
+{
+    "get_folder_info": {
+        "target_folder_path": "D:/Unity/Survaval\\Assets"
+    }
+}
+2024-11-03 02:55:38,839 - INFO Retriever 0 - user:
+目标文件夹路径：D:/Unity/Survaval\Assets
+文件结构树（该结构树可能不完整，仅返回深度小于等于1层的子文件以及文件夹）：
+├── AddressableAssetsData
+│   ├── AddressableAssetSettings.asset
+│   ├── Android
+│   ├── AssetGroupTemplates
+│   ├── AssetGroups
+│   ├── DataBuilders
+│   ├── DefaultObject.asset
+│   ├── iOS
+├── AmplifyShaderEditor
+│   ├── AmplifyShaderEditor.asmdef
+│   ├── ChangeLog.txt
+│   ├── CreatingTerrainsWithASE.txt
+│   ├── Plugins
+│   ├── Readme.txt
+├── BlobHashMaps
+│   ├── BlobBuilderExtensions.cs
+│   ├── BlobHashMap.cs
+│   ├── BlobHashMapIntInt.cs
+│   ├── BlobHashMaps.asmdef
+│   ├── BlobMultiHashMap.cs
+│   ├── Data
+├── BuildReport
+│   ├── CustomBuildScriptExample.txt
+│   ├── GUI
+│   ├── README.txt
+│   ├── Scripts
+│   ├── VERSION.txt
+│   ├── license.txt
+├── CapturePath
+├── DamageNumbersPro
+│   ├── DamageNumbersPro.asmdef
+│   ├── Documentation.url
+│   ├── Editor
+│   ├── Fonts
+│   ├── Materials
+│   ├── Scripts
+├── Editor
+│   ├── ChannelSetting.cs
+│   ├── OrbiteExtenedEditor.cs
+│   ├── Resources
+│   ├── ShaderStripSettings
+├── Editor Default Resources
+│   ├── MasterAudio
+├── EnhancedScroller v2
+│   ├── ChangeLog.txt
+│   ├── Documentation
+│   ├── Plugins
+│   ├── Tutorials
+│   ├── readme.txt
+│   ├── upgrading from 1.x to 2.x.txt
+├── FlockBox
+│   ├── Classic
+│   ├── DOTS
+│   ├── Flock Box Manual.pdf
+├── Gizmos
+│   ├── MasterAudio
+├── Magic Spells Sound Effects V2.0
+│   ├── Casting Loops
+│   ├── Element Scholls
+│   ├── General Spell
+│   ├── Medieval Combat Sounds BONUS
+│   ├── Special Attack
+├── Pixel Arsenal
+│   ├── Demo
+│   ├── Materials
+│   ...
+│   ├── Textures
+├── Plugins
+│   ├── Android
+│   ├── DarkTonic
+│   ├── Demigiant
+│   ├── Editor
+│   ├── RelationsInspector
+│   ├── Sirenix
+│   ├── iOS
+├── RPG Icons Pixel Art
+│   ├── Aeromancer
+│   ├── Alchemy1
+│   ...
+│   ├── Сrossbowman
+├── Resources
+│   ├── DOTweenSettings.asset
+│   ├── MasterAudio
+├── SPUM
+│   ├── MonsterOrc_Prefabs
+│   ├── MonsterUndeadPrefabs
+│   ...
+│   ├── Sprite_SheetExporter(Beta)
+├── StreamingAssets
+├── TextMesh Pro
+│   ├── Documentation
+│   ├── Fonts
+│   ├── Resources
+│   ├── Shaders
+│   ├── Sprites
+├── UniversalRenderPipelineGlobalSettings.asset
+├── VirtualButtonsForUnity
+│   ├── VirtualButtonsForUnity
+├── YouLoftSDK
+│   ├── PottingMobileSDK
+│   ├── PottingMobileServices
+│   ...
+│   ├── YouloftTemp.cs
+├── ZTools
+│   ├── GlobalStringBuilder.cs
+│   ├── Localization
+│   ├── ZTools.asmdef
+├── _MyAssets
+│   ├── Animations
+│   ├── ArtAssets
+│   ...
+│   ├── URPSettings
+
+
+其中，部分主要文件及文件夹的信息如下：
+1. Assets
+# 路径:D:\\Unity\\Survaval\Assets
+# 内容概述:“UniversalRenderPipelineGlobalSettings.asset”文件是Unity项目中用于配置通用渲染管道（URP）全局设置的资产。它涵盖了光照模式、阴影质量、后处理效果以及性能优化等关键设置，如光照层配置、阴影质量选择和后处理效果启用，旨在平衡视觉效果与性能表现，以适应不同游戏的需求。
+
+2. AddressableAssetsData
+# 路径:D:\\Unity\\Survaval\Assets\AddressableAssetsData
+# 内容概述:### 文件夹内容简述
+
+“AddressableAssetsData”文件夹汇集了Unity游戏开发所需的资源管理和配置文件。其中，Android和iOS子文件夹分别管理针对各自平台的资源状态。AssetGroups和AssetGroupTemplates子文件夹则专注于资源打包和内容更新配置，而DataBuilders子文件夹提供了资源管理和场景加载的脚本配置。此外，AddressableAssetSettings.asset文件负责资源加载和优化全局设置，而DefaultObject.asset则定义了Unity脚本组件的配置。整体而言，这些文件共同构成了游戏资源高效管理和优化的框架。
+
+3. AmplifyShaderEditor
+# 路径:D:\\Unity\\Survaval\Assets\AmplifyShaderEditor
+# 内容概述:“AmplifyShaderEditor”文件夹汇集了Unity游戏开发中Amplify Shader Editor插件的核心组件与资源，包括编辑器脚本、界面资源、版本更新日志和使用指南。其中，“Editor”子文件夹承载着插件的核心逻辑和操作界面，而“EditorResources”则提供了图形用户界面和渲染资源。更新日志“ChangeLog.txt”详细记录了插件的功能迭代和问题修复，而“CreatingTerrainsWithASE.txt”则指导用户如何利用ASE创建地形着色器。遗憾的是，“Readme.txt”因编码错误无法读取，但预计包含插件的基本使用说明。
+
+4. BlobHashMaps
+# 路径:D:\\Unity\\Survaval\Assets\BlobHashMaps
+# 内容概述:“BlobHashMaps”文件夹汇集了针对Unity游戏引擎优化的数据结构脚本，包括BlobHashMap和BlobMultiHashMap的实现。核心文件如BlobBuilderHashMapData.cs和BlobHashMapData.cs定义了HashMap和只读哈希表，BlobBuilderExtensions.cs扩展了BlobHashMap功能，BlobHashMap.cs和BlobHashMapIntInt.cs则提供了更丰富的操作和构建器功能。BlobHashMaps.asmdef文件定义了模块依赖，而BlobMultiHashMap.cs引入了多哈希映射支持，共同构成了一个高效的数据管理工具集。
+
+5. BuildReport
+# 路径:D:\\Unity\\Survaval\Assets\BuildReport
+# 内容概述:“BuildReport”文件夹汇集了Unity游戏引擎的构建报告工具及相关资源，包括UI设计资源（如BRTSkin、NativeSkin和NativeSkinExtraIcons）、自动化构建脚本（如CustomBuildScriptExample.txt）和编辑器脚本（位于Scripts/Editor）。此外，它还包含定义特定窗口样式的皮肤文件（BuildReportWindow.guiskin和BuildReportWindowDark.guiskin），以及工具的许可证信息（license.txt）和使用说明（README.txt）。VERSION.txt文件记录了工具的版本更新历史，突出了新增功能和错误修复。
+
+6. CapturePath
+# 路径:D:\\Unity\\Survaval\Assets\CapturePath
+# 内容概述:该文件夹内容为空。
+
+7. DamageNumbersPro
+# 路径:D:\\Unity\\Survaval\Assets\DamageNumbersPro
+# 内容概述:“DamageNumbersPro”文件夹汇集了Unity游戏开发所需的资源，包括编辑器脚本、多种风格的字体、材质和游戏逻辑脚本。其中，编辑器脚本用于资源配置，字体和材质丰富了游戏视觉元素，而脚本集合则支撑了游戏的核心逻辑和交互。此外，汇编定义文件和文档链接文件提供了模块化开发和项目文档的便捷访问。
+
+8. Editor
+# 路径:D:\\Unity\\Survaval\Assets\Editor
+# 内容概述:### 文件夹内容总结
+
+“Editor”文件夹汇集了Unity项目开发所需的资源与工具。其中，**Resources**子文件夹提供游戏与动画设计的视觉素材，包括角色、场景元素和预制游戏单元。**ShaderStripSettings**包含提升渲染质量的Unity脚本组件，而**ChannelSetting.cs**脚本则用于管理不同渠道的SDK和项目配置。此外，**OrbiteExtenedEditor.cs**编辑器扩展脚本增强了文本编辑和屏幕截图功能，辅助设计和开发流程。整体上，这些资源与工具相互关联，共同服务于Unity项目的开发与优化。
+
+9. Editor Default Resources
+# 路径:D:\\Unity\\Survaval\Assets\Editor Default Resources
+# 内容概述:“Editor Default Resources”文件夹汇集了多种音频处理相关的图标，包括播放、暂停、停止等控制图标，以及复制、删除、保存等操作图标，还有LED灯状态指示和扬声器图标等。这些图标共同服务于音频编辑和界面设计，为用户提供了直观的操作和状态指示。
+
+10. EnhancedScroller v2
+# 路径:D:\\Unity\\Survaval\Assets\EnhancedScroller v2
+# 内容概述:该“EnhancedScroller v2”文件夹汇集了Unity游戏开发中EnhancedScroller插件的全面资源，包括用户手册、插件代码、教程和更新日志。用户手册详细介绍了插件的使用方法，插件代码则由组件、单元格视图和动画系统等组成，旨在提升UI开发效率。教程资源帮助开发者快速上手，而更新日志和升级指南则提供了插件版本间的变化和升级指导。
+
+11. FlockBox
+# 路径:D:\\Unity\\Survaval\Assets\FlockBox
+# 内容概述:### 文件夹内容精简总结
+
+“Flock Box”文件夹是Unity游戏开发项目，集成了视觉资源、游戏逻辑脚本和DOTS架构相关资源。其中，**Classic**子文件夹提供游戏场景、预制体和艺术资源，**DOTS**子文件夹则专注于DOTS架构的脚本和材料。项目手册“Flock Box Manual.pdf”详细介绍了项目结构、资源使用和开发指南，为开发者提供了全面的项目操作指导。
+
+12. Gizmos
+# 路径:D:\\Unity\\Survaval\Assets\Gizmos
+# 内容概述:“Gizmos”文件夹汇集了音频处理相关的图标设计，包括“MasterAudio”品牌标识和“PlaylistController”播放列表控制功能的图标，旨在为音频软件界面提供视觉元素。
+
+13. Magic Spells Sound Effects V2.0
+# 路径:D:\\Unity\\Survaval\Assets\Magic Spells Sound Effects V2.0
+# 内容概述:“Magic Spells Sound Effects V2.0”文件夹汇集了丰富的音效资源，包括循环施法音效、元素相关施法音效、通用魔法效果、中世纪战斗声音以及特定攻击音效。这些音效覆盖了从增益攻击到治疗，从施法到战斗动作，适用于游戏、影视等多媒体项目，且文件命名清晰，便于快速查找和使用。
+
+14. Pixel Arsenal
+# 路径:D:\\Unity\\Survaval\Assets\Pixel Arsenal
+# 内容概述:“Pixel Arsenal”文件夹汇集了丰富的游戏开发资源，包括视觉素材（如天空盒和纹理）、预制体（如界面元素和特效）、场景素材、Unity脚本（用于游戏逻辑）和音频效果。这些资源相互关联，共同构建了游戏和视觉效果的基础，适用于Unity等游戏引擎。文件夹内的“ReadMe.txt”文件提供了资源使用指南和潜在的技术支持信息。
+
+15. Plugins
+# 路径:D:\\Unity\\Survaval\Assets\Plugins
+# 内容概述:“Plugins”文件夹汇集了多平台游戏开发资源，包括Android应用开发工具、Unity游戏资源包如音频和网络同步插件，以及编辑器扩展和iOS应用开发组件。其中，Android子文件夹提供项目配置和第三方库；Unity相关资源如DarkTonic和Demigiant则专注于音频和网络同步，以及动画处理；Editor子文件夹增强Unity编辑器功能；iOS子文件夹涵盖性能监控和广告集成等iOS特有功能。这些资源相互关联，共同构建了一个全面的游戏开发环境。
+
+16. Resources
+# 路径:D:\\Unity\\Survaval\Assets\Resources
+# 内容概述:### 文件夹内容总结
+
+“Resources”文件夹汇集了Unity游戏项目的关键配置资源，包括“MasterAudioSettings.asset”用于音频处理和插件配置，以及“DOTweenSettings.asset”用于动画和缓动库的详细设置，两者共同确保游戏音效和动画的优化与流畅。
+
+17. RPG Icons Pixel Art
+# 路径:D:\\Unity\\Survaval\Assets\RPG Icons Pixel Art
+# 内容概述:当然可以。以下是融合后的简短内容：
+
+“Support contact.pdf”文件提供客户支持联系信息，包括电话、电子邮件和在线支持服务，并附有服务时间表、常见问题解答以及用户反馈表单，旨在为用户提供便捷的咨询与支持服务。
+
+18. SPUM
+# 路径:D:\\Unity\\Survaval\Assets\SPUM
+# 内容概述:“SPUM”文件夹汇集了丰富的游戏开发资源，包括怪物与角色预制体、动画素材、图像资源、字体、材质以及Unity脚本等。它涵盖了从角色模型和动画到编辑器扩展和场景设置的全方位内容，旨在支持游戏开发、3D建模和动画制作项目。文件夹内不同子目录紧密关联，共同构成了一个完整的项目资源库。
+
+19. StreamingAssets
+# 路径:D:\\Unity\\Survaval\Assets\StreamingAssets
+# 内容概述:“StreamingAssets”文件夹主要存储流媒体应用所需的资源，包括视频、音频和图像文件，以及相关的配置和脚本文件。该文件夹内部分为视频、音频、图像、配置和脚本等子文件夹，各自管理不同类型的媒体资源和播放逻辑配置，以确保资源的高效加载和流式传输。
+
+20. TextMesh Pro
+# 路径:D:\\Unity\\Survaval\Assets\TextMesh Pro
+# 内容概述:该“TextMesh Pro”文件夹汇集了TextMesh Pro软件的用户指南、Liberation Sans字体资源、Unity项目资源包以及表情符号素材。其中，用户指南详细介绍了软件操作，Liberation Sans字体提供多种样式，Unity资源包包括字体、材质和精灵资产，着色器文件则专注于图形渲染，而表情符号资源则便于集成到项目中。这些内容相互关联，共同服务于游戏开发与图形设计的需求。
+
+21. VirtualButtonsForUnity
+# 路径:D:\\Unity\\Survaval\Assets\VirtualButtonsForUnity
+# 内容概述:### 文件夹内容概览
+
+“VirtualButtonsForUnity”文件夹是Unity游戏开发资源，集成了虚拟按钮、方向垫和摇杆预制体及脚本，旨在增强游戏交互体验。内含示例项目、预制体、脚本、图像资源和详细文档，方便开发者快速集成和使用。
+
+22. YouLoftSDK
+# 路径:D:\\Unity\\Survaval\Assets\YouLoftSDK
+# 内容概述:### 文件夹内容总结
+
+“YouLoftSDK”文件夹是Unity游戏开发者的综合工具包，集成了广告管理、支付、用户管理、数据同步等功能模块。其中，**PottingMobileSDK** 提供了Android和iOS平台的插件和脚本，**PottingMobileServices** 则包含了跨平台服务接口和功能脚本。广告管理、支付、礼包兑换等具体功能由 **YouLoftAd.cs**、**YouLoftPay.cs** 和 **YouLoftRedeemcode.cs** 等文件实现，而 **YouLoftSDKManager.cs** 负责管理这些模块，确保它们协同工作。此外，**YouLoftLogin.cs** 处理用户登录，**YouLoftEvent.cs** 和 **YouloftTemp.cs** 分别提供事件跟踪和配置同步功能，共同支撑游戏的整体运行。
+
+23. ZTools
+# 路径:D:\\Unity\\Survaval\Assets\ZTools
+# 内容概述:### 文件夹内容总结
+“ZTools”文件夹汇集了Unity游戏开发中本地化和字符串操作的工具。其中，包含用于本地化文本管理的脚本，如`StaticLocalizedText.cs`和`StaticLocalizedText_UGUI.cs`，以及`Strings.cs`用于管理本地化字符串。此外，`GlobalStringBuilder.cs`提供了全局字符串构建功能，优化了字符串操作性能。而“ZTools.asmdef”文件则定义了项目中的“ZTools”程序集，管理着相关脚本文件的引用和编译。这些工具共同构成了一个高效且模块化的开发环境。
+
+24. _MyAssets
+# 路径:D:\\Unity\\Survaval\Assets\_MyAssets
+# 内容概述:“_MyAssets”文件夹是游戏开发的核心资源库，汇集了动画、艺术资产、音频、数据配置、编辑器资源、字体、图标、脚本、着色器等关键文件，以及预制体和场景设计。它为游戏提供了丰富的视觉和音频效果，并通过详细的配置文件和脚本实现了复杂的游戏逻辑和交互。文件夹内资源相互关联，共同支撑起游戏的整体架构和功能实现。
+
+25. UniversalRenderPipelineGlobalSettings.asset
+# 路径:D:\\Unity\\Survaval\Assets\UniversalRenderPipelineGlobalSettings.asset
+# 内容概述:### 简化总结
+
+该文件是Unity的通用渲染管道全局设置配置，定义了8个光照层（如Light Layer default至Light Layer 7）。它还包含了性能优化设置，如移除调试变体和未使用变体，以及不支持运行时调试显示。
+
+
+2024-11-03 02:55:38,842 - INFO Retriever 0 - assistant:
+{
+    "deep_think": {
+        "thoughts": "在获取了项目文件的顶层结构后，我还需要结合待查询的问题描述，对于项目中的文件和目录进行一些深度关键词检索。根据任务描述：“请在D:/Unity/Survaval\\Assets下各级目录中寻找：有关关卡时间设置的相关文件”，我总结出如下可能会出现在各个文件名或者文件内容中的关键词：“level”，“time”，“hour”，“关卡”，“时间”。\n接下来，我将使用retrieve_keywords操作，在项目顶层路径“D:/Unity/Survaval\\Assets”下检索这些关键词，从而大致把握可能与问题描述相关的文件或目录的路径。"
+    }
+}
+2024-11-03 02:55:38,842 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 02:55:38,843 - INFO Retriever 0 - assistant:
+{
+    "retrieve_keywords": {
+        "keyword_list": [
+            "level",
+            "time",
+            "hour",
+            "关卡",
+            "时间"
+        ]
+    }
+}
+2024-11-03 02:55:38,843 - INFO Retriever 0 - user:
+根据你提供的关键词，我检索到以下目录或文件，它们的绝对路径如下：
+
+
+1. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_31-40.asset
+### 简要总结
+该文件定义了Unity游戏关卡31至40的奖励系统，涵盖正常和升级奖励。每个关卡对应不同的奖励类型和数值，旨在激励玩家完成挑战。
+
+2. D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI\MainUI\StagePanel
+## 文件夹内容精简总结
+
+“StagePanel”文件夹内包含两个关键脚本：`StageSelectItem.cs`和`StageSelectPanel.cs`。`StageSelectItem.cs`负责在关卡选择界面中展示单个关卡的信息，包括解锁状态和事件处理；而`StageSelectPanel.cs`则管理整个关卡选择界面的逻辑，包括关卡列表的显示和用户交互。这两个脚本协同工作，共同实现了关卡选择界面的功能。
+
+3. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_41-50.asset
+### 关键点融合
+该文件详细定义了Unity游戏关卡41至50的奖励系统，涵盖每个级别的正常和升级奖励。奖励类型包括金币、道具和特殊奖励，具体奖励值和关联数据如地图、角色等均有所配置。
+
+4. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_81-90.asset
+### 文本总结
+该文件为Unity游戏资产“level_81-90.asset”，记录了81至90级关卡的正常与升级奖励配置。每个关卡设有类型7的奖励，正常奖励值为50，升级奖励值为150，涉及地图、物品等数据，但具体引用的数据文件ID均为0。
+
+5. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_91-100.asset
+### 文本总结
+该文件是Unity3D游戏关卡91至100的奖励配置，详细列出了每级关卡的普通和升级奖励，包括奖励类型和数值。配置涵盖了地图、物品、属性等数据，但具体内容以占位符表示。
+
+6. D:\\Unity\\Survaval\Assets\_MyAssets\Scripts\UI\MainUI\StagePanel\StageSelectItem.cs
+该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。类继承自`EnhancedScrollerCellView`，负责显示关卡图标、标题、描述等，并处理解锁状态和事件响应。主要功能包括初始化按钮监听、设置关卡数据、根据解锁情况更新界面样式，以及处理选中事件和按钮点击事件，以实现关卡选择和引导功能。
+
+7. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass\level_11-20.asset
+### 简要总结
+该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励，包括经验、货币、物品等多种奖励类型，并关联了角色、物品等游戏内数据。
+
+8. D:\\Unity\\Survaval\Assets\_MyAssets\Data\BattlePass
+## 简化版文件夹内容分析总结
+
+“BattlePass”文件夹汇集了Unity游戏开发中的关键配置文件，涵盖战斗通行证数据结构、经验值和奖励设置，以及从等级1至100的关卡奖励配置。这些文件协同定义了游戏的奖励系统，为玩家提供完成关卡和参与战斗的激励，同时部分奖励配置涉及外部数据引用，表明系统可能包含更复杂的数据结构。文件夹内文件如“BattlePassData.asset”定义了战斗通行证的整体框架，而“Level_1-100.asset”系列文件则详细列出了各等级的奖励配置，包括正常和升级奖励。
+
+
+请注意，这些目录或文件可能不全都和你的任务目标相关，仅供参考。请你基于具体的文件内容概述，结合你的任务目标，认真思考分析后，优先选择最有可能与任务相关的目录或文件进行进一步的检查。
+2024-11-03 02:55:38,844 - INFO Retriever 0 - assistant:
+好的。在我进行下一步行动或思考前，我又回顾了一下，以下是之前已经遍历过的文件信息：
+
+* 文件一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡11至20的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件定义了Unity游戏关卡31至40的奖励系统，包括正常和升级奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_81-90.asset
+    * 文件内容概述：该文件记录了81至90级关卡的正常与升级奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_91-100.asset
+    * 文件内容概述：该文件是Unity3D游戏关卡91至100的奖励配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/UI/MainUI/StagePanel/StageSelectItem.cs
+    * 文件内容概述：该脚本定义了Unity游戏中的`StageSelectItem`类，作为关卡选择界面中单个关卡信息的展示单元。
+    * 是否与问题相关：否
+    * 具体分析：脚本内容与关卡选择界面相关，但未提及关卡时间设置。
+
+* 文件六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_11-20.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_11-20.asset”的配置，详细列出了第11至20级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件七：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Data/BattlePass/level_31-40.asset
+    * 文件内容概述：该文件是Unity游戏资产“level_31-40.asset”的配置，详细列出了第31至40级关卡的正常与升级后奖励。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与关卡奖励相关，但未提及关卡时间设置。
+
+* 文件八：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayData.cs
+    * 文件内容概述：该脚本定义了`GameplayData`类，用于存储和管理游戏中的静态数据，如金币、生命值、属性增强等。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏中的统计数据和属性相关，但未提及关卡时间设置。
+
+* 文件九：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayComponents.cs
+    * 文件内容概述：该脚本文件“GameplayComponents.cs”定义了多个Unity游戏组件数据结构，用于管理游戏状态和配置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏状态和配置相关，但未提及关卡时间设置。
+
+* 文件十：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏逻辑计算相关，但未提及关卡时间设置。
+
+* 文件十一：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayManager.cs
+    * 文件内容概述：`GameplayManager.cs` 文件定义了一个核心游戏管理类，继承自 `SkillDataContainer`。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏管理相关，但未提及关卡时间设置。
+
+* 文件十二：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplaySystem.cs
+    * 文件内容概述："GameplaySystem.cs" 是一个Unity游戏开发中的核心类，负责管理游戏中的物品、玩家等级、暂停/恢复状态以及武器和技能。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏物品、玩家等级、游戏状态以及武器和技能相关，但未提及关卡时间设置。
+
+* 文件十三：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/WeaponFireOnceTag.cs
+    * 文件内容概述：该脚本定义了一个名为`WeaponFireOnceTag`的类，该类实现了Unity的`IConvertGameObjectToEntity`接口。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与武器标签相关，但未提及关卡时间设置。
+
+* 文件十四：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/BuffValue.cs
+    * 文件内容概述：该脚本定义了`BuffValue`结构体，用于管理游戏中的增益效果。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏增益效果相关，但未提及关卡时间设置。
+
+* 文件十五：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/FlockBoxBoundarySyncSystem.cs
+    * 文件内容概述：该脚本定义了一个Unity实体系统`FlockBoxBoundarySyncSystem`，负责同步游戏中的`FlockBox`边界与`weaponRoot`的位置。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏边界同步相关，但未提及关卡时间设置。
+
+* 文件十六：
+    * 文件绝对路径：D:/Unity/Survaval\Assets/_MyAssets/Scripts/Gameplay/GameplayFormula.cs
+    * 文件内容概述：该脚本定义了`GameplayFormula`静态类，包含三个用于游戏逻辑计算的静态方法。
+    * 是否与问题相关：否
+    * 具体分析：文件内容与游戏逻辑计算相关，但未提及关卡时间设置。
+
+以上是我根据你的要求，按照遍历顺序，列出的在本次项目文件搜索过程中所搜索到的过程文件绝对路径及其内容概述。
+
+以上是我回顾的之前已经遍历过的文件信息。接下来，我将基于上述的进度，继续进行任务。
+2024-11-03 02:55:38,846 - INFO Retriever 0 - user:
+好的，请继续你的下一步行动或思考。
+2024-11-03 02:55:38,846 - INFO Retriever 0 - 
+
+——————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:55:38,846 - INFO Retriever 0 - ——————————————————————————————————————————————————————————————————————————————————————————
+2024-11-03 02:55:38,846 - INFO Retriever 0 - ————————————————————————————————————————————————————————————————
+
+
+2024-11-03 02:55:38,846 - INFO Retriever 0 - 
+
+————————————————————————————————————STOP IN POS 1————————————————————————————————————
+
+
